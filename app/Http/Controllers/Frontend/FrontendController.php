@@ -134,6 +134,54 @@ class FrontendController extends Controller
         return true;
     }
 
+    public function about() {
+        return view('front.about');
+    }
+
+    public function contact() {
+        return view('front.contact');
+    }
+
+    public function submitContact(Request $request) {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        // Here you can add your email sending logic
+        // For example:
+        /*
+        Mail::send('emails.contact', [
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ], function($message) use ($request) {
+            $message->to('your-email@example.com')
+                    ->subject('New Contact Form Submission: ' . $request->subject);
+        });
+        */
+
+        Session::flash('success', 'Thank you for contacting us. We will get back to you soon!');
+        return redirect()->back();
+    }
+
+    public function templates() {
+        return view('front.templates.index');
+    }
+
+    public function templateShow() {
+        return view('front.templates.show');
+    }
+
     public function catchAll(){
         return view('frontend.pages.error');
     }

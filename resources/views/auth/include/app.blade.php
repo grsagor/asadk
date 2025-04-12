@@ -10,6 +10,7 @@
     <title>Login - {{ Helper::getSettings('application_name') }}</title>
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/auth/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/auth/css/login.css') }}" rel="stylesheet" />
     <link href="{{ asset('uploads/settings/' . Helper::getSettings('site_favicon')) }}" rel="icon">
 </head>
 

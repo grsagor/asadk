@@ -140,7 +140,7 @@ class LoginController extends Controller
 
 		Auth::logout();
 		$request->session()->invalidate();
-		return redirect()->route('admin');
+		return redirect()->route('login');
 	}
 
     public function adminProfile(){

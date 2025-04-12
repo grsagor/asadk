@@ -1,7 +1,7 @@
 @extends('auth.include.app')
 @section('content')
     <div class="border-0 rounded-lg">
-        <h3 class="text-center my-4">Login</h3>
+        <h3 class="text-center my-4 text-white">Login</h3>
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>

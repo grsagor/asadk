@@ -13,7 +13,7 @@
         <div class="sb-sidenav-menu">
 
             <div class="nav">
-                @if (Helper::hasRight('setting.view'))
+                {{-- @if (Helper::hasRight('setting.view'))
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#settingNav"
                         aria-expanded="@if (Route::is('admin.setting.general') || Route::is('admin.setting.static.content') || Route::is('admin.setting.legal.content') || Route::is('admin.contact') || Route::is('admin.resource')) true @else false @endif"
                         aria-controls="collapseLayouts">
@@ -42,11 +42,11 @@
                             @endif
                         </nav>
                     </div>
-                @endif
+                @endif --}}
 
 
                 {{-- admin  --}}
-                @if (Helper::hasRight('setting.view'))
+                {{-- @if (Helper::hasRight('setting.view'))
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#setupNav"
                         aria-expanded="@if (Route::is('admin.role') || Route::is('admin.role.create') || Route::is('admin.role.edit') || Route::is('admin.role.right') || Route::is('admin.partner') || Route::is('admin.partner.product') || Route::is('admin.user')) true @else false @endif" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-user-shield"></i></div> Administration
@@ -70,13 +70,41 @@
                             @endif
                         </nav>
                     </div>
-                @endif
+                @endif --}}
 
 
                 @if (Helper::hasRight('dashboard.view'))
                     <a class="nav-link {{ Route::is('admin.index') ? 'active' : '' }}"
                         href="{{ route('admin.index') }}">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div> Dashboard
+                    </a>
+                @endif
+
+                @if (Helper::hasRight('templates.view'))
+                    <a class="nav-link {{ Route::is('admin.templates') || Route::is('admin.templates.create') || Route::is('admin.templates.edit') ? 'active' : '' }}"
+                        href="{{ route('admin.templates.index') }}">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-file-code"></i></div> Templates
+                    </a>
+                @endif
+
+                @if (Helper::hasRight('categories.view'))
+                    <a class="nav-link {{ Route::is('admin.categories') ? 'active' : '' }}"
+                        href="{{ route('admin.categories.index') }}">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-folder"></i></div> Categories
+                    </a>
+                @endif
+
+                @if (Helper::hasRight('orders.view'))
+                    <a class="nav-link {{ Route::is('admin.orders') ? 'active' : '' }}"
+                        href="{{ route('admin.orders.index') }}">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-shopping-cart"></i></div> Orders
+                    </a>
+                @endif
+
+                @if (Helper::hasRight('tags.view'))
+                    <a class="nav-link {{ Route::is('admin.tags') ? 'active' : '' }}"
+                        href="{{ route('admin.tags.index') }}">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-tags"></i></div> Tags
                     </a>
                 @endif
             </div>

@@ -1,63 +1,73 @@
-<header>
-    <div class="mobile-nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+<header class="header">
+    <div class="logo-container">
+        <a href="{{ url('/') }}" class="logo-link">
+            <img src="{{ asset('assets/images/utils/logo.png') }}" alt="Logo" class="logo-image">
+        </a>
     </div>
+
     <nav class="main-nav">
-        <ul>
-            <li class="dropdown">
-                <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+        <div class="mobile-nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
+            {{-- <li class="dropdown">
+                <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#">All Cabinets</a>
-                    <a href="#">Allure</a>
-                    <a href="#">Illume</a>
-                    <a href="#">Accessories</a>
-                    <a href="#">Hoods</a>
-                    <a href="#">Vanities</a>
-                    <a href="#">Custom Works</a>
-                    <a href="#">Samples and Parts</a>
+                    <a href="{{ url('/services/web-development') }}" class="dropdown-link">Web Development</a>
+                    <a href="{{ url('/services/mobile-apps') }}" class="dropdown-link">Mobile Apps</a>
+                    <a href="{{ url('/services/design') }}" class="dropdown-link">Design</a>
                 </div>
-            </li>
-            <li class="dropdown">
-                <a href="#">KBIS <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Events</a>
-                    <a href="#">Showcase</a>
-                    <a href="#">Gallery</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#">Inspiration <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Design Ideas</a>
-                    <a href="#">Style Guide</a>
-                    <a href="#">Case Studies</a>
-                    <a href="#">Kitchen Trends</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#">Dealers <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Find a Dealer</a>
-                    <a href="#">Become a Dealer</a>
-                    <a href="#">Dealer Login</a>
-                </div>
-            </li>
-            <li><a href="#">Q12</a></li>
-            <li><a href="#">Blog</a></li>
-            <li class="dropdown">
-                <a href="#">About <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Our Story</a>
-                    <a href="#">Our Process</a>
-                    <a href="#">Sustainability</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Contact Us</a>
-                </div>
-            </li>
-            <li><a href="#">Login</a></li>
+            </li> --}}
+            <li><a href="{{ url('/templates') }}" class="nav-link">Templates</a></li>
+            <li><a href="{{ url('/about') }}" class="nav-link">About</a></li>
+            <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
         </ul>
     </nav>
-    <div class="login"><a href="#">Login</a></div>
+
+    <div class="user-section">
+        @auth
+            <div class="user-info dropdown">
+                <a href="#" class="user-info-link">
+                    <img src="{{ auth()->user()->avatar ?? asset('assets/images/default-avatar.png') }}" alt="User Avatar" class="avatar">
+                    <span class="user-name">{{ auth()->user()->name }}</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content user-dropdown">
+                    <a href="{{ url('/profile') }}" class="dropdown-link">Profile</a>
+                    <a href="{{ url('/dashboard') }}" class="dropdown-link">Dashboard</a>
+                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="dropdown-link">Logout</a>
+                </div>
+            </div>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        @else
+            <a href="{{ route('login') }}" class="login-btn btn-primary">Login</a>
+        @endauth
+    </div>
 </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        mobileNavToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        if (window.innerWidth <= 991) {
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    this.classList.toggle('active');
+                    e.stopPropagation();
+                });
+            });
+        }
+    });
+</script>

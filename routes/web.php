@@ -2,15 +2,26 @@
 
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\OrderController;
 use App\Http\Controllers\Backend\RoleController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SkillController;
+use App\Http\Controllers\Backend\TagController;
+use App\Http\Controllers\Backend\TemplateController;
 use Illuminate\Support\Facades\Route;
 
 Route::controller(FrontendController::class)->group(function() {
     Route::get('/', 'index')->name('front.index');
+    Route::get('/about', 'about')->name('front.about');
+    Route::get('/contact', 'contact')->name('front.contact');
+    Route::post('/contact/submit', 'submitContact')->name('contact.submit');
+    Route::get('/templates', 'templates')->name('front.templates');
+    Route::get('/templates/business-template', 'templateShow')->name('front.templates.show');
+    Route::get('/templates/portfolio-template', 'templateShow')->name('front.templates.show');
+    Route::get('/templates/ecommerce-template', 'templateShow')->name('front.templates.show');
 });
 
 Route::controller(FrontendController::class)->group(function(){
@@ -20,8 +31,6 @@ Route::controller(FrontendController::class)->group(function(){
     Route::get('login', 'login')->name('login');
     Route::get('registration', 'registration');
 });
-
-
 
 // Auth route
 Route::post('login-post', [LoginController::class, 'authenticate'])->name('login.post');
@@ -80,6 +89,47 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::put('/update/{id}', 'update')->name('update');
         Route::delete('/delete/{id}', 'delete')->name('delete');
     });
+
+    // Template Marketplace Routes
+    Route::prefix('templates')->controller(TemplateController::class)->name('admin.templates.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/list', 'list')->name('list');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::put('/update/{id}', 'update')->name('update');
+        Route::delete('/delete/{id}', 'delete')->name('delete');
+        Route::put('/status/{id}', 'updateStatus')->name('status');
+    });
+
+    Route::prefix('categories')->controller(CategoryController::class)->name('admin.categories.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/list', 'list')->name('list');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::put('/update/{id}', 'update')->name('update');
+        Route::delete('/delete/{id}', 'delete')->name('delete');
+    });
+
+    Route::prefix('orders')->controller(OrderController::class)->name('admin.orders.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/list', 'list')->name('list');
+        Route::get('/create', 'index')->name('create');
+        Route::get('/show/{id}', 'show')->name('show');
+        Route::put('/status/{id}', 'updateStatus')->name('status');
+    });
+
+    Route::prefix('tags')->controller(TagController::class)->name('admin.tags.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/list', 'list')->name('list');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::put('/update/{id}', 'update')->name('update');
+        Route::delete('/delete/{id}', 'delete')->name('delete');
+    });
 });
 
 Route::get('admin/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('admin/logout', [LoginController::class, 'logout'])->name('logout');
