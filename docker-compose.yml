@@ -1,0 +1,41 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: digitaltemplates24_app
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "9000:8000"
+    depends_on:
+      - db
+    command: ./wait-for-it.sh db:3306 --timeout=60 -- php artisan serve --host=0.0.0.0 --port=8000
+
+  db:
+    image: mysql:5.7
+    platform: linux/amd64
+    container_name: digitaltemplates24_db
+    restart: unless-stopped
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_DATABASE: digitaltemplates24_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./digitaltemplates24.sql:/docker-entrypoint-initdb.d/digitaltemplates24.sql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    container_name: digitaltemplates24_phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8082:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
