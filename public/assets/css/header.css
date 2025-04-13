@@ -23,7 +23,7 @@
     width: 100%;
     height: 48px;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .main-nav {

@@ -27,3 +27,10 @@
 .text-primary {
     color: #1A1A1A !important;
 }
+
+/* Footer CSS */
+.footer-logo img {
+    width: 200px;
+    height: 48px;
+    object-fit: cover;
+}

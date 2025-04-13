@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4 footer-section">
                 <div class="footer-logo mb-4">
-                    <img src="{{ asset('assets/images/utils/logo.png') }}" alt="Logo" class="img-fluid" style="max-width: 200px;">
+                    <img src="{{ asset('assets/images/utils/logo-white.png') }}" alt="Logo" class="img-fluid">
                 </div>
                 <p>We are dedicated to delivering exceptional solutions and services to our clients. Our commitment to excellence drives everything we do.</p>
             </div>

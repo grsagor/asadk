@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>iamgrsagor</title>
+    <title>DigitalTemplates24</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

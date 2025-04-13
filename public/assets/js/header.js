@@ -1,13 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
     const scrollThreshold = 50;
+    const logoImage = document.querySelector('.logo-image');
 
     // Handle scroll-based header transition
     const handleScroll = () => {
         if (window.scrollY > scrollThreshold) {
             header.classList.add('scrolled');
+            if (logoImage) {
+                logoImage.src = '/assets/images/utils/logo-black.png';
+            }
         } else {
             header.classList.remove('scrolled');
+            if (logoImage) {
+                logoImage.src = '/assets/images/utils/logo-white.png';
+            }
         }
     };
 

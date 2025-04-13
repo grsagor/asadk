@@ -1,7 +1,7 @@
 <header class="header">
     <div class="logo-container">
         <a href="{{ url('/') }}" class="logo-link">
-            <img src="{{ asset('assets/images/utils/logo.png') }}" alt="Logo" class="logo-image">
+            <img src="{{ asset('assets/images/utils/logo-white.png') }}" alt="Logo" class="logo-image">
         </a>
     </div>
 
