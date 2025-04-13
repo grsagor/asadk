@@ -27,38 +27,38 @@ $(document).ready(function() {
     });
 
     // Create button click handler
-    $(document).on('click', '#create_btn', function() {
-        let url = $(this).data('url');
-        $.ajax({
-            url: url,
-            type: 'GET',
-            success: function(response) {
-                $('#form_modal_content').html(response);
-                $('#form_modal').modal('show');
-                initializeFormComponents();
-            },
-            error: function(xhr) {
-                handleAjaxError(xhr);
-            }
-        });
-    });
+    // $(document).on('click', '#create_btn', function() {
+    //     let url = $(this).data('url');
+    //     $.ajax({
+    //         url: url,
+    //         type: 'GET',
+    //         success: function(response) {
+    //             $('#form_modal_content').html(response);
+    //             $('#form_modal').modal('show');
+    //             initializeFormComponents();
+    //         },
+    //         error: function(xhr) {
+    //             handleAjaxError(xhr);
+    //         }
+    //     });
+    // });
 
     // Edit button click handler
-    $(document).on('click', '.edit-btn', function() {
-        let url = $(this).data('url');
-        $.ajax({
-            url: url,
-            type: 'GET',
-            success: function(response) {
-                $('#form_modal_content').html(response);
-                $('#form_modal').modal('show');
-                initializeFormComponents();
-            },
-            error: function(xhr) {
-                handleAjaxError(xhr);
-            }
-        });
-    });
+    // $(document).on('click', '.edit-btn', function() {
+    //     let url = $(this).data('url');
+    //     $.ajax({
+    //         url: url,
+    //         type: 'GET',
+    //         success: function(response) {
+    //             $('#form_modal_content').html(response);
+    //             $('#form_modal').modal('show');
+    //             initializeFormComponents();
+    //         },
+    //         error: function(xhr) {
+    //             handleAjaxError(xhr);
+    //         }
+    //     });
+    // });
 
     // Delete button click handler
     $(document).on('click', '.delete-btn', function() {
@@ -82,29 +82,29 @@ $(document).ready(function() {
     });
 
     // Form submit handler
-    $(document).on('submit', '#crud_form', function(e) {
-        e.preventDefault();
-        let form = $(this);
-        let url = form.attr('action');
-        let method = form.attr('method');
-        let formData = new FormData(this);
+    // $(document).on('submit', '#crud_form', function(e) {
+    //     e.preventDefault();
+    //     let form = $(this);
+    //     let url = form.attr('action');
+    //     let method = form.attr('method');
+    //     let formData = new FormData(this);
 
-        $.ajax({
-            url: url,
-            type: method,
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function(response) {
-                toastr.success(response.message);
-                $('#form_modal').modal('hide');
-                table.draw();
-            },
-            error: function(xhr) {
-                handleAjaxError(xhr);
-            }
-        });
-    });
+    //     $.ajax({
+    //         url: url,
+    //         type: method,
+    //         data: formData,
+    //         processData: false,
+    //         contentType: false,
+    //         success: function(response) {
+    //             toastr.success(response.message);
+    //             $('#form_modal').modal('hide');
+    //             table.draw();
+    //         },
+    //         error: function(xhr) {
+    //             handleAjaxError(xhr);
+    //         }
+    //     });
+    // });
 
     // Initialize form components (Select2, etc.)
     function initializeFormComponents() {

@@ -12,9 +12,9 @@
                         <div class="col-12 d-flex justify-content-between">
                             <div class="d-flex align-items-center"><h5 class="m-0">Categories List</h5></div>
                             @if (Helper::hasRight('templates.create'))
-                                <button type="button" class="btn btn-primary btn-sm" id="create_btn" data-url="{{ route('admin.categories.create') }}">
+                                <a href="{{route('admin.categories.create')}}" class="btn btn-primary btn-sm" id="create_btn" data-url="{{ route('admin.categories.create') }}">
                                     <i class="fas fa-plus"></i> Add New
-                                </button>
+                                </a>
                             @endif
                         </div>
                     </div>
@@ -64,9 +64,6 @@
 @endsection
 
 @section('script')
-<script src="{{ asset('vendor/datatable/js/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('vendor/datatable/js/dataTables.bootstrap4.min.js') }}"></script>
-<script src="{{ asset('vendor/select2/js/select2.min.js') }}"></script>
 <script>
     window.listUrl = "{{ route('admin.categories.list') }}";
     window.csrfToken = "{{ csrf_token() }}";
@@ -79,5 +76,4 @@
         {data: 'action', name: 'action', orderable: false, searchable: false}
     ];
 </script>
-<script src="{{ asset('assets/backend/js/common-crud.js') }}"></script>
 @endsection

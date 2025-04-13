@@ -32,8 +32,7 @@ class CategoryController extends Controller
 
     public function create()
     {
-        $html = view('backend.pages.categories.create')->render();
-        return response()->json(['html' => $html]);
+        return view('backend.pages.categories.create');
     }
 
     public function store(Request $request)
