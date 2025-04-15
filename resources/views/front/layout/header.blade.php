@@ -30,15 +30,38 @@
     <div class="user-section">
         @auth
             <div class="user-info dropdown">
-                <a href="#" class="user-info-link">
-                    <img src="{{ auth()->user()->avatar ?? asset('assets/images/default-avatar.png') }}" alt="User Avatar" class="avatar">
-                    <span class="user-name">{{ auth()->user()->name }}</span>
+                <button type="button" class="user-dropdown-toggle">
+                    @if(auth()->user()->avatar)
+                        <img src="{{ asset(auth()->user()->avatar) }}" alt="Avatar" class="user-avatar">
+                    @else
+                        <div class="user-avatar-placeholder">
+                            {{ strtoupper(substr(auth()->user()->name, 0, 1)) }}
+                        </div>
+                    @endif
+                    <div class="user-details">
+                        <span class="user-name">{{ auth()->user()->name }}</span>
+                        <span class="user-email">{{ auth()->user()->email }}</span>
+                    </div>
                     <i class="fas fa-chevron-down"></i>
-                </a>
-                <div class="dropdown-content user-dropdown">
-                    <a href="{{ url('/profile') }}" class="dropdown-link">Profile</a>
-                    <a href="{{ url('/dashboard') }}" class="dropdown-link">Dashboard</a>
-                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="dropdown-link">Logout</a>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">
+                        <span class="welcome-text">Welcome!</span>
+                        <span class="user-role">{{ auth()->user()->role }}</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="{{ url('/profile') }}" class="dropdown-item">
+                        <i class="fas fa-user"></i> My Profile
+                    </a>
+                    <a href="{{ url('/dashboard') }}" class="dropdown-item">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="{{ route('logout') }}" 
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+                       class="dropdown-item text-danger">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
                 </div>
             </div>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

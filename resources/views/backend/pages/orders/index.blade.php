@@ -3,7 +3,7 @@
 @section('title', 'Orders')
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid px-5 pt-4">
     <div class="row">
         <div class="col-12">
             <div class="card">

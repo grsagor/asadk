@@ -93,8 +93,14 @@
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-folder"></i></div> Categories
                     </a>
                 @endif
+                @if (Helper::hasRight('categories.view'))
+                    <a class="nav-link {{ Route::is('admin.license.types') ? 'active' : '' }}"
+                        href="{{ route('admin.license.types.index') }}">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-folder"></i></div> License Type
+                    </a>
+                @endif
 
-                @if (Helper::hasRight('orders.view'))
+                {{-- @if (Helper::hasRight('orders.view'))
                     <a class="nav-link {{ Route::is('admin.orders') ? 'active' : '' }}"
                         href="{{ route('admin.orders.index') }}">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-shopping-cart"></i></div> Orders
@@ -106,7 +112,7 @@
                         href="{{ route('admin.tags.index') }}">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-tags"></i></div> Tags
                     </a>
-                @endif
+                @endif --}}
             </div>
         </div>
     </nav>

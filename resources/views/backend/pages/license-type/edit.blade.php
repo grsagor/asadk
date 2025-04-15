@@ -1,6 +1,6 @@
 @extends('backend.layout.app')
 
-@section('title', 'Create Category')
+@section('title', 'Edit License Type')
 
 @section('content')
     <div class="container-fluid px-5 pt-4">
@@ -11,20 +11,20 @@
                         <div class="row">
                             <div class="col-12 d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="m-0">Create Category</h5>
+                                    <h5 class="m-0">Edit License Type</h5>
                                 </div>
-                                <a href="{{ route('admin.categories.index') }}" class="btn btn-secondary btn-sm">
+                                <a href="{{ route('admin.license.types.index') }}" class="btn btn-secondary btn-sm">
                                     <i class="fas fa-arrow-left"></i> Back
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('admin.categories.store') }}" method="POST">
+                        <form action="{{ route('admin.license.types.update', ['id' => $licenseType->id]) }}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="name">Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}" required>
+                                <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name', $licenseType->name) }}" required>
                                 @error('name')
                                     <span class="invalid-feedback">{{ $message }}</span>
                                 @enderror
@@ -32,13 +32,13 @@
 
                             <div class="form-group">
                                 <label for="description">Description</label>
-                                <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description" rows="3">{{ old('description') }}</textarea>
+                                <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description" rows="3">{{ old('description', $licenseType->description) }}</textarea>
                                 @error('description')
                                     <span class="invalid-feedback">{{ $message }}</span>
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Create Category</button>
+                            <button type="submit" class="btn btn-primary">Update License Type</button>
                         </form>
                     </div>
                 </div>

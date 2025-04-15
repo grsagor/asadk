@@ -4,6 +4,7 @@ use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\LicenseTypeController;
 use App\Http\Controllers\Backend\OrderController;
 use App\Http\Controllers\Backend\RoleController;
 use App\Http\Controllers\Backend\UserController;
@@ -99,7 +100,14 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/edit/{id}', 'edit')->name('edit');
         Route::put('/update/{id}', 'update')->name('update');
         Route::delete('/delete/{id}', 'delete')->name('delete');
+        Route::delete('/image/{id}', 'deleteImage')->name('image.delete');
         Route::put('/status/{id}', 'updateStatus')->name('status');
+        Route::post('/feature/add', 'addFeature')->name('feature.add');
+        Route::delete('/feature/{id}', 'deleteFeature')->name('feature.delete');
+        Route::post('/license/add', 'addLicense')->name('license.add');
+        Route::delete('/license/{id}', 'deleteLicense')->name('license.delete');
+        Route::delete('/license/{id}', 'deleteLicense')->name('license.delete');
+        Route::get('templates/download/{id}', 'download')->name('templates.download');
     });
 
     Route::prefix('categories')->controller(CategoryController::class)->name('admin.categories.')->group(function () {
@@ -109,6 +117,15 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::post('/store', 'store')->name('store');
         Route::get('/edit/{id}', 'edit')->name('edit');
         Route::put('/update/{id}', 'update')->name('update');
+        Route::delete('/delete/{id}', 'delete')->name('delete');
+    });
+    Route::prefix('license-types')->controller(LicenseTypeController::class)->name('admin.license.types.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/list', 'list')->name('list');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::post('/update/{id}', 'update')->name('update');
         Route::delete('/delete/{id}', 'delete')->name('delete');
     });
 

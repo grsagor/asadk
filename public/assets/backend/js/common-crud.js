@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Initialize DataTable
     let table = $('.table').DataTable({
         processing: true,
@@ -6,11 +6,11 @@ $(document).ready(function() {
         ajax: {
             url: window.listUrl,
             type: 'GET',
-            data: function(d) {
+            data: function (d) {
                 // Add filter form data if exists
                 if ($('#filter_form').length) {
                     let filterData = $('#filter_form').serializeArray();
-                    filterData.forEach(function(item) {
+                    filterData.forEach(function (item) {
                         d[item.name] = item.value;
                     });
                 }
@@ -20,111 +20,50 @@ $(document).ready(function() {
         order: [[0, 'desc']]
     });
 
-    // Filter form submit handler
-    $('#filter_form').on('submit', function(e) {
-        e.preventDefault();
-        table.draw();
-    });
-
-    // Create button click handler
-    // $(document).on('click', '#create_btn', function() {
-    //     let url = $(this).data('url');
-    //     $.ajax({
-    //         url: url,
-    //         type: 'GET',
-    //         success: function(response) {
-    //             $('#form_modal_content').html(response);
-    //             $('#form_modal').modal('show');
-    //             initializeFormComponents();
-    //         },
-    //         error: function(xhr) {
-    //             handleAjaxError(xhr);
-    //         }
-    //     });
-    // });
-
-    // Edit button click handler
-    // $(document).on('click', '.edit-btn', function() {
-    //     let url = $(this).data('url');
-    //     $.ajax({
-    //         url: url,
-    //         type: 'GET',
-    //         success: function(response) {
-    //             $('#form_modal_content').html(response);
-    //             $('#form_modal').modal('show');
-    //             initializeFormComponents();
-    //         },
-    //         error: function(xhr) {
-    //             handleAjaxError(xhr);
-    //         }
-    //     });
-    // });
-
     // Delete button click handler
-    $(document).on('click', '.delete-btn', function() {
+    $(document).on('click', '.delete_btn', function () {
         let url = $(this).data('url');
-        if (confirm('Are you sure you want to delete this item?')) {
-            $.ajax({
-                url: url,
-                type: 'DELETE',
-                data: {
-                    _token: window.csrfToken
-                },
-                success: function(response) {
-                    toastr.success(response.message);
-                    table.draw();
-                },
-                error: function(xhr) {
-                    handleAjaxError(xhr);
-                }
-            });
-        }
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: url,
+                    type: 'DELETE',
+                    data: {
+                        "_token": $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            Swal.fire(
+                                'Deleted!',
+                                response.message,
+                                'success'
+                            );
+                            table.ajax.reload();
+                        } else {
+                            Swal.fire(
+                                'Error!',
+                                response.message,
+                                'error'
+                            );
+                        }
+                    },
+                    error: function () {
+                        Swal.fire(
+                            'Error!',
+                            'Error deleting item',
+                            'error'
+                        );
+                    }
+                });
+            }
+        });
     });
-
-    // Form submit handler
-    // $(document).on('submit', '#crud_form', function(e) {
-    //     e.preventDefault();
-    //     let form = $(this);
-    //     let url = form.attr('action');
-    //     let method = form.attr('method');
-    //     let formData = new FormData(this);
-
-    //     $.ajax({
-    //         url: url,
-    //         type: method,
-    //         data: formData,
-    //         processData: false,
-    //         contentType: false,
-    //         success: function(response) {
-    //             toastr.success(response.message);
-    //             $('#form_modal').modal('hide');
-    //             table.draw();
-    //         },
-    //         error: function(xhr) {
-    //             handleAjaxError(xhr);
-    //         }
-    //     });
-    // });
-
-    // Initialize form components (Select2, etc.)
-    function initializeFormComponents() {
-        // Initialize Select2
-        if ($.fn.select2) {
-            $('.select2').select2({
-                theme: 'bootstrap4'
-            });
-        }
-    }
-
-    // Handle Ajax errors
-    function handleAjaxError(xhr) {
-        if (xhr.status === 422) {
-            let errors = xhr.responseJSON.errors;
-            Object.keys(errors).forEach(function(key) {
-                toastr.error(errors[key][0]);
-            });
-        } else {
-            toastr.error(xhr.responseJSON.message || 'Something went wrong!');
-        }
-    }
 });

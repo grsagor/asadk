@@ -1,6 +1,6 @@
 @extends('backend.layout.app')
 
-@section('title', 'Categories')
+@section('title', 'License Types')
 
 @section('content')
     <div class="container-fluid px-5 pt-4">
@@ -11,10 +11,10 @@
                         <div class="row">
                             <div class="col-12 d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="m-0">Categories List</h5>
+                                    <h5 class="m-0">License Types List</h5>
                                 </div>
                                 @if (Helper::hasRight('templates.create'))
-                                    <a href="{{ route('admin.categories.create') }}" class="btn btn-primary btn-sm">
+                                    <a href="{{ route('admin.license.types.create') }}" class="btn btn-primary btn-sm">
                                         <i class="fas fa-plus"></i> Add New
                                     </a>
                                 @endif
@@ -22,12 +22,11 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <table class="table table-bordered table-striped" id="categories_table">
+                        <table class="table table-bordered table-striped" id="license_types_table">
                             <thead>
                                 <tr>
                                     <th>ID</th>
                                     <th>Name</th>
-                                    <th>Slug</th>
                                     <th>Description</th>
                                     <th>Action</th>
                                 </tr>
@@ -46,7 +45,7 @@
 
 @section('script')
     <script>
-        window.listUrl = "{{ route('admin.categories.list') }}";
+        window.listUrl = "{{ route('admin.license.types.list') }}";
         window.csrfToken = "{{ csrf_token() }}";
         window.columns = [{
                 data: 'id',
@@ -55,10 +54,6 @@
             {
                 data: 'name',
                 name: 'name'
-            },
-            {
-                data: 'slug',
-                name: 'slug'
             },
             {
                 data: 'description',

@@ -1,6 +1,6 @@
 @extends('backend.layout.app')
 
-@section('title', 'Create Category')
+@section('title', 'Create License Type')
 
 @section('content')
     <div class="container-fluid px-5 pt-4">
@@ -11,16 +11,16 @@
                         <div class="row">
                             <div class="col-12 d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="m-0">Create Category</h5>
+                                    <h5 class="m-0">Create License Type</h5>
                                 </div>
-                                <a href="{{ route('admin.categories.index') }}" class="btn btn-secondary btn-sm">
+                                <a href="{{ route('admin.license.types.index') }}" class="btn btn-secondary btn-sm">
                                     <i class="fas fa-arrow-left"></i> Back
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('admin.categories.store') }}" method="POST">
+                        <form action="{{ route('admin.license.types.store') }}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="name">Name <span class="text-danger">*</span></label>
@@ -38,7 +38,7 @@
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Create Category</button>
+                            <button type="submit" class="btn btn-primary">Create License Type</button>
                         </form>
                     </div>
                 </div>

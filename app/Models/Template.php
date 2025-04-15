@@ -2,88 +2,50 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Template extends Model
 {
-    use SoftDeletes;
+    use HasFactory;
 
     protected $fillable = [
-        'name',
-        'slug',
-        'description',
-        'price',
-        'sale_price',
-        'sale_starts_at',
-        'sale_ends_at',
-        'thumbnail',
-        'preview_url',
-        'file_path',
+        'user_id',
         'category_id',
-        'status',
-        'downloads',
-        'specifications',
-        'version',
-        'changelog',
-        'featured'
+        'title',
+        'description',
+        'short_description',
+        'regular_price',
+        'framework',
+        'browser_compatibility',
+        'documentation_status',
+        'support_period',
+        'demo_url',
+        'template_file'
     ];
 
-    protected $casts = [
-        'specifications' => 'array',
-        'sale_starts_at' => 'datetime',
-        'sale_ends_at' => 'datetime',
-        'featured' => 'boolean',
-        'price' => 'decimal:2',
-        'sale_price' => 'decimal:2',
-        'downloads' => 'integer'
-    ];
+    public function author()
+    {
+        return $this->belongsTo(User::class);
+    }
 
-    public function category(): BelongsTo
+    public function category()
     {
         return $this->belongsTo(Category::class);
     }
 
-    public function tags(): BelongsToMany
+    public function features()
     {
-        return $this->belongsToMany(Tag::class)
-                    ->withTimestamps();
+        return $this->hasMany(TemplateFeature::class);
     }
 
-    public function reviews(): HasMany
+    public function images()
     {
-        return $this->hasMany(Review::class);
+        return $this->hasMany(TemplateImage::class);
     }
 
-    public function getAverageRatingAttribute(): float
+    public function licenses()
     {
-        return $this->reviews()
-                    ->where('is_approved', true)
-                    ->avg('rating') ?? 0.0;
-    }
-
-    public function getReviewsCountAttribute(): int
-    {
-        return $this->reviews()
-                    ->where('is_approved', true)
-                    ->count();
-    }
-
-    public function isOnSale(): bool
-    {
-        if (!$this->sale_price || !$this->sale_starts_at || !$this->sale_ends_at) {
-            return false;
-        }
-
-        $now = now();
-        return $now->between($this->sale_starts_at, $this->sale_ends_at);
-    }
-
-    public function getCurrentPriceAttribute(): float
-    {
-        return $this->isOnSale() ? $this->sale_price : $this->price;
+        return $this->belongsToMany(LicenseType::class, 'template_license_types');
     }
 }

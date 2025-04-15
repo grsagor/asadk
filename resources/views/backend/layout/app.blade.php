@@ -47,10 +47,6 @@
     <script src="{{ asset('vendor/sweetalert2/sweetalert2.js') }}"></script>
     <script src="{{ asset('vendor/datepicker/bootstrap-datepicker.min.js') }}"></script>
     <script src="{{ asset('vendor/validator/validator.js') }}"></script>
-    <script src="{{ asset('assets/backend/js/crud-handler.js') }}"></script>
-    <script src="{{ asset('vendor/datatable/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('vendor/datatable/js/dataTables.bootstrap4.min.js') }}"></script>
-    <script src="{{ asset('vendor/select2/js/select2.min.js') }}"></script>
     <script src="{{ asset('assets/backend/js/common-crud.js') }}"></script>
 
     <script>
