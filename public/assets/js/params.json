@@ -1,0 +1,56 @@
+{
+    "particles": {
+        "density": 60,
+        "size": {
+            "value": 3,
+            "random": true
+        },
+        "movement": {
+            "speed": 100,
+            "restless": {
+                "enabled": false,
+                "value": 1
+            }
+        },
+        "interactivity": {
+            "on_hover": {
+                "enabled": true,
+                "action": "big_repulse"
+            },
+            "on_click": {
+                "enabled": false,
+                "action": "big_repulse"
+            },
+            "on_touch": {
+                "enabled": true,
+                "action": "big_repulse"
+            }
+        }
+    },
+    "image": {
+        "src": {
+            "path": "assets/images/animated-logo.svg",
+            "is_external": true
+        },
+        "size": {
+            "canvas_pct": 90,
+            "min_px": 150,
+            "max_px": 800
+        }
+    },
+    "interactions": {
+        "repulse": {
+            "distance": 60,
+            "strength": 50
+        },
+        "big_repulse": {
+            "distance": 50,
+            "strength": 100
+        },
+        "grab": {
+            "distance": 1,
+            "line_width": 1
+        }
+    },
+    "disabled": false
+}
