@@ -1,3 +1,5 @@
+// this was my design
+
 @extends('front.layout.app')
 @section('content')
     <!-- Hero Section -->
