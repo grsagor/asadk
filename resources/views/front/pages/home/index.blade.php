@@ -41,43 +41,16 @@
     <link rel="canonical" href="https://www.designlayeragency.com/">
     <link rel="icon" href="assets/images/favicon.png">
     <!-- <link href="../assets/css/fontawesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="{{asset('front/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/owl.theme.default.min.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/stylesheet.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
-    <meta name="google-site-verification" content="5ACDKNVQ5fo7oaI0GVsM3xFn8uontlA8M_yLb-QE9oM">
-    <script async="" src="https://embed.tawk.to/6318b3c554f06e12d8934fe5/1gcc7sfv7" charset="UTF-8"
-        crossorigin="*"></script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Digital Templates 24",
-  "alternateName": "Digital Templates 24",
-  "url": "https://www.designlayeragency.com/",
-  "logo": "https://www.designlayeragency.com/assets/images/logo.svg",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1 (305) 395-6482",
-    "contactType": "sales",
-    "contactOption": "TollFree",
-    "areaServed": "US",
-    "availableLanguage": "en"
-  },
-  "sameAs": [
-    "https://www.facebook.com/designlayeragencyllc",
-    "https://www.instagram.com/designlayeragency/",
-    "https://www.linkedin.com/company/83519829/"
-  ]
-}
-</script>
+    <link rel="stylesheet" href="{{ asset('front/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/stylesheet.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
 
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TYD85VSV1M"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-TYD85VSV1M'); </script>
-    
+
     <style type="text/css">
         @font-face {
             font-family: 'Atlassian Sans';
@@ -92,261 +65,6 @@
                 U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
     </style>
-    
-    <script integrity="sha512-FwqNPb8ENFXApJKNgRgYq5ok7VoOf5ImaOdzyF/xe/T5jdd/S0xq0CXBLDhpzaemxpQ61X3nLVln6KaczwhKgA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">/*
-* Lazy Load - jQuery plugin for lazy loading images
-*
-* Copyright (c) 2007-2013 Mika Tuupola
-*
-* Licensed under the MIT license:
-*   http://www.opensource.org/licenses/mit-license.php
-*
-* Project home:
-*   http://www.appelsiini.net/projects/lazyload
-*
-* Version:  1.9.1
-*
-*/
-
-            (function ($, window, document, undefined) {
-                var $window = $(window);
-
-                $.fn.lazyload = function (options) {
-                    var elements = this;
-                    var $container;
-                    var settings = {
-                        threshold: 0,
-                        failure_limit: 0,
-                        event: "scroll",
-                        effect: "show",
-                        container: window,
-                        data_attribute: "original",
-                        skip_invisible: true,
-                        appear: null,
-                        load: null,
-                        placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                    };
-
-                    function update() {
-                        var counter = 0;
-
-                        elements.each(function () {
-                            var $this = $(this);
-                            if (settings.skip_invisible && !$this.is(":visible")) {
-                                return;
-                            }
-                            if ($.abovethetop(this, settings) ||
-                                $.leftofbegin(this, settings)) {
-                                /* Nothing. */
-                            } else if (!$.belowthefold(this, settings) &&
-                                !$.rightoffold(this, settings)) {
-                                $this.trigger("appear");
-                                /* if we found an image we'll load, reset the counter */
-                                counter = 0;
-                            } else {
-                                if (++counter > settings.failure_limit) {
-                                    return false;
-                                }
-                            }
-                        });
-
-                    }
-
-                    if (options) {
-                        /* Maintain BC for a couple of versions. */
-                        if (undefined !== options.failurelimit) {
-                            options.failure_limit = options.failurelimit;
-                            delete options.failurelimit;
-                        }
-                        if (undefined !== options.effectspeed) {
-                            options.effect_speed = options.effectspeed;
-                            delete options.effectspeed;
-                        }
-
-                        $.extend(settings, options);
-                    }
-
-                    /* Cache container as jQuery as object. */
-                    $container = (settings.container === undefined ||
-                        settings.container === window) ? $window : $(settings.container);
-
-                    /* Fire one scroll event per scroll. Not one scroll event per image. */
-                    if (0 === settings.event.indexOf("scroll")) {
-                        $container.bind(settings.event, function () {
-                            return update();
-                        });
-                    }
-
-                    this.each(function () {
-                        var self = this;
-                        var $self = $(self);
-
-                        self.loaded = false;
-
-                        if ($self.attr("src") === undefined || $self.attr("src") === false) {
-                            if ($self.is("img")) {
-                                $self.attr("src", settings.placeholder);
-                            }
-                        }
-
-                        /* When appear is triggered load original image. */
-                        $self.one("appear", function () {
-                            if (!this.loaded) {
-                                if (settings.appear) {
-                                    var elements_left = elements.length;
-                                    settings.appear.call(self, elements_left, settings);
-                                }
-                                $("<img />")
-                                    .bind("load", function () {
-
-                                        var original = $self.attr("data-" + settings.data_attribute);
-                                        $self.hide();
-                                        if ($self.is("img")) {
-                                            $self.attr("src", original);
-                                        } else {
-                                            $self.css("background-image", "url('" + original + "')");
-                                        }
-                                        $self[settings.effect](settings.effect_speed);
-
-                                        self.loaded = true;
-
-                                        /* Remove image from array so it is not looped next time. */
-                                        var temp = $.grep(elements, function (element) {
-                                            return !element.loaded;
-                                        });
-                                        elements = $(temp);
-
-                                        if (settings.load) {
-                                            var elements_left = elements.length;
-                                            settings.load.call(self, elements_left, settings);
-                                        }
-                                    })
-                                    .attr("src", $self.attr("data-" + settings.data_attribute));
-                            }
-                        });
-
-                        /* When wanted event is triggered load original image */
-                        /* by triggering appear.                              */
-                        if (0 !== settings.event.indexOf("scroll")) {
-                            $self.bind(settings.event, function () {
-                                if (!self.loaded) {
-                                    $self.trigger("appear");
-                                }
-                            });
-                        }
-                    });
-
-                    /* Check if something appears when window is resized. */
-                    $window.bind("resize", function () {
-                        update();
-                    });
-
-                    /* With IOS5 force loading images when navigating with back button. */
-                    /* Non optimal workaround. */
-                    if ((/(?:iphone|ipod|ipad).*os 5/gi).test(navigator.appVersion)) {
-                        $window.bind("pageshow", function (event) {
-                            if (event.originalEvent && event.originalEvent.persisted) {
-                                elements.each(function () {
-                                    $(this).trigger("appear");
-                                });
-                            }
-                        });
-                    }
-
-                    /* Force initial check if images should appear. */
-                    $(document).ready(function () {
-                        update();
-                    });
-
-                    return this;
-                };
-
-                /* Convenience methods in jQuery namespace.           */
-                /* Use as  $.belowthefold(element, {threshold : 100, container : window}) */
-
-                $.belowthefold = function (element, settings) {
-                    var fold;
-
-                    if (settings.container === undefined || settings.container === window) {
-                        fold = (window.innerHeight ? window.innerHeight : $window.height()) + $window.scrollTop();
-                    } else {
-                        fold = $(settings.container).offset().top + $(settings.container).height();
-                    }
-
-                    return fold <= $(element).offset().top - settings.threshold;
-                };
-
-                $.rightoffold = function (element, settings) {
-                    var fold;
-
-                    if (settings.container === undefined || settings.container === window) {
-                        fold = $window.width() + $window.scrollLeft();
-                    } else {
-                        fold = $(settings.container).offset().left + $(settings.container).width();
-                    }
-
-                    return fold <= $(element).offset().left - settings.threshold;
-                };
-
-                $.abovethetop = function (element, settings) {
-                    var fold;
-
-                    if (settings.container === undefined || settings.container === window) {
-                        fold = $window.scrollTop();
-                    } else {
-                        fold = $(settings.container).offset().top;
-                    }
-
-                    return fold >= $(element).offset().top + settings.threshold + $(element).height();
-                };
-
-                $.leftofbegin = function (element, settings) {
-                    var fold;
-
-                    if (settings.container === undefined || settings.container === window) {
-                        fold = $window.scrollLeft();
-                    } else {
-                        fold = $(settings.container).offset().left;
-                    }
-
-                    return fold >= $(element).offset().left + settings.threshold + $(element).width();
-                };
-
-                $.inviewport = function (element, settings) {
-                    return !$.rightoffold(element, settings) && !$.leftofbegin(element, settings) &&
-                        !$.belowthefold(element, settings) && !$.abovethetop(element, settings);
-                };
-
-                /* Custom selectors for your convenience.   */
-                /* Use as $("img:below-the-fold").something() or */
-                /* $("img").filter(":below-the-fold").something() which is faster */
-
-                $.extend($.expr[":"], {
-                    "below-the-fold": function (a) { return $.belowthefold(a, { threshold: 0 }); },
-                    "above-the-top": function (a) { return !$.belowthefold(a, { threshold: 0 }); },
-                    "right-of-screen": function (a) { return $.rightoffold(a, { threshold: 0 }); },
-                    "left-of-screen": function (a) { return !$.rightoffold(a, { threshold: 0 }); },
-                    "in-viewport": function (a) { return $.inviewport(a, { threshold: 0 }); },
-                    /* Maintain BC for couple of versions. */
-                    "above-the-fold": function (a) { return !$.belowthefold(a, { threshold: 0 }); },
-                    "right-of-fold": function (a) { return $.rightoffold(a, { threshold: 0 }); },
-                    "left-of-fold": function (a) { return !$.rightoffold(a, { threshold: 0 }); }
-                });
-
-            })(jQuery, window, document);
-        </script>
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/6318b3c554f06e12d8934fe5/1gcc7sfv7';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
     <base href="https://www.designlayeragency.com/">
 </head>
 
@@ -361,20 +79,18 @@
         <div class="container">
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/"><img
-                            src="{{asset('assets/images/logo.svg')}}"
+                    <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.svg') }}"
                             alt="dDigital Templates 24" class="lazy"></a>
                 </div>
                 <div class="main-nav">
                     <ul class="nav navbar-nav">
                         <li class="btn-container btn-blue"><a href="contact/">get in touch <img
-                                    src="{{asset('assets/images/arrow.png')}}"
-                                    alt="get in touch" class="lazy"></a></li>
+                                    src="{{ asset('assets/images/arrow.png') }}" alt="get in touch" class="lazy"></a>
+                        </li>
                     </ul>
                     <div class="toggle-menu">
                         <a href="javascript:void(0)">
-                            <img src="{{asset('assets/images/toggle-menu.svg')}}"
-                                alt="menu" class="lazy">
+                            <img src="{{ asset('assets/images/toggle-menu.svg') }}" alt="menu" class="lazy">
                         </a>
                     </div>
                 </div>
@@ -384,15 +100,13 @@
     <section class="main-menu-nav" style=" background: #130047">
         <div class="hero-main-rp container">
             <div class="cancel-btn">
-                <a href="javascript:void(0)">Menu<img
-                        src="{{asset('assets/images/cancel.svg')}}"
-                        alt="cancel button" class="lazy"></a>
+                <a href="javascript:void(0)">Menu<img src="{{ asset('assets/images/cancel.svg') }}" alt="cancel button"
+                        class="lazy"></a>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="/"><img
-                                src="{{asset('assets/images/logo.svg')}}"
+                        <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.svg') }}"
                                 alt="navigation" class="lazy"></a>
                     </div>
                     <div class="menu-nav">
@@ -408,14 +122,14 @@
                     <div class="social-icons-head">
                         <ul>
                             <li><a target="_blank" href="https://www.facebook.com/designlayeragencyllc"><img
-                                        src="{{asset('assets/images/facebook-head.svg')}}"
-                                        alt="facebook" class="lazy"></a></li>
+                                        src="{{ asset('assets/images/facebook-head.svg') }}" alt="facebook"
+                                        class="lazy"></a></li>
                             <li><a target="_blank" href="https://www.linkedin.com/company/83519829/"><img
-                                        src="{{asset('assets/images/linkedin-head.svg')}}"
-                                        alt="linkedin" class="lazy"></a></li>
+                                        src="{{ asset('assets/images/linkedin-head.svg') }}" alt="linkedin"
+                                        class="lazy"></a></li>
                             <li><a target="_blank" href="https://www.instagram.com/designlayeragency/"><img
-                                        src="{{asset('assets/images/insta-head.svg')}}"
-                                        alt="instagram" class="lazy"></a></li>
+                                        src="{{ asset('assets/images/insta-head.svg') }}" alt="instagram"
+                                        class="lazy"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -428,28 +142,24 @@
                 style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative;">
                 <div class="layer" data-depth=".6"
                     style="transform: translate3d(-40.8114px, -21.36px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-                    <img src="{{asset('assets/images/Group1.png')}}"
-                        alt="digital agency" class="lazy">
+                    <img src="{{ asset('assets/images/Group1.png') }}" alt="digital agency" class="lazy">
                 </div>
                 <div class="layer" data-depth=".5"
                     style="transform: translate3d(-34.0095px, -17.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                    <img src="{{asset('assets/images/Group1.png')}}"
-                        alt="branding and designing" class="lazy">
+                    <img src="{{ asset('assets/images/Group1.png') }}" alt="branding and designing" class="lazy">
                 </div>
                 <div class="layer" data-depth=".4"
                     style="transform: translate3d(-27.2076px, -14.24px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                    <img src="{{asset('assets/images/Vectors.png')}}"
-                        alt="digital advertising agency" class="lazy">
+                    <img src="{{ asset('assets/images/Vectors.png') }}" alt="digital advertising agency"
+                        class="lazy">
                 </div>
                 <div class="layer" data-depth=".3"
                     style="transform: translate3d(-20.4057px, -10.68px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                    <img src="{{asset('assets/images/Vectors.png')}}"
-                        alt="Digital Templates 24" class="lazy">
+                    <img src="{{ asset('assets/images/Vectors.png') }}" alt="Digital Templates 24" class="lazy">
                 </div>
                 <div class="layer" data-depth=".2"
                     style="transform: translate3d(-13.6038px, -7.12px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                    <img src="{{asset('assets/images/Frame.png')}}"
-                        alt="digital marketing agency" class="lazy">
+                    <img src="{{ asset('assets/images/Frame.png') }}" alt="digital marketing agency" class="lazy">
                 </div>
             </div>
         </div>
@@ -470,17 +180,14 @@
                         flawless designs and strategies, then you found the dreamland because, at <b>Design Layer
                             Agency</b>, you can find anything from A to Z that can make your website stand out. </p>
                     <div class="btn-container btn-blue">
-                        <a href="services/">Our Services<img
-                                src="{{asset('assets/images/arrow.png')}}"
+                        <a href="services/">Our Services<img src="{{ asset('assets/images/arrow.png') }}"
                                 alt="creative designing" class="lazy"></a>
                     </div>
                     <ul class="headr-icon">
-                        <li><img src="{{asset('assets/images/clutch.svg')}}"
-                                alt="clutch" class="lazy"></li>
-                        <li><img src="{{asset('assets/images/yext.svg')}}"
-                                alt="yext" class="lazy"></li>
-                        <li><img src="{{asset('assets/images/google-partner.svg')}}"
-                                alt="google partner" class="lazy"></li>
+                        <li><img src="{{ asset('assets/images/clutch.svg') }}" alt="clutch" class="lazy"></li>
+                        <li><img src="{{ asset('assets/images/yext.svg') }}" alt="yext" class="lazy"></li>
+                        <li><img src="{{ asset('assets/images/google-partner.svg') }}" alt="google partner"
+                                class="lazy"></li>
                     </ul>
                 </div>
             </div>
@@ -494,7 +201,8 @@
             <div class="row">
                 <div class="col-lg-10 col-md-12">
                     <h2 class="animate-in-future clip-animate">Digital Agency That Rev Up Brands</h2>
-                    <p class="p-left animate-in-future clip-animate">Digital Templates 24 is the best digital agency that
+                    <p class="p-left animate-in-future clip-animate">Digital Templates 24 is the best digital agency
+                        that
                         has assisted many brands, all around the globe, to flourish and accomplish greater things
                         through flawless web designs. We are a creative web designing agency that studies every aspect
                         of our client’s brands and comes up with extraordinary strategies to give their brands the boost
@@ -505,8 +213,7 @@
                         extraordinary each and every time.
                     </p>
                     <div class="btn-container btn-blue">
-                        <a href="portfolio/">Learn More<img
-                                src="{{asset('assets/images/arrow2.svg')}}"
+                        <a href="portfolio/">Learn More<img src="{{ asset('assets/images/arrow2.svg') }}"
                                 alt="learn more" class="lazy"></a>
                     </div>
                 </div>
@@ -524,7 +231,7 @@
                                         <div class="col-md-5">
                                             <div class="logo-case">
                                                 <a href="portfolio/"><img
-                                                        src="{{asset('assets/images/coclogo1.png')}}"
+                                                        src="{{ asset('assets/images/coclogo1.png') }}"
                                                         class="lazy" alt="pouoiy"></a>
                                             </div>
                                             <ul class="technology-case">
@@ -536,12 +243,12 @@
                                             <p>intorducing express cleaning! free steam cleaning, free cleaning
                                                 materials.</p>
                                             <a href="javascript:;" class="btn-website">Visit Website <img
-                                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                                    class="lazy" alt="qwqrfsf"></a>
+                                                    src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
+                                                    alt="qwqrfsf"></a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="{{asset('assets/images/mockup-1.png')}}"
-                                                alt="ufhkn" class="myLazy">
+                                            <img src="{{ asset('assets/images/mockup-1.png') }}" alt="ufhkn"
+                                                class="myLazy">
                                         </div>
                                     </div>
                                 </div>
@@ -554,8 +261,8 @@
                                         <div class="col-md-5">
                                             <div class="logo-case">
                                                 <a href="portfolio/"><img
-                                                        src="{{asset('assets/images/viator1.svg')}}"
-                                                        class="lazy" alt="dhfkdsnf"></a>
+                                                        src="{{ asset('assets/images/viator1.svg') }}" class="lazy"
+                                                        alt="dhfkdsnf"></a>
                                             </div>
                                             <ul class="technology-case">
                                                 <li>ui/ux</li>
@@ -567,12 +274,12 @@
                                             <h3>Find amazing things to do.</h3>
                                             <p>Anytime, anywhere.</p>
                                             <a href="https://www.viator.com/" class="btn-website">Visit Website <img
-                                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                                    class="lazy" alt="qwqrfsf"></a>
+                                                    src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
+                                                    alt="qwqrfsf"></a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="{{asset('assets/images/mockup-011.jpg')}}"
-                                                class="lazy" alt="jfdhkusad">
+                                            <img src="{{ asset('assets/images/mockup-011.jpg') }}" class="lazy"
+                                                alt="jfdhkusad">
                                         </div>
                                     </div>
                                 </div>
@@ -585,7 +292,7 @@
                                         <div class="col-md-5">
                                             <div class="logo-case">
                                                 <a href="portfolio/"><img
-                                                        src="{{asset('assets/images/skullcandy.png')}}"
+                                                        src="{{ asset('assets/images/skullcandy.png') }}"
                                                         class="lazy" alt="asasas"></a>
                                             </div>
                                             <ul class="technology-case">
@@ -597,13 +304,13 @@
                                             <h3>cue your strength soundtrack.</h3>
                                             <p>whether you're working on your outer or inner strength, push active with
                                                 future-proof smart feature technology is built to keep up.</p>
-                                            <a href="https://www.skullcandy.com/" class="btn-website">Visit Website <img
-                                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                                    class="lazy" alt="qwqrfsf"></a>
+                                            <a href="https://www.skullcandy.com/" class="btn-website">Visit Website
+                                                <img src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
+                                                    alt="qwqrfsf"></a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="{{asset('assets/images/case-study01-5.jpg')}}"
-                                                alt="yhjg" class="myLazy">
+                                            <img src="{{ asset('assets/images/case-study01-5.jpg') }}" alt="yhjg"
+                                                class="myLazy">
                                         </div>
                                     </div>
                                 </div>
@@ -616,7 +323,7 @@
                                         <div class="col-md-5">
                                             <div class="logo-case">
                                                 <a href="portfolio/"><img
-                                                        src="{{asset('assets/images/coclogo1.png')}}"
+                                                        src="{{ asset('assets/images/coclogo1.png') }}"
                                                         class="lazy" alt="pouoiy"></a>
                                             </div>
                                             <ul class="technology-case">
@@ -628,12 +335,12 @@
                                             <p>intorducing express cleaning! free steam cleaning, free cleaning
                                                 materials.</p>
                                             <a href="javascript:;" class="btn-website">Visit Website <img
-                                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                                    class="lazy" alt="qwqrfsf"></a>
+                                                    src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
+                                                    alt="qwqrfsf"></a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="{{asset('assets/images/mockup-1.png')}}"
-                                                alt="ufhkn" class="myLazy">
+                                            <img src="{{ asset('assets/images/mockup-1.png') }}" alt="ufhkn"
+                                                class="myLazy">
                                         </div>
                                     </div>
                                 </div>
@@ -646,8 +353,8 @@
                                         <div class="col-md-5">
                                             <div class="logo-case">
                                                 <a href="portfolio/"><img
-                                                        src="{{asset('assets/images/viator1.svg')}}"
-                                                        class="lazy" alt="dhfkdsnf"></a>
+                                                        src="{{ asset('assets/images/viator1.svg') }}" class="lazy"
+                                                        alt="dhfkdsnf"></a>
                                             </div>
                                             <ul class="technology-case">
                                                 <li>ui/ux</li>
@@ -659,12 +366,12 @@
                                             <h3>Find amazing things to do.</h3>
                                             <p>Anytime, anywhere.</p>
                                             <a href="https://www.viator.com/" class="btn-website">Visit Website <img
-                                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                                    class="lazy" alt="qwqrfsf"></a>
+                                                    src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
+                                                    alt="qwqrfsf"></a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="{{asset('assets/images/mockup-011.jpg')}}"
-                                                class="lazy" alt="jfdhkusad">
+                                            <img src="{{ asset('assets/images/mockup-011.jpg') }}" class="lazy"
+                                                alt="jfdhkusad">
                                         </div>
                                     </div>
                                 </div>
@@ -677,7 +384,7 @@
                                         <div class="col-md-5">
                                             <div class="logo-case">
                                                 <a href="portfolio/"><img
-                                                        src="{{asset('assets/images/skullcandy.png')}}"
+                                                        src="{{ asset('assets/images/skullcandy.png') }}"
                                                         class="lazy" alt="asasas"></a>
                                             </div>
                                             <ul class="technology-case">
@@ -689,13 +396,13 @@
                                             <h3>cue your strength soundtrack.</h3>
                                             <p>whether you're working on your outer or inner strength, push active with
                                                 future-proof smart feature technology is built to keep up.</p>
-                                            <a href="https://www.skullcandy.com/" class="btn-website">Visit Website <img
-                                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                                    class="lazy" alt="qwqrfsf"></a>
+                                            <a href="https://www.skullcandy.com/" class="btn-website">Visit Website
+                                                <img src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
+                                                    alt="qwqrfsf"></a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="{{asset('assets/images/case-study01-5.jpg')}}"
-                                                alt="yhjg" class="myLazy">
+                                            <img src="{{ asset('assets/images/case-study01-5.jpg') }}" alt="yhjg"
+                                                class="myLazy">
                                         </div>
                                     </div>
                                 </div>
@@ -708,7 +415,7 @@
                                         <div class="col-md-5">
                                             <div class="logo-case">
                                                 <a href="portfolio/"><img
-                                                        src="{{asset('assets/images/coclogo1.png')}}"
+                                                        src="{{ asset('assets/images/coclogo1.png') }}"
                                                         class="lazy" alt="pouoiy"></a>
                                             </div>
                                             <ul class="technology-case">
@@ -720,12 +427,12 @@
                                             <p>intorducing express cleaning! free steam cleaning, free cleaning
                                                 materials.</p>
                                             <a href="javascript:;" class="btn-website">Visit Website <img
-                                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                                    class="lazy" alt="qwqrfsf"></a>
+                                                    src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
+                                                    alt="qwqrfsf"></a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="{{asset('assets/images/mockup-1.png')}}"
-                                                alt="ufhkn" class="myLazy">
+                                            <img src="{{ asset('assets/images/mockup-1.png') }}" alt="ufhkn"
+                                                class="myLazy">
                                         </div>
                                     </div>
                                 </div>
@@ -776,20 +483,15 @@
                                 <li class="animate-in-future">Interaction Design</li>
                             </ul>
                             <ul class="service-technology">
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/xd-img.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/xd-img.svg') }}"
                                         alt="xd design" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/diamond-img.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/diamond-img.svg') }}"
                                         alt="diamond design" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/figma-img.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/figma-img.svg') }}"
                                         alt="figma design" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/link-img.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/link-img.svg') }}"
                                         alt="logo designing" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/ps-img.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/ps-img.svg') }}"
                                         alt="photoshop design" class="lazy"></li>
                             </ul>
                         </div>
@@ -817,20 +519,15 @@
                                 <li class="animate-in-future">SMS Marketing</li>
                             </ul>
                             <ul class="service-technology">
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/googledrive.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/googledrive.svg') }}"
                                         alt="googledrive marketing" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/moz.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/moz.svg') }}"
                                         alt="moz marketing" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/analytics.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/analytics.svg') }}"
                                         alt="analytics marketing" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/emailchimp.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/emailchimp.svg') }}"
                                         alt="mailchimp marketing" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/hubspot-s.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/hubspot-s.svg') }}"
                                         alt="hubspot marketing" class="lazy"></li>
                             </ul>
                         </div>
@@ -841,7 +538,8 @@
                             <h3 class="animate-in-future"><a href="web-mobile-app-development/">Web &amp; Mobile App
                                     Development</a></h3>
                             <p class="animate-in-future">If you're looking for the best website development company,
-                                then look no further because Digital Templates 24 is the one-stop web development company
+                                then look no further because Digital Templates 24 is the one-stop web development
+                                company
                                 that can fulfill all your development needs. We do all the developments, be it Corporate
                                 Website Development, eCommerce, or web and mobile applications, our coders can do them
                                 all, you just name it.
@@ -859,20 +557,15 @@
                                 <li class="animate-in-future">PWA Development </li>
                             </ul>
                             <ul class="service-technology">
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/shopify-s.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/shopify-s.svg') }}"
                                         alt="shopify development" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/magento-s.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/magento-s.svg') }}"
                                         alt="magento development" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/laravel-s.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/laravel-s.svg') }}"
                                         alt="laravel development" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/wordpress-s.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/wordpress-s.svg') }}"
                                         alt="wordpress development" class="lazy"></li>
-                                <li class="animate-in-future"><img
-                                        src="{{asset('assets/images/js-s.svg')}}"
+                                <li class="animate-in-future"><img src="{{ asset('assets/images/js-s.svg') }}"
                                         alt="javascript development" class="lazy"></li>
                             </ul>
                         </div>
@@ -884,8 +577,7 @@
                         class="animate-in-future">Agency’s Services</div>
                 </h2>
                 <div class="btn-container btn-blue">
-                    <a href="/services/">View All Services<img
-                            src="{{asset('assets/images/arrow.png')}}"
+                    <a href="/services/">View All Services<img src="{{ asset('assets/images/arrow.png') }}"
                             alt="read more" class="lazy"></a>
                 </div>
             </div>
@@ -900,128 +592,98 @@
                 <div class="continuous-slider--wrap">
                     <ul id="" class="continuous-slider--list clearfix " style="width: 1800px;">
                         <li class="item" style="margin-left: -23.0175px;">
-                            <img src="{{asset('assets/images/Group-159.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-159.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-160.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-160.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-161.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-161.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-162.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-162.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-163.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-163.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-164.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-164.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-165.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-165.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-166.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-166.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-167.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-167.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-168.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-168.png') }}" alt="">
                         </li>
                     </ul>
                     <ul id="" class="continuous-slider--list clearfix " style="width: 1800px;">
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-169.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-169.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-170.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-170.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-171.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-171.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-172.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-172.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-173.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-173.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-174.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-174.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-175.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-175.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-176.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-176.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-182.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-182.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-183.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-183.png') }}" alt="">
                         </li>
                     </ul>
                     <ul id="" class="continuous-slider--list clearfix " style="width: 1800px;">
                         <li class="item" style="margin-left: -22.8586px;">
-                            <img src="{{asset('assets/images/Group-184.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-184.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-185.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-185.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-186.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-186.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-187.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-187.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Group-189.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Group-189.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Mask-group.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Mask-group.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Rectangle-174.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Rectangle-174.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Rectangle-177.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Rectangle-177.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Rectangle-179.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Rectangle-179.png') }}" alt="">
                         </li>
                         <li class="item" style="margin-left: 0px;">
-                            <img src="{{asset('assets/images/Rectangle-182.png')}}"
-                                alt="">
+                            <img src="{{ asset('assets/images/Rectangle-182.png') }}" alt="">
                         </li>
                     </ul>
 
@@ -1041,13 +703,11 @@
                         A/B Testing, Multi Variant Testing and Split Testing.</p>
                     <div class="btn-container btn-pirple">
                         <a href="javascript:void(Tawk_API.toggle())">let’s chat<img
-                                src="{{asset('assets/images/arrow2.svg')}}"
-                                alt="lets chat" class="lazy"></a>
+                                src="{{ asset('assets/images/arrow2.svg') }}" alt="lets chat" class="lazy"></a>
                     </div>
                 </div>
-                <div class="col-lg-6  col-md-6"><img
-                        src="{{asset('assets/images/team.png')}}"
-                        alt="team" class="tem-img lazy  animate-in-future" loading="lazy">
+                <div class="col-lg-6  col-md-6"><img src="{{ asset('assets/images/team.png') }}" alt="team"
+                        class="tem-img lazy  animate-in-future" loading="lazy">
                 </div>
             </div>
         </div>
@@ -1064,16 +724,15 @@
                         <div class="inner-row">
                             <div class="col-md-7">
                                 <a href="https://www.anoc.ae/" class="res"><img
-                                        src="{{asset('assets/images/worklogoone1.png')}}"
-                                        alt="portfolio" class="lazy"></a>
+                                        src="{{ asset('assets/images/worklogoone1.png') }}" alt="portfolio"
+                                        class="lazy"></a>
                                 <h3>Management Consultants</h3>
                                 <a href="https://www.anoc.ae/" class="btn-website">view website <img
-                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                        alt="our work" class="lazy"></a>
+                                        src="{{ asset('assets/images/whitearrow.svg') }}" alt="our work"
+                                        class="lazy"></a>
                             </div>
                             <div class="col-md-5">
-                                <img src="{{asset('assets/images/maskone1.png')}}"
-                                    alt="mockup" class="myLazy">
+                                <img src="{{ asset('assets/images/maskone1.png') }}" alt="mockup" class="myLazy">
                             </div>
                         </div>
                     </div>
@@ -1083,16 +742,15 @@
                         <div class="inner-row">
                             <div class="col-md-7">
                                 <a href="https://www.kiewit.com/" class="res"><img
-                                        src="{{asset('assets/images/worklogotwo.png')}}"
-                                        alt="porfolio" class="lazy"></a>
+                                        src="{{ asset('assets/images/worklogotwo.png') }}" alt="porfolio"
+                                        class="lazy"></a>
                                 <h3>unmatched performance in transportation</h3>
                                 <a href="https://www.kiewit.com/" class="btn-website">view website <img
-                                        src="{{asset('assets/images/whitearrow.svg')}}"
-                                        alt="our work" class="lazy"></a>
+                                        src="{{ asset('assets/images/whitearrow.svg') }}" alt="our work"
+                                        class="lazy"></a>
                             </div>
                             <div class="col-md-5">
-                                <img src="{{asset('assets/images/masktwo.png')}}"
-                                    alt="mockup" class="myLazy">
+                                <img src="{{ asset('assets/images/masktwo.png') }}" alt="mockup" class="myLazy">
                             </div>
                         </div>
                     </div>
@@ -1102,16 +760,16 @@
                         <div class="inner-row">
                             <div class="col-md-7">
                                 <a href="https://www.crateandbarrel.com/" class="res"><img
-                                        src="{{asset('assets/images/worklogothree.svg')}}"
-                                        alt="portfolio" class="lazy"></a>
+                                        src="{{ asset('assets/images/worklogothree.svg') }}" alt="portfolio"
+                                        class="lazy"></a>
                                 <h3>new &amp; designed with purpose</h3>
                                 <a href="https://www.crateandbarrel.com/" class="btn-website">view website <img
-                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                        alt="our work" class="lazy"></a>
+                                        src="{{ asset('assets/images/whitearrow.svg') }}" alt="our work"
+                                        class="lazy"></a>
                             </div>
                             <div class="col-md-5">
-                                <img src="{{asset('assets/images/cratemask.png')}}"
-                                    alt="mockup" class="myLazy">
+                                <img src="{{ asset('assets/images/cratemask.png') }}" alt="mockup"
+                                    class="myLazy">
                             </div>
                         </div>
                     </div>
@@ -1121,16 +779,15 @@
                         <div class="inner-row">
                             <div class="col-md-7">
                                 <a href="https://one-delivery.co.uk/" class="res"><img
-                                        src="{{asset('assets/images/worklogofour.svg')}}"
-                                        alt="portfolio" class="lazy"></a>
+                                        src="{{ asset('assets/images/worklogofour.svg') }}" alt="portfolio"
+                                        class="lazy"></a>
                                 <h3>All your favourite cuisines in one place</h3>
                                 <a href="https://one-delivery.co.uk/" class="btn-website">view website <img
-                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                        alt="our work" class="lazy"></a>
+                                        src="{{ asset('assets/images/whitearrow.svg') }}" alt="our work"
+                                        class="lazy"></a>
                             </div>
                             <div class="col-md-5">
-                                <img src="{{asset('assets/images/maskfive.png')}}"
-                                    alt="mockup" class="myLazy">
+                                <img src="{{ asset('assets/images/maskfive.png') }}" alt="mockup" class="myLazy">
                             </div>
                         </div>
                     </div>
@@ -1140,16 +797,15 @@
                         <div class="inner-row">
                             <div class="col-md-7">
                                 <a href="https://www.madeofsundays.com/" class="res"><img
-                                        src="{{asset('assets/images/worklogofive.svg')}}"
-                                        alt="portfolio" class="lazy"></a>
+                                        src="{{ asset('assets/images/worklogofive.svg') }}" alt="portfolio"
+                                        class="lazy"></a>
                                 <h3>DECORATE WITH PAPER WALL DECALS</h3>
                                 <a href="https://www.madeofsundays.com/" class="btn-website">view website <img
-                                    src="{{asset('assets/images/whitearrow.svg')}}"
-                                        alt="our work" class="lazy"></a>
+                                        src="{{ asset('assets/images/whitearrow.svg') }}" alt="our work"
+                                        class="lazy"></a>
                             </div>
                             <div class="col-md-5">
-                                <img src="{{asset('assets/images/maskfour.png')}}"
-                                    alt="mockup" class="myLazy">
+                                <img src="{{ asset('assets/images/maskfour.png') }}" alt="mockup" class="myLazy">
                             </div>
                         </div>
                     </div>
@@ -1159,16 +815,16 @@
                         <div class="inner-row">
                             <div class="col-md-7">
                                 <a href="https://airbit.com/" class="res"><img
-                                        src="{{asset('assets/images/worklogosix1.png')}}"
-                                        alt="portfolio" class="lazy"></a>
+                                        src="{{ asset('assets/images/worklogosix1.png') }}" alt="portfolio"
+                                        class="lazy"></a>
                                 <h3>Find the perfect beat for your project</h3>
                                 <a href="https://airbit.com/" class="btn-website">view website <img
-                                        src="{{asset('assets/images/whitearrow.svg')}}"
-                                        alt="our work" class="lazy"></a>
+                                        src="{{ asset('assets/images/whitearrow.svg') }}" alt="our work"
+                                        class="lazy"></a>
                             </div>
                             <div class="col-md-5">
-                                <img src="{{asset('assets/images/maskthree1.png')}}"
-                                    alt="mockup" class="myLazy">
+                                <img src="{{ asset('assets/images/maskthree1.png') }}" alt="mockup"
+                                    class="myLazy">
                             </div>
                         </div>
                     </div>
@@ -1176,8 +832,7 @@
             </div>
             <div class="readmore-sec-home">
                 <div class="btn-container btn-blue">
-                    <a href="portfolio/">View All Portfolio <img
-                            src="{{asset('assets/images/arrow.png')}}"
+                    <a href="portfolio/">View All Portfolio <img src="{{ asset('assets/images/arrow.png') }}"
                             alt="read more" class="lazy"></a>
                 </div>
             </div>
@@ -1185,7 +840,8 @@
     </section>
     <section class="homepage-sectionsix">
         <div class="hero-main-rp container">
-            <h2 class="animate-in-future">Custom Website Services Consists of 7 Easy Process In Order To Create Magic At
+            <h2 class="animate-in-future">Custom Website Services Consists of 7 Easy Process In Order To Create Magic
+                At
                 Our Web Development Company</h2>
             <!-- Tabs navs -->
 
@@ -1193,8 +849,8 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
 
                     <li class="nav-item active" role="presentation">
-                        <button class="nav-link active" id="one-tab" data-toggle="tab" data-target="#one" type="button"
-                            role="tab" aria-controls="one" aria-selected="true"
+                        <button class="nav-link active" id="one-tab" data-toggle="tab" data-target="#one"
+                            type="button" role="tab" aria-controls="one" aria-selected="true"
                             aria-expanded="true"><span>01</span><br>Kick-Off &amp; Discovery</button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -1203,18 +859,18 @@
                             aria-expanded="false"><span>02</span><br>Digital Strategy</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="three-tab" data-toggle="tab" data-target="#three" type="button"
-                            role="tab" aria-controls="three" aria-selected="false"
+                        <button class="nav-link" id="three-tab" data-toggle="tab" data-target="#three"
+                            type="button" role="tab" aria-controls="three" aria-selected="false"
                             aria-expanded="false"><span>03</span><br>Information Architecture</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="four-tab" data-toggle="tab" data-target="#four" type="button"
-                            role="tab" aria-controls="four" aria-selected="false"
+                        <button class="nav-link" id="four-tab" data-toggle="tab" data-target="#four"
+                            type="button" role="tab" aria-controls="four" aria-selected="false"
                             aria-expanded="false"><span>04</span><br>Design Mockups</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="five-tab" data-toggle="tab" data-target="#five" type="button"
-                            role="tab" aria-controls="five" aria-selected="false"
+                        <button class="nav-link" id="five-tab" data-toggle="tab" data-target="#five"
+                            type="button" role="tab" aria-controls="five" aria-selected="false"
                             aria-expanded="false"><span>05</span><br>Coding &amp; Development</button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -1223,8 +879,8 @@
                             aria-expanded="false"><span>06</span><br>Quality Assurance</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="seven-tab" data-toggle="tab" data-target="#seven" type="button"
-                            role="tab" aria-controls="seven" aria-selected="false"
+                        <button class="nav-link" id="seven-tab" data-toggle="tab" data-target="#seven"
+                            type="button" role="tab" aria-controls="seven" aria-selected="false"
                             aria-expanded="false"><span>07</span><br>Launch &amp; Optimization</button>
                     </li>
                 </ul>
@@ -1235,8 +891,8 @@
                 <div class="tab-pane fade active in" id="one" role="tabpanel" aria-labelledby="one-tab">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{asset('assets/images/kickoff-img.jpg')}}"
-                                alt="Digital Templates 24" class="myLazy">
+                            <img src="{{ asset('assets/images/kickoff-img.jpg') }}" alt="Digital Templates 24"
+                                class="myLazy">
                         </div>
                         <div class="col-md-6">
                             <h3 class="animate-in-future">Kick-Off and Delivery</h3>
@@ -1256,8 +912,8 @@
                 <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{asset('assets/images/DigitalStrategy.jpg')}}"
-                                alt="digital strategy" class="myLazy">
+                            <img src="{{ asset('assets/images/DigitalStrategy.jpg') }}" alt="digital strategy"
+                                class="myLazy">
                         </div>
                         <div class="col-md-6">
                             <h3 class="animate-in-future">Digital Strategy</h3>
@@ -1277,7 +933,7 @@
                 <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{asset('assets/images/InformationArchitecture.jpg')}}"
+                            <img src="{{ asset('assets/images/InformationArchitecture.jpg') }}"
                                 alt="informative architecture" class="myLazy">
                         </div>
                         <div class="col-md-6">
@@ -1297,8 +953,8 @@
                 <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{asset('assets/images/DesignMockups.jpg')}}"
-                                alt="design mockup" class="myLazy">
+                            <img src="{{ asset('assets/images/DesignMockups.jpg') }}" alt="design mockup"
+                                class="myLazy">
                         </div>
                         <div class="col-md-6">
                             <h3 class="animate-in-future">Design Mockup</h3>
@@ -1318,8 +974,8 @@
                 <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{asset('assets/images/CodingDevelopment.jpg')}}"
-                                alt="coding development" class="myLazy">
+                            <img src="{{ asset('assets/images/CodingDevelopment.jpg') }}" alt="coding development"
+                                class="myLazy">
                         </div>
                         <div class="col-md-6">
                             <h3 class="animate-in-future">Coding &amp; Development</h3>
@@ -1337,8 +993,8 @@
                 <div class="tab-pane fade" id="six" role="tabpanel" aria-labelledby="six-tab">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{asset('assets/images/QualityAssurance.jpg')}}"
-                                alt="quality assurance" class="myLazy">
+                            <img src="{{ asset('assets/images/QualityAssurance.jpg') }}" alt="quality assurance"
+                                class="myLazy">
                         </div>
                         <div class="col-md-6">
                             <h3 class="animate-in-future">Quality Assurance</h3>
@@ -1354,8 +1010,8 @@
                 <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="seven-tab">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{asset('assets/images/LaunchOptimization.jpg')}}"
-                                alt="launch optimization" class="myLazy">
+                            <img src="{{ asset('assets/images/LaunchOptimization.jpg') }}" alt="launch optimization"
+                                class="myLazy">
                         </div>
                         <div class="col-md-6">
                             <h3 class="animate-in-future">Launch &amp; Optimization</h3>
@@ -1379,588 +1035,292 @@
 
     </section>
     <!-- <section class="homepage-sectionseven">
-	<div class="hero-main-rp container">
-		<h2>Stay Enlightened About The Digital Trends</h2>
-		<p class="p-center">Digital Templates 24, the US digital advertising agency, thrives to provide you with the latest information and digital trends that can help you and your business achieve new heights.</p>
-		<h4>Articles / Blogs</h4>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="blog-boxes-home">
-					<a href="/blogs/10-ways-to-perfect-your-newsletter-signup-and-increase-subscribers/"><img src="assets/images/BLOG/BLOG1.jpg" class="lazy"></a>
-					<span class="date">SEP 20,2022</span>
-					<h3><a href="/blogs/10-ways-to-perfect-your-newsletter-signup-and-increase-subscribers/">10 WAYS TO PERFECT YOUR NEWSLETTER SIGNUP AND INCREASE SUBSCRIBERS</a></h3>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="blog-boxes-home">
-					<a href="/blogs/7-reasons-your-website-needs-regular-maintenance/"><img src="assets/images/BLOG/BLOG2.png" class="lazy"></a>
-					<span class="date">sep 19,2022</span>
-					<h3><a href="/blogs/7-reasons-your-website-needs-regular-maintenance/">7 REASONS YOUR WEBSITE NEEDS (AND DESERVES) REGULAR MAINTENANCE</a></h3>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="blog-boxes-home">
-					<a href="/blogs/ridiculously-challenging-wordpress-quiz/"><img src="assets/images/BLOG/BLOG3.png" class="lazy"></a>
-					<span class="date">july 21,2022</span>
-					<h3><a href="/blogs/ridiculously-challenging-wordpress-quiz/">RIDICULOUSLY CHALLENGING WORDPRESS QUIZ</a></h3>
-				</div>
-			</div>
-		</div>
-		<div class="readmore-sec-home">
-			<div class="btn-container btn-blue" style="margin: 0 auto;">
-				<a href="/blogs/">view more blogs <img src="assets/images/arrow.png" class="lazy"></a>
-			</div>
-		</div>
-	</div>
+ <div class="hero-main-rp container">
+  <h2>Stay Enlightened About The Digital Trends</h2>
+  <p class="p-center">Digital Templates 24, the US digital advertising agency, thrives to provide you with the latest information and digital trends that can help you and your business achieve new heights.</p>
+  <h4>Articles / Blogs</h4>
+  <div class="row">
+   <div class="col-md-4">
+    <div class="blog-boxes-home">
+     <a href="/blogs/10-ways-to-perfect-your-newsletter-signup-and-increase-subscribers/"><img src="assets/images/BLOG/BLOG1.jpg" class="lazy"></a>
+     <span class="date">SEP 20,2022</span>
+     <h3><a href="/blogs/10-ways-to-perfect-your-newsletter-signup-and-increase-subscribers/">10 WAYS TO PERFECT YOUR NEWSLETTER SIGNUP AND INCREASE SUBSCRIBERS</a></h3>
+    </div>
+   </div>
+   <div class="col-md-4">
+    <div class="blog-boxes-home">
+     <a href="/blogs/7-reasons-your-website-needs-regular-maintenance/"><img src="assets/images/BLOG/BLOG2.png" class="lazy"></a>
+     <span class="date">sep 19,2022</span>
+     <h3><a href="/blogs/7-reasons-your-website-needs-regular-maintenance/">7 REASONS YOUR WEBSITE NEEDS (AND DESERVES) REGULAR MAINTENANCE</a></h3>
+    </div>
+   </div>
+   <div class="col-md-4">
+    <div class="blog-boxes-home">
+     <a href="/blogs/ridiculously-challenging-wordpress-quiz/"><img src="assets/images/BLOG/BLOG3.png" class="lazy"></a>
+     <span class="date">july 21,2022</span>
+     <h3><a href="/blogs/ridiculously-challenging-wordpress-quiz/">RIDICULOUSLY CHALLENGING WORDPRESS QUIZ</a></h3>
+    </div>
+   </div>
+  </div>
+  <div class="readmore-sec-home">
+   <div class="btn-container btn-blue" style="margin: 0 auto;">
+    <a href="/blogs/">view more blogs <img src="assets/images/arrow.png" class="lazy"></a>
+   </div>
+  </div>
+ </div>
 </section> -->
 
     <section class="homepage-sectionone discuss-section lazy" style="background: url('assets/images/discuss.jpg');">
         <div class="hero-main-rp container">
             <div class="row scroll-visible">
                 <div class="col-lg-10 col-md-12">
-                    <h2 class="animate-in-future"><span style="
+                    <h2 class="animate-in-future"><span
+                            style="
     color: #2bc4f7;
     font-size: 23px;
     display: block;
     margin-bottom: 10px;
-">Have you made up your mind to choose</span> the best digital advertising agency</h2>
+">Have
+                            you made up your mind to choose</span> the best digital advertising agency</h2>
                 </div>
                 <div class="col-lg-2 col-md-12">
                     <div class="btn-container btn-pirple chat">
                         <a href="javascript:void(Tawk_API.toggle())">let’s chat<img
-                                src="{{asset('assets/images/arrow2.svg')}}" class="lazy"></a>
-                                alt="digital advertising agency"></a>
+                                src="{{ asset('assets/images/arrow2.svg') }}" class="lazy"></a>
+                        alt="digital advertising agency"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="homepage-testimonials">
         <div class="hero-main-rp container">
             <h2 class="animate-in-future">We thrive on <br>client satisfaction</h2>
             <div class="testimonials">
-                <div class="owl-carousel owl-theme owl-testimonials scroll-visible owl-loaded owl-drag">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transition: 0.25s; width: 14550px; transform: translate3d(-6790px, 0px, 0px);">
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="assets/images/quote-right.svg'"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">Understanding customer simple or complex requirements and
-                                            putting together a website is a huge task, finding the right individual or
-                                            company is even more complex.
-                                            <br><span style="display: none;"> I did my search around looking for a web
-                                                design and development company that has the ability to create, design
-                                                and optimize my web site. Thanks to team Digital Templates 24, not only
-                                                they have great taste in design but they can guide you through the
-                                                process and beyond. They not only exceeded my expectation with the
-                                                design but went above and beyond to ensure no corners of the
-                                                requirements are left behind.<br>
-                                                Working with Digital Templates 24 was a great experience. They take the
-                                                utmost care and dedication to ensure 100% customer satisfaction. Thanks
-                                                to their knowledge and determination. I recommend anyone that is looking
-                                                for a custom website, at Digital Templates 24 a team of experts will
-                                                guide you in the right direction.
-                                            </span>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="assets/images/author.png"
-                                                        alt="author" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Sriram Vadlapadla</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 04 / 07 </p>
-                                        </div>
+                <div class="owl-carousel owl-theme owl-testimonials">
+                    <!-- Testimonial Item 1 -->
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <img src="{{ asset('assets/images/quote-right.svg') }}" alt="reviews"
+                                class="quote-right">
+                            <p class="testi-txt">I was fortunate to find Digital Templates 24 for my website design and
+                                development, I was working with Travis Smith, who was very patient with me, and he
+                                helped me through the whole process and most off all made me understand everything.
+                                <span class="hidden-content">Travis and his team are very professional in their work
+                                    they know what they are doing and come up with great ideas to make the site look
+                                    good. I will definitely work with team again in the future whenever I have website
+                                    related work.</span>
+                                <a href="javascript:void(0)" class="readmore">Read more</a>
+                            </p>
+                            <div class="col-md-6">
+                                <div class="person-info">
+                                    <div class="img-testi">
+                                        <img src="{{ asset('assets/images/author.png') }}" alt="client reviews"
+                                            class="myLazy">
+                                    </div>
+                                    <div class="details-testi">
+                                        <h3>Ahmed Hassan</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="client reviews" class="quote-right">
-                                        <p class="testi-txt">You guys were great to work with and did everything we
-                                            could ever ask for. We couldn't be happier with our product. Thank you.</p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Jamie N Courtney Popham</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 05 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">After interviewing multiple web design companies to create
-                                            our business website, it was obvious that Digital Templates 24 offered the
-                                            skill and price that we needed to launch a great website.
-                                            <br><span style="display: none;">
-                                                Maxwell was an effective communicator that listened to what we wanted
-                                                and helped us identify areas that we needed to make critical decisions.
-                                                He kept us involved with the overall process and we are happy with the
-                                                finished product
-                                            </span>
-                                            <a href="javascript:void(0)" class="readmore">Read more</a>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Reed McDonald</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 06 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">It was a great service and with the help from my
-                                            representative Ilana she was a great help. Would recommend this service.</p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Jr Reyes</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 07 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">I was fortunate to find Digital Templates 24 for my website
-                                            design and development, I was working with Travis Smith, who was very
-                                            patient with me, and he helped me through the whole process and most off all
-                                            made me understand everything.
-                                            <span style="display:none">Travis and his team are very professional in
-                                                their work they know what they are doing and come up with great ideas to
-                                                make the site look good. I will definitely work with team again in the
-                                                future whenever I have website related work. </span>
-                                            <a href="javascript:void(0)" class="readmore">Read more</a>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Ahmed Hassan</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 01 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">I have been looking for a new company to do the website
-                                            development I need. I sent a small site to Travis Smith at Design Layer
-                                            Agency - their quote was very reasonable, so I gave the 'go-ahead'...<br>
-                                            <span style="display: none;"> and within a relatively short time, I had a
-                                                nice mockup, and shortly after than a secondary pages mockup, and then
-                                                they made the site. It looked and worked perfectly!<br>
-                                                We approved the newly completed site, and Digital Templates 24 installed
-                                                the new site on my server after zipping up and saving the old site for
-                                                us. They made the change over a 'hands-off' experience for me!<br>
-                                                As is typical, my client (who we had the website made for) wanted
-                                                changes. They almost always want changes after the site is done because
-                                                they have new ideas after seeing their creation come to life. So I sent
-                                                the requests along and Digital Templates 24 happily made the changes for
-                                                me. They also helped figure out a couple little glitches, caused by my
-                                                client, with speed and without complaint.<br>
-                                                Now today, I just gave them the go-ahead to start on the 3 new sites for
-                                                me, and I have 2 more in the works to send their way as soon as I get
-                                                the approvals from my new clients.</span>
-                                            <a href="javascript:void(0)" class="readmore">Read more</a>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Randall Peterson</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 02 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">Have used design layer agencies for 3 websites and have
-                                            been very happy with the design quality in each instance. I would highly
-                                            recommend.</p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Adam S Tracy</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 03 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active center" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">Understanding customer simple or complex requirements and
-                                            putting together a website is a huge task, finding the right individual or
-                                            company is even more complex.
-                                            <br><span style="display: none;"> I did my search around looking for a web
-                                                design and development company that has the ability to create, design
-                                                and optimize my web site. Thanks to team Digital Templates 24, not only
-                                                they have great taste in design but they can guide you through the
-                                                process and beyond. They not only exceeded my expectation with the
-                                                design but went above and beyond to ensure no corners of the
-                                                requirements are left behind.<br>
-                                                Working with Digital Templates 24 was a great experience. They take the
-                                                utmost care and dedication to ensure 100% customer satisfaction. Thanks
-                                                to their knowledge and determination. I recommend anyone that is looking
-                                                for a custom website, at Digital Templates 24 a team of experts will
-                                                guide you in the right direction.
-                                            </span>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="author" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Sriram Vadlapadla</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 04 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="client reviews" class="quote-right">
-                                        <p class="testi-txt">You guys were great to work with and did everything we
-                                            could ever ask for. We couldn't be happier with our product. Thank you.</p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Jamie N Courtney Popham</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 05 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">After interviewing multiple web design companies to create
-                                            our business website, it was obvious that Digital Templates 24 offered the
-                                            skill and price that we needed to launch a great website.
-                                            <br><span style="display: none;">
-                                                Maxwell was an effective communicator that listened to what we wanted
-                                                and helped us identify areas that we needed to make critical decisions.
-                                                He kept us involved with the overall process and we are happy with the
-                                                finished product
-                                            </span>
-                                            <a href="javascript:void(0)" class="readmore">Read more</a>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Reed McDonald</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 06 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">It was a great service and with the help from my
-                                            representative Ilana she was a great help. Would recommend this service.</p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Jr Reyes</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 07 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">I was fortunate to find Digital Templates 24 for my website
-                                            design and development, I was working with Travis Smith, who was very
-                                            patient with me, and he helped me through the whole process and most off all
-                                            made me understand everything.
-                                            <span style="display:none">Travis and his team are very professional in
-                                                their work they know what they are doing and come up with great ideas to
-                                                make the site look good. I will definitely work with team again in the
-                                                future whenever I have website related work. </span>
-                                            <a href="javascript:void(0)" class="readmore">Read more</a>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Ahmed Hassan</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 01 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">I have been looking for a new company to do the website
-                                            development I need. I sent a small site to Travis Smith at Design Layer
-                                            Agency - their quote was very reasonable, so I gave the 'go-ahead'...<br>
-                                            <span style="display: none;"> and within a relatively short time, I had a
-                                                nice mockup, and shortly after than a secondary pages mockup, and then
-                                                they made the site. It looked and worked perfectly!<br>
-                                                We approved the newly completed site, and Digital Templates 24 installed
-                                                the new site on my server after zipping up and saving the old site for
-                                                us. They made the change over a 'hands-off' experience for me!<br>
-                                                As is typical, my client (who we had the website made for) wanted
-                                                changes. They almost always want changes after the site is done because
-                                                they have new ideas after seeing their creation come to life. So I sent
-                                                the requests along and Digital Templates 24 happily made the changes for
-                                                me. They also helped figure out a couple little glitches, caused by my
-                                                client, with speed and without complaint.<br>
-                                                Now today, I just gave them the go-ahead to start on the 3 new sites for
-                                                me, and I have 2 more in the works to send their way as soon as I get
-                                                the approvals from my new clients.</span>
-                                            <a href="javascript:void(0)" class="readmore">Read more</a>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Randall Peterson</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 02 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">Have used design layer agencies for 3 websites and have
-                                            been very happy with the design quality in each instance. I would highly
-                                            recommend.</p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="client reviews" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Adam S Tracy</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 03 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 940px; margin-right: 30px;">
-                                <div class="testimonials-box">
-                                    <div class="row">
-                                        <img src="{{asset('assets/images/quote-right.svg')}}"
-                                            alt="reviews" class="quote-right">
-                                        <p class="testi-txt">Understanding customer simple or complex requirements and
-                                            putting together a website is a huge task, finding the right individual or
-                                            company is even more complex.
-                                            <br><span style="display: none;"> I did my search around looking for a web
-                                                design and development company that has the ability to create, design
-                                                and optimize my web site. Thanks to team Digital Templates 24, not only
-                                                they have great taste in design but they can guide you through the
-                                                process and beyond. They not only exceeded my expectation with the
-                                                design but went above and beyond to ensure no corners of the
-                                                requirements are left behind.<br>
-                                                Working with Digital Templates 24 was a great experience. They take the
-                                                utmost care and dedication to ensure 100% customer satisfaction. Thanks
-                                                to their knowledge and determination. I recommend anyone that is looking
-                                                for a custom website, at Digital Templates 24 a team of experts will
-                                                guide you in the right direction.
-                                            </span>
-                                        </p>
-                                        <div class="col-md-6">
-                                            <div class="person-info">
-                                                <div class="img-testi">
-                                                    <img src="{{asset('assets/images/author.png')}}"
-                                                        alt="author" class="myLazy">
-                                                </div>
-                                                <div class="details-testi">
-                                                    <h3>Sriram Vadlapadla</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 04 / 07 </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-6">
+                                <p>01 / 07</p>
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img
-                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjExNjEyIDkuMTE2MTJDMC42Mjc5NjIgOS42MDQyNyAwLjYyNzk2MiAxMC4zOTU3IDEuMTE2MTIgMTAuODgzOUw5LjA3MTA3IDE4LjgzODhDOS41NTkyMiAxOS4zMjcgMTAuMzUwNyAxOS4zMjcgMTAuODM4OCAxOC44Mzg4QzExLjMyNyAxOC4zNTA3IDExLjMyNyAxNy41NTkyIDEwLjgzODggMTcuMDcxMUwzLjc2Nzc3IDEwTDEwLjgzODggMi45Mjg5M0MxMS4zMjcgMi40NDA3OCAxMS4zMjcgMS42NDkzMiAxMC44Mzg4IDEuMTYxMTZDMTAuMzUwNyAwLjY3MzAwOSA5LjU1OTIyIDAuNjczMDA5IDkuMDcxMDcgMS4xNjExNkwxLjExNjEyIDkuMTE2MTJaTTE4IDguNzVMMiA4Ljc1TDIgMTEuMjVMMTggMTEuMjVMMTggOC43NVoiIGZpbGw9IiM3Qzc1OTYiLz4NCjwvc3ZnPg0K"></button><button
-                            type="button" role="presentation" class="owl-next"><img
-                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNi44ODM5IDEwLjg4MzlDMTcuMzcyIDEwLjM5NTcgMTcuMzcyIDkuNjA0MjcgMTYuODgzOSA5LjExNjEyTDguOTI4OTMgMS4xNjExNkM4LjQ0MDc4IDAuNjczMDA5IDcuNjQ5MzIgMC42NzMwMDkgNy4xNjExNiAxLjE2MTE2QzYuNjczMDEgMS42NDkzMiA2LjY3MzAxIDIuNDQwNzggNy4xNjExNiAyLjkyODkzTDE0LjIzMjIgMTBMNy4xNjExNyAxNy4wNzExQzYuNjczMDEgMTcuNTU5MiA2LjY3MzAxIDE4LjM1MDcgNy4xNjExNyAxOC44Mzg4QzcuNjQ5MzIgMTkuMzI3IDguNDQwNzggMTkuMzI3IDguOTI4OTMgMTguODM4OEwxNi44ODM5IDEwLjg4MzlaTTYuODI5OTFlLTA4IDExLjI1TDE2IDExLjI1TDE2IDguNzVMLTYuODI5OTFlLTA4IDguNzVMNi44Mjk5MWUtMDggMTEuMjVaIiBmaWxsPSIjN0M3NTk2Ii8+DQo8L3N2Zz4NCg=="></button>
+
+                    <!-- Testimonial Item 2 -->
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <img src="{{ asset('assets/images/quote-right.svg') }}" alt="reviews"
+                                class="quote-right">
+                            <p class="testi-txt">I have been looking for a new company to do the website development I
+                                need. I sent a small site to Travis Smith at Design Layer Agency - their quote was very
+                                reasonable, so I gave the 'go-ahead'...
+                                <span class="hidden-content">and within a relatively short time, I had a nice mockup,
+                                    and shortly after than a secondary pages mockup, and then they made the site. It
+                                    looked and worked perfectly!</span>
+                                <a href="javascript:void(0)" class="readmore">Read more</a>
+                            </p>
+                            <div class="col-md-6">
+                                <div class="person-info">
+                                    <div class="img-testi">
+                                        <img src="{{ asset('assets/images/author.png') }}" alt="client reviews"
+                                            class="myLazy">
+                                    </div>
+                                    <div class="details-testi">
+                                        <h3>Randall Peterson</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>02 / 07</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="owl-dots disabled"></div>
+
+                    <!-- Testimonial Item 3 -->
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <img src="{{ asset('assets/images/quote-right.svg') }}" alt="reviews"
+                                class="quote-right">
+                            <p class="testi-txt">Have used design layer agencies for 3 websites and have been very
+                                happy with the design quality in each instance. I would highly recommend.</p>
+                            <div class="col-md-6">
+                                <div class="person-info">
+                                    <div class="img-testi">
+                                        <img src="{{ asset('assets/images/author.png') }}" alt="client reviews"
+                                            class="myLazy">
+                                    </div>
+                                    <div class="details-testi">
+                                        <h3>Adam S Tracy</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>03 / 07</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 4 -->
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <img src="{{ asset('assets/images/quote-right.svg') }}" alt="reviews"
+                                class="quote-right">
+                            <p class="testi-txt">Understanding customer simple or complex requirements and putting
+                                together a website is a huge task, finding the right individual or company is even more
+                                complex.
+                                <span class="hidden-content">I did my search around looking for a web design and
+                                    development company that has the ability to create, design and optimize my web site.
+                                    Thanks to team Digital Templates 24.</span>
+                                <a href="javascript:void(0)" class="readmore">Read more</a>
+                            </p>
+                            <div class="col-md-6">
+                                <div class="person-info">
+                                    <div class="img-testi">
+                                        <img src="{{ asset('assets/images/author.png') }}" alt="author"
+                                            class="myLazy">
+                                    </div>
+                                    <div class="details-testi">
+                                        <h3>Sriram Vadlapadla</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>04 / 07</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 5 -->
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <img src="{{ asset('assets/images/quote-right.svg') }}" alt="client reviews"
+                                class="quote-right">
+                            <p class="testi-txt">You guys were great to work with and did everything we could ever ask
+                                for. We couldn't be happier with our product. Thank you.</p>
+                            <div class="col-md-6">
+                                <div class="person-info">
+                                    <div class="img-testi">
+                                        <img src="{{ asset('assets/images/author.png') }}" alt="client reviews"
+                                            class="myLazy">
+                                    </div>
+                                    <div class="details-testi">
+                                        <h3>Jamie N Courtney Popham</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>05 / 07</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 6 -->
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <img src="{{ asset('assets/images/quote-right.svg') }}" alt="reviews"
+                                class="quote-right">
+                            <p class="testi-txt">After interviewing multiple web design companies to create our
+                                business website, it was obvious that Digital Templates 24 offered the skill and price
+                                that we needed to launch a great website.
+                                <span class="hidden-content">Maxwell was an effective communicator that listened to
+                                    what we wanted and helped us identify areas that we needed to make critical
+                                    decisions.</span>
+                                <a href="javascript:void(0)" class="readmore">Read more</a>
+                            </p>
+                            <div class="col-md-6">
+                                <div class="person-info">
+                                    <div class="img-testi">
+                                        <img src="{{ asset('assets/images/author.png') }}" alt="client reviews"
+                                            class="myLazy">
+                                    </div>
+                                    <div class="details-testi">
+                                        <h3>Reed McDonald</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>06 / 07</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 7 -->
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <img src="{{ asset('assets/images/quote-right.svg') }}" alt="reviews"
+                                class="quote-right">
+                            <p class="testi-txt">It was a great service and with the help from my representative Ilana
+                                she was a great help. Would recommend this service.</p>
+                            <div class="col-md-6">
+                                <div class="person-info">
+                                    <div class="img-testi">
+                                        <img src="{{ asset('assets/images/author.png') }}" alt="client reviews"
+                                            class="myLazy">
+                                    </div>
+                                    <div class="details-testi">
+                                        <h3>Jr Reyes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>07 / 07</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section> <!--Start Footer-->
+    </section>
 
-    <script src="{{asset('front/js/sparkles.js')}}"></script>
-    <script src="{{asset('front/js/jquery.min.js')}}"></script>
-    <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('front/js/owl.carousel.min.js')}}"></script>
+    <script src="{{ asset('front/js/sparkles.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('front/js/owl.carousel.min.js') }}"></script>
     <footer class="main-footer">
         <div class="footer-row1">
             <div class="container">
                 <h2>Awards And Acknowledgements</h2>
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
-                        <img src="{{asset('assets/images/f-logos4.png')}}"
-                            alt="clutch" class="myLazy">
+                        <img src="{{ asset('assets/images/f-logos4.png') }}" alt="clutch" class="myLazy">
                     </div>
                     <div class="col-lg-2 col-md-2">
-                        <img src="{{asset('assets/images/f-logos3.png')}}"
-                            alt="seo blog" class="myLazy">
+                        <img src="{{ asset('assets/images/f-logos3.png') }}" alt="seo blog" class="myLazy">
                     </div>
                     <div class="col-lg-2 col-md-2">
-                        <img src="{{asset('assets/images/f-logos2.png')}}"
-                            alt="google partner" class="myLazy">
+                        <img src="{{ asset('assets/images/f-logos2.png') }}" alt="google partner"
+                            class="myLazy">
                     </div>
                     <div class="col-lg-2 col-md-2">
-                        <img src="{{asset('assets/images/f-logos1.png')}}"
-                            alt="expertise" class="myLazy">
+                        <img src="{{ asset('assets/images/f-logos1.png') }}" alt="expertise" class="myLazy">
                     </div>
                     <div class="col-lg-2 col-md-2">
-                        <img src="{{asset('assets/images/f-logos.png')}}"
-                            alt="amrican company inc" class="myLazy">
+                        <img src="{{ asset('assets/images/f-logos.png') }}" alt="amrican company inc"
+                            class="myLazy">
                     </div>
                 </div>
             </div>
@@ -1969,26 +1329,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="/"><img
-                                src="{{asset('assets/images/logo.svg')}}"
+                        <a href="/"><img src="{{ asset('assets/images/logo.svg') }}"
                                 alt="Digital Templates 24" class="lazy"></a>
                         <ul class="social-footer">
                             <li><a target="_blank" href="https://www.facebook.com/designlayeragency.dla"><img
-                                        src="{{asset('assets/images/facebook.svg')}}"
-                                        alt="facebook" class="lazy"></a></li>
-                            <li><a target="_blank" href="https://www.linkedin.com/company/design-layer-agency-dla/"><img
-                                        src="{{asset('assets/images/linkdin.svg')}}"
-                                        alt="linkedin" class="lazy"></a></li>
+                                        src="{{ asset('assets/images/facebook.svg') }}" alt="facebook"
+                                        class="lazy"></a></li>
+                            <li><a target="_blank"
+                                    href="https://www.linkedin.com/company/design-layer-agency-dla/"><img
+                                        src="{{ asset('assets/images/linkdin.svg') }}" alt="linkedin"
+                                        class="lazy"></a></li>
                             <li><a target="_blank" href="#"><img
-                                        src="{{asset('assets/images/instagram.svg')}}"
-                                        alt="instagram" class="lazy"></a></li>
+                                        src="{{ asset('assets/images/instagram.svg') }}" alt="instagram"
+                                        class="lazy"></a></li>
                         </ul>
                         <div class="reviews-footer">
                             <div class="row">
                                 <div class="col-md-6">
                                     <a href="https://www.trustpilot.com/review/designlayeragency.com"
-                                        target="blank"><img
-                                            src="{{asset('assets/images/trustpilot.png')}}"
+                                        target="blank"><img src="{{ asset('assets/images/trustpilot.png') }}"
                                             alt="trust pilot" class="lazy"></a>
                                 </div>
                             </div>
@@ -1998,7 +1357,8 @@
                         <h3>services</h3>
                         <ul class="footer-links">
                             <li><a href="branding-designing/">Branding &amp; Designing</a></li>
-                            <li><a href="digital-marketing-optimization/">Digital Marketing &amp; Sales Optimization</a>
+                            <li><a href="digital-marketing-optimization/">Digital Marketing &amp; Sales
+                                    Optimization</a>
                             </li>
                             <li><a href="web-mobile-app-development/">Web &amp; Mobile App Development</a></li>
                         </ul>
@@ -2014,16 +1374,17 @@
                         </ul>
                     </div>
                     <div class="col-lg-3">
-                        <h3><img src="{{asset('assets/images/usa-flag.png')}}"
-                                alt="usa branch" class="lazy">USA Branch</h3>
+                        <h3><img src="{{ asset('assets/images/usa-flag.png') }}" alt="usa branch"
+                                class="lazy">USA Branch</h3>
                         <p>Registered Office 450 South Orange Avenue, 7th Floor, Orlando, FL 32807</p>
                         <a href="tel:+17327026913" class="cntct-footer">+1 (732) 702-6913</a>
                         <br>
-                        <h3><img src="{{asset('assets/images/uk-flag.png')}}"
-                                alt="uk branch" class="lazy">UK Branch</h3>
+                        <h3><img src="{{ asset('assets/images/uk-flag.png') }}" alt="uk branch"
+                                class="lazy">UK Branch</h3>
                         <p>4 Mann Island, Liverpool L3 1BP, UK</p>
                         <a href="tel:+447835249706" class="cntct-footer">+44 7835-249706</a>
-                        <a href="mailto:info@designlayeragency.com" class="cntct-footer">info@designlayeragency.com</a>
+                        <a href="mailto:info@designlayeragency.com"
+                            class="cntct-footer">info@designlayeragency.com</a>
                     </div>
                 </div>
             </div>
@@ -2039,7 +1400,7 @@
         </div>
     </footer>
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.owl-case-study').owlCarousel({
                 loop: true,
                 items: 1,
@@ -2089,7 +1450,9 @@
                 center: true,
                 margin: 30,
                 autoplay: true,
-                navText: ["<img src='/assets/images/right-arrow.svg'>", "<img src='/assets/images/left-arrow.svg'>"],
+                navText: ["<img src='/assets/images/right-arrow.svg'>",
+                    "<img src='/assets/images/left-arrow.svg'>"
+                ],
                 nav: true,
                 // stagePadding: 150,
                 dots: false,
@@ -2118,7 +1481,9 @@
                 items: 1,
                 margin: 30,
                 // autoplay:true,
-                navText: ["<img src='/assets/images/left-arrow-abt.svg'>", "<img src='/assets/images/right-arrow-abt.svg'>"],
+                navText: ["<img src='/assets/images/left-arrow-abt.svg'>",
+                    "<img src='/assets/images/right-arrow-abt.svg'>"
+                ],
                 nav: true,
                 // stagePadding: 150,
                 dots: false,
@@ -2140,7 +1505,9 @@
                 loop: true,
                 items: 1,
                 margin: 30,
-                navText: ["<img src='/assets/images/left-arrow-abt.svg'>", "<img src='/assets/images/right-arrow-abt.svg'>"],
+                navText: ["<img src='/assets/images/left-arrow-abt.svg'>",
+                    "<img src='/assets/images/right-arrow-abt.svg'>"
+                ],
                 nav: true,
                 dots: false,
                 responsiveClass: true,
@@ -2160,7 +1527,9 @@
                 loop: true,
                 items: 1,
                 margin: 30,
-                navText: ["<img src='/assets/images/left-arrow-abt.svg'>", "<img src='/assets/images/right-arrow-abt.svg'>"],
+                navText: ["<img src='/assets/images/left-arrow-abt.svg'>",
+                    "<img src='/assets/images/right-arrow-abt.svg'>"
+                ],
                 nav: true,
                 dots: false,
                 responsiveClass: true,
@@ -2177,32 +1546,32 @@
                 }
             });
         });
-        jQuery(document).on('click', '.service-tabs-section .nav li a', function (event) {
+        jQuery(document).on('click', '.service-tabs-section .nav li a', function(event) {
             event.preventDefault();
 
             jQuery('html, body').animate({
                 scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
             }, 1400);
         });
-        $(document).ready(function () {
-            $(".service-tabs-section .nav li").click(function () {
+        $(document).ready(function() {
+            $(".service-tabs-section .nav li").click(function() {
                 if (!$(this).hasClass('active')) {
                     $(".service-tabs-section .nav li").removeClass("active");
                     $(this).addClass("active");
                 }
             });
         });
-        $('.toggle-menu').click(function (e) {
+        $('.toggle-menu').click(function(e) {
             e.preventDefault();
             $('.main-menu-nav').toggleClass('show');
         })
-        $('.cancel-btn').click(function (e) {
+        $('.cancel-btn').click(function(e) {
             e.preventDefault();
             $('.main-menu-nav').toggleClass('show');
         })
     </script>
     <script>
-        $('.testimonials-box .readmore').click(function () {
+        $('.testimonials-box .readmore').click(function() {
             $(this).parents('.testimonials-box').find('span').fadeIn();
             $(this).fadeOut();
         })
@@ -2227,7 +1596,7 @@ s0.parentNode.insertBefore(s1,s0);
 <\/script>
          `);
 
-                $('.myLazy').each(function () {
+                $('.myLazy').each(function() {
                     $(this).attr("src", $(this).attr('data-src'))
                 })
                 isloading = false
@@ -2275,7 +1644,7 @@ s0.parentNode.insertBefore(s1,s0);
         vid.playbackRate = 4;
     </script>
     <script>
-        window.addEventListener('load', function () {
+        window.addEventListener('load', function() {
             $("head").append(`<script type="text/javascript" src="assets/js/particle-image.js"><\/script>`);
             $('._loader').fadeOut();
             let options = {
@@ -2307,7 +1676,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 
     <script type="text/javascript">
-        var tabsInterval = setInterval(function () {
+        var tabsInterval = setInterval(function() {
             if ($('.homepage-sectionsix ul#myTab li.active').next('li').length > 0) {
                 $('.homepage-sectionsix ul#myTab li.active').next('li').find('button').click();
             } else {
@@ -2316,12 +1685,12 @@ s0.parentNode.insertBefore(s1,s0);
         }, 5000);
     </script>
 
-<script src="{{asset('front/js/parallex.js')}}"></script>
+    <script src="{{ asset('front/js/parallex.js') }}"></script>
     <script>
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
-        $(function () {
-            $('.continuous-slider--list').each(function (index, item) {
+        $(function() {
+            $('.continuous-slider--list').each(function(index, item) {
                 var $slider = $(item);
                 $($slider).append($($($slider).html()))
                 var sizeImage = $(item).find('.item:nth-child(1)').outerWidth();
@@ -2338,7 +1707,7 @@ s0.parentNode.insertBefore(s1,s0);
                     var $first = $($slider).find('li:first');
                     $first.animate({
                         'margin-left': '-' + sizeImage + 'px'
-                    }, speed, "linear", function () {
+                    }, speed, "linear", function() {
                         $first.remove().css({
                             'margin-left': '0px'
                         });
@@ -2356,9 +1725,4 @@ s0.parentNode.insertBefore(s1,s0);
             })
         });
     </script>
-
-
-    <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
-        <div id="shadow-host-companion"></div>
-    </div>
 </body>
