@@ -1,181 +1,99 @@
-<footer class="modern-footer">
-    <div class="footer-content">
-        <div class="row">
-            <div class="col-md-4 footer-section">
-                <div class="footer-logo mb-4">
-                    <img src="{{ asset('assets/images/utils/logo-white.png') }}" alt="Logo" class="img-fluid">
-                </div>
-                <p>We are dedicated to delivering exceptional solutions and services to our clients. Our commitment to excellence drives everything we do.</p>
-            </div>
-            
-            <div class="col-md-4 footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
 
-            <div class="col-md-4 footer-section">
-                <h3>Connect With Us</h3>
-                <ul class="footer-social">
-                    <li><a target="_blank" href="https://facebook.com/iamgrsagor" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/grsagor" class="social-icon"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/iamgrsagor/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a target="_blank" href="https://medium.com/@iamgrsagor" class="social-icon"><i class="fa-brands fa-medium"></i></a></li>
-                    <li><a target="_blank" href="https://dev.to/iamgrsagor" class="social-icon"><i class="fa-brands fa-dev"></i></a></li>
-                    <li><a target="_blank" href="https://x.com/iamgrsagor" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                </ul>
+<footer class="main-footer">
+    <div class="footer-row1">
+        <div class="container">
+            <h2>Industry Recognition & Certifications</h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <img src="{{ asset('assets/images/f-logos4.png') }}" alt="clutch" class="myLazy">
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <img src="{{ asset('assets/images/f-logos3.png') }}" alt="seo blog" class="myLazy">
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <img src="{{ asset('assets/images/f-logos2.png') }}" alt="google partner" class="myLazy">
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <img src="{{ asset('assets/images/f-logos1.png') }}" alt="expertise" class="myLazy">
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <img src="{{ asset('assets/images/f-logos.png') }}" alt="amrican company inc"
+                        class="myLazy">
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="footer-bottom">
-        <div class="copyright">
-            <span>© Copyright 2024 </span>
-            <span>All Rights Reserved by <a href="http://www.grsagor.com/">Golam Rahman Sagor</a></span>
+    <div class="footer-row2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/"><img src="{{ asset('assets/images/logo.svg') }}"
+                            alt="Digital Templates 24" class="lazy"></a>
+                    <ul class="social-footer">
+                        <li><a target="_blank" href="https://www.facebook.com/designlayeragency.dla"><img
+                                    src="{{ asset('assets/images/facebook.svg') }}" alt="facebook"
+                                    class="lazy"></a></li>
+                        <li><a target="_blank"
+                                href="https://www.linkedin.com/company/design-layer-agency-dla/"><img
+                                    src="{{ asset('assets/images/linkdin.svg') }}" alt="linkedin"
+                                    class="lazy"></a></li>
+                        <li><a target="_blank" href="#"><img
+                                    src="{{ asset('assets/images/instagram.svg') }}" alt="instagram"
+                                    class="lazy"></a></li>
+                    </ul>
+                    <div class="reviews-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="https://www.trustpilot.com/review/designlayeragency.com"
+                                    target="blank"><img src="{{ asset('assets/images/trustpilot.png') }}"
+                                        alt="trust pilot" class="lazy"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h3>services</h3>
+                    <ul class="footer-links">
+                        <li><a href="branding-designing/">Branding &amp; Designing</a></li>
+                        <li><a href="digital-marketing-optimization/">Digital Marketing &amp; Sales
+                                Optimization</a>
+                        </li>
+                        <li><a href="web-mobile-app-development/">Web &amp; Mobile App Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>quick links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">home </a></li>
+                        <li><a href="portfolio/">Portfolio</a></li>
+                        <li><a href="services/">Services</a></li>
+                        <li><a href="about/">About</a></li>
+                        <li><a href="contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3><img src="{{ asset('assets/images/usa-flag.png') }}" alt="usa branch"
+                            class="lazy">USA Branch</h3>
+                    <p>Registered Office 450 South Orange Avenue, 7th Floor, Orlando, FL 32807</p>
+                    <a href="tel:+17327026913" class="cntct-footer">+1 (732) 702-6913</a>
+                    <br>
+                    <h3><img src="{{ asset('assets/images/uk-flag.png') }}" alt="uk branch"
+                            class="lazy">UK Branch</h3>
+                    <p>4 Mann Island, Liverpool L3 1BP, UK</p>
+                    <a href="tel:+447835249706" class="cntct-footer">+44 7835-249706</a>
+                    <a href="mailto:info@designlayeragency.com"
+                        class="cntct-footer">info@designlayeragency.com</a>
+                </div>
+            </div>
         </div>
-        <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
+    </div>
+    <div class="footer-siteinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright © 2024. <a href="/">FIVEPCMIRACLE LIMITED</a>. All Rights Reserved.</p>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
-
-<style>
-.modern-footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 60px 0 20px;
-    position: relative;
-}
-
-.footer-content {
-    padding: 0 30px;
-    margin-bottom: 40px;
-}
-
-.footer-section {
-    margin-bottom: 30px;
-}
-
-.footer-section h3 {
-    color: #ffffff;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.footer-section h3:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 2px;
-    background: #4a90e2;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #4a90e2;
-}
-
-.footer-social {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.3s ease;
-}
-
-.social-icon:hover {
-    background: #4a90e2;
-    transform: translateY(-3px);
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px 30px;
-    text-align: center;
-}
-
-.copyright {
-    font-size: 0.9rem;
-    color: #888;
-}
-
-.copyright a {
-    color: #4a90e2;
-    text-decoration: none;
-}
-
-#go-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    z-index: 600;
-}
-
-#go-top a {
-    background-color: #4a90e2;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    transition: all 0.3s ease;
-}
-
-#go-top a:hover {
-    background-color: #357abd;
-    transform: translateY(-3px);
-}
-
-@media screen and (max-width: 768px) {
-    .footer-section {
-        text-align: center;
-    }
-
-    .footer-section h3:after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .footer-social {
-        justify-content: center;
-    }
-}
-</style>

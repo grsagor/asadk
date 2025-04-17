@@ -697,14 +697,10 @@
         <div class="hero-main-rp container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 upper-spacing">
-                    <h2 class=" animate-in-future">Providing You With<br> The Complete Tech Support</h2>
-                    <p class=" animate-in-future">Being the best US Digital Agency, Digital Templates 24 thrive to
-                        provide you with a complete package where all your problems can be solved, and you don't have to
-                        go to another digital agency. Our web design company offer you Conversion Rate Optimization,
-                        Designing landing pages, UX audits, Page Speed Optimization, Website Support, Monthly Reporting,
-                        A/B Testing, Multi Variant Testing and Split Testing.</p>
+                <h2 class="animate-in-future">Comprehensive Business<br>Integration Solutions</h2>
+                <p class="animate-in-future">At FIVEPCMIRACLE LIMITED, we provide end-to-end business integration solutions that drive growth and efficiency. Our services include Channel Partner Programs, Distribution Projects, Reseller Programs, Wholesaler Programs, and White Label Branding Services. We focus on creating seamless collaborations that enhance operational efficiency, reduce costs, and accelerate market expansion. Our dedicated team ensures that every partnership delivers measurable results and sustainable growth.</p>
                     <div class="btn-container btn-pirple">
-                        <a href="javascript:void(Tawk_API.toggle())">let’s chat<img
+                        <a href="javascript:void(Tawk_API.toggle())">Start Collaboration<img
                                 src="{{ asset('assets/images/arrow2.svg') }}" alt="lets chat" class="lazy"></a>
                     </div>
                 </div>

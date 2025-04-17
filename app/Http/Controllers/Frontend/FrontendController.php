@@ -139,7 +139,7 @@ class FrontendController extends Controller
     }
 
     public function contact() {
-        return view('front.contact');
+        return view('front.pages.contact.index');
     }
 
     public function submitContact(Request $request) {
@@ -176,6 +176,9 @@ class FrontendController extends Controller
 
     public function templates() {
         return view('front.templates.index');
+    }
+    public function portfolio() {
+        return view('front.pages.portfolio.index');
     }
 
     public function templateShow() {

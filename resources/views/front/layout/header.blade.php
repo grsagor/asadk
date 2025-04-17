@@ -1,96 +1,61 @@
-<header class="header">
-    <div class="logo-container">
-        <a href="{{ url('/') }}" class="logo-link">
-            <img src="{{ asset('assets/images/utils/logo-white.png') }}" alt="Logo" class="logo-image">
-        </a>
-    </div>
-
-    <nav class="main-nav">
-        <div class="mobile-nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="nav-list">
-            <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
-            {{-- <li class="dropdown">
-                <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="{{ url('/services/web-development') }}" class="dropdown-link">Web Development</a>
-                    <a href="{{ url('/services/mobile-apps') }}" class="dropdown-link">Mobile Apps</a>
-                    <a href="{{ url('/services/design') }}" class="dropdown-link">Design</a>
-                </div>
-            </li> --}}
-            <li><a href="{{ url('/templates') }}" class="nav-link">Templates</a></li>
-            <li><a href="{{ url('/about') }}" class="nav-link">About</a></li>
-            <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="user-section">
-        @auth
-            <div class="user-info dropdown">
-                <button type="button" class="user-dropdown-toggle">
-                    @if(auth()->user()->avatar)
-                        <img src="{{ asset(auth()->user()->avatar) }}" alt="Avatar" class="user-avatar">
-                    @else
-                        <div class="user-avatar-placeholder">
-                            {{ strtoupper(substr(auth()->user()->name, 0, 1)) }}
-                        </div>
-                    @endif
-                    <div class="user-details">
-                        <span class="user-name">{{ auth()->user()->name }}</span>
-                        <span class="user-email">{{ auth()->user()->email }}</span>
-                    </div>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="dropdown-menu">
-                    <div class="dropdown-header">
-                        <span class="welcome-text">Welcome!</span>
-                        <span class="user-role">{{ auth()->user()->role }}</span>
-                    </div>
-                    <div class="dropdown-divider"></div>
-                    <a href="{{ url('/profile') }}" class="dropdown-item">
-                        <i class="fas fa-user"></i> My Profile
-                    </a>
-                    <a href="{{ url('/dashboard') }}" class="dropdown-item">
-                        <i class="fas fa-tachometer-alt"></i> Dashboard
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="{{ route('logout') }}" 
-                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
-                       class="dropdown-item text-danger">
-                        <i class="fas fa-sign-out-alt"></i> Logout
+<header class="site-header">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.svg') }}"
+                        alt="dDigital Templates 24" class="lazy"></a>
+            </div>
+            <div class="main-nav">
+                <ul class="nav navbar-nav">
+                    <li class="btn-container btn-blue"><a href="contact/">get in touch <img
+                                src="{{ asset('assets/images/arrow.png') }}" alt="get in touch" class="lazy"></a>
+                    </li>
+                </ul>
+                <div class="toggle-menu">
+                    <a href="javascript:void(0)">
+                        <img src="{{ asset('assets/images/toggle-menu.svg') }}" alt="menu" class="lazy">
                     </a>
                 </div>
             </div>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-            </form>
-        @else
-            <a href="{{ route('login') }}" class="login-btn btn-primary">Login</a>
-        @endauth
+        </nav>
     </div>
 </header>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-        const mainNav = document.querySelector('.main-nav');
-        const dropdowns = document.querySelectorAll('.dropdown');
-
-        mobileNavToggle.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
-            this.classList.toggle('active');
-        });
-
-        if (window.innerWidth <= 991) {
-            dropdowns.forEach(dropdown => {
-                dropdown.addEventListener('click', function(e) {
-                    this.classList.toggle('active');
-                    e.stopPropagation();
-                });
-            });
-        }
-    });
-</script>
+<section class="main-menu-nav" style=" background: #130047">
+    <div class="hero-main-rp container">
+        <div class="cancel-btn">
+            <a href="javascript:void(0)">Menu<img src="{{ asset('assets/images/cancel.svg') }}" alt="cancel button"
+                    class="lazy"></a>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.svg') }}"
+                            alt="navigation" class="lazy"></a>
+                </div>
+                <div class="menu-nav">
+                    <ul class="fancy-menu ">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/portfolio/">portfolio</a></li>
+                        <li><a href="/services/">services</a></li>
+                        <li><a href="/about/">about</a></li>
+                        <!-- <li><a href="/blogs/">digital trends</a></li> -->
+                        <li><a href="contact/">contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons-head">
+                    <ul>
+                        <li><a target="_blank" href="https://www.facebook.com/designlayeragencyllc"><img
+                                    src="{{ asset('assets/images/facebook-head.svg') }}" alt="facebook"
+                                    class="lazy"></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/83519829/"><img
+                                    src="{{ asset('assets/images/linkedin-head.svg') }}" alt="linkedin"
+                                    class="lazy"></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/designlayeragency/"><img
+                                    src="{{ asset('assets/images/insta-head.svg') }}" alt="instagram"
+                                    class="lazy"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

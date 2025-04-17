@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(FrontendController::class)->group(function() {
     Route::get('/', 'index')->name('front.index');
+    Route::get('/portfolio', 'portfolio')->name('front.portfolio');
     Route::get('/about', 'about')->name('front.about');
     Route::get('/contact', 'contact')->name('front.contact');
     Route::post('/contact/submit', 'submitContact')->name('contact.submit');
