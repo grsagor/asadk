@@ -18,6 +18,7 @@ Route::controller(FrontendController::class)->group(function() {
     Route::get('/', 'index')->name('front.index');
     Route::get('/portfolio', 'portfolio')->name('front.portfolio');
     Route::get('/about', 'about')->name('front.about');
+    Route::get('/services', 'services')->name('front.services');
     Route::get('/contact', 'contact')->name('front.contact');
     Route::post('/contact/submit', 'submitContact')->name('contact.submit');
     Route::get('/templates', 'templates')->name('front.templates');
