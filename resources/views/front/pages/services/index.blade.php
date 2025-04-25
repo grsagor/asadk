@@ -16,13 +16,6 @@
 	<div class="hero-main-rp container">
 		<h2><img src="assets/images/Group 198.png" class="lazy"><br>Our Partnership Programs</h2>
 		<div class="owl-carousel owl-theme portfolio-slider owl-loaded owl-drag">
-			
-			
-			
-			
-			
-			
-
 		<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2100px, 0px, 0px); transition: all; width: 8400px;"><div class="owl-item cloned" style="width: 670px; margin-right: 30px;"><div class="work-boxes-home lazy" style="background: url('assets/images/workfour.jpg');" loading="lazy">
 				<div class="inner-row">
 					<div class="col-md-7">
@@ -156,7 +149,7 @@
 					</div>
 				</div>
 			</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/assets/images/left-arrow-abt.svg"></button><button type="button" role="presentation" class="owl-next"><img src="/assets/images/right-arrow-abt.svg"></button></div><div class="owl-dots disabled"></div></div>
-		<div class="btn-container btn-blue" style="margin: 50px auto 0 "><a href="/prtfolio/">View All Portfolio</a></div>
+		<div class="btn-container btn-blue" style="margin: 50px auto 0 "><a href="/prtfolio/">View All Partnerships</a></div>
 	</div>
 </section>
 
