@@ -4,7 +4,7 @@
         <div class="hero-main-rp container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>I Need To Talk To An <br>Expert.</h1>
+                    <h1>Let's Collaborate<br>Together.</h1>
                 </div>
             </div>
         </div>
@@ -14,16 +14,15 @@
         <div class="hero-main-rp container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Don’t Like Forms?</h2>
-                    <p><a href="javascript:void(Tawk_API.toggle())">click here</a> to speak to one of our solutions
-                        specialist</p>
+                    <h2>Ready to Start a Partnership?</h2>
+                    <p><a href="javascript:void(Tawk_API.toggle())">click here</a> to speak with one of our collaboration specialists</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="find-us-section">
         <div class="hero-main-rp container">
-            <h2><img src="assets/images/Group 198.png" alt="address" class="lazy"><br>Where To Find Us</h2>
+            <h2><img src="assets/images/Group 198.png" alt="address" class="lazy"><br>Our Collaboration Centers</h2>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="findus-box">

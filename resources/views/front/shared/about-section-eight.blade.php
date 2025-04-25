@@ -3,7 +3,7 @@
         <div class="row cntct-detail">
             <div class="col-md-4">
                 <div class="cntct-box">
-                    <p>Is your need urgent? <br>If so, call our receptionist at</p>
+                    <p>Ready to start collaborating?<br>Call our partnership team at</p>
                     <h3><a href="tel:2143216549" class="numbr">+1 (305) 395-6482</a>
                     </h3>
                 </div>
@@ -17,8 +17,8 @@
             </div>
             <div class="col-md-4">
                 <div class="cntct-box">
-                    <p>Looking to kick-off your projects? Let’s start planning!</p>
-                    <h3><a href="mailto:info@designlayeragency.com" class="numbr">info@designlayeragency.com</a></h3>
+                    <p>Looking to explore partnership opportunities? Let's connect!</p>
+                    <h3><a href="mailto:partnerships@fivepcmiracle.com" class="numbr">partnerships@fivepcmiracle.com</a></h3>
                 </div>
             </div>
         </div>
@@ -53,30 +53,30 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <label>How can we help you?</label><br>
+                        <label>What type of collaboration are you interested in?</label><br>
                         <textarea id="textarea_abt" name="textarea_abt"
-                            placeholder="tell us about your product and your nearest plans on the design engagement"></textarea>
+                            placeholder="Tell us about your business needs and which partnership program interests you"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <label>How did you hear about us?</label><br>
+                        <label>Which partnership program interests you most?</label><br>
                         <select name="hear_us" id="hear_us" required="">
-                            <option value="">How did you hear about us?</option>
-                            <option value="graphic">Google</option>
-                            <option value="web-Development">Social Media</option>
-                            <option value="app-development">News</option>
-                            <option value="devops">Friends</option>
-                            <option value="digital-marketing">Other</option>
+                            <option value="">Select a partnership program</option>
+                            <option value="Channel Partner Program">Channel Partner Program</option>
+                            <option value="Distribution Projects">Distribution Projects</option>
+                            <option value="Reseller Program">Reseller Program</option>
+                            <option value="Wholesaler Program">Wholesaler Program</option>
+                            <option value="digital-marketing">Digital Marketing Services</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>I need to sign the NDA first</p>
+                        <p>I would like to discuss an NDA before proceeding</p>
                         <div class="btn-container btn-pirple">
                             <button type="submit" value="submit" name="submit_mailer" id="form-submit"
-                                class="">let’s talk <img style="bottom: 10px;  "
+                                class="">Start Collaborating <img style="bottom: 10px;  "
                                     src="assets/images/submit.svg"></button>
                         </div>
                     </div>
