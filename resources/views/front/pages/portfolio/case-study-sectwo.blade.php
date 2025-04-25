@@ -1,17 +1,16 @@
 <section class="case-study-sectwo">
     <div class="hero-main-rp container">
-        <h2><img src="{{ asset('assets/images/Group-198.png') }}" alt="digital agency" class="lazy"><br>Amazing Companies
-            We Are<br>
-            Fortunate To Cooperate With</h2>
+        <h2><img src="{{ asset('assets/images/Group-198.png') }}" alt="digital agency" class="lazy"><br>Unlocking Business Potential<br>
+            Through Collaboration</h2>
         <!-- Tabs navs -->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item active" role="presentation">
                 <button class="nav-link active" id="one-tab" data-toggle="tab" data-target="#one" type="button"
-                    role="tab" aria-controls="one" aria-selected="true">web Portfolio</button>
+                    role="tab" aria-controls="one" aria-selected="true">Our Programs</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="two-tab" data-toggle="tab" data-target="#two" type="button"
-                    role="tab" aria-controls="two" aria-selected="false">Logo Portfolio</button>
+                    role="tab" aria-controls="two" aria-selected="false">Digital Services</button>
             </li>
         </ul>
         <!-- Tabs navs -->
@@ -26,8 +25,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.anoc.ae/" class="res"><img
                                             src="assets/images/worklogoone1.png" alt="portoflio" class="lazy"></a>
-                                    <h3>Management Consultants</h3>
-                                    <a href="https://www.anoc.ae/" class="btn-website">view website <img
+                                    <h3>Channel Partner Program</h3>
+                                    <a href="https://www.anoc.ae/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -44,8 +43,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.kiewit.com/" class="res"><img
                                             src="assets/images/worklogotwo.svg" alt="portoflio" class="lazy"></a>
-                                    <h3>unmatched performance in transportation</h3>
-                                    <a href="https://www.kiewit.com/" class="btn-website">view website <img
+                                    <h3>Distribution Projects</h3>
+                                    <a href="https://www.kiewit.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -64,8 +63,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.crateandbarrel.com/" class="res"><img
                                             src="assets/images/worklogothree.svg" alt="portoflio" class="lazy"></a>
-                                    <h3>new &amp; designed with purpose</h3>
-                                    <a href="https://www.crateandbarrel.com/" class="btn-website">view website <img
+                                    <h3>Reseller Program</h3>
+                                    <a href="https://www.crateandbarrel.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -82,8 +81,8 @@
                                 <div class="col-md-7">
                                     <a href="https://one-delivery.co.uk/" class="res"><img
                                             src="assets/images/worklogofour.svg" alt="portoflio" class="lazy"></a>
-                                    <h3>All your favourite cuisines in one place</h3>
-                                    <a href="https://one-delivery.co.uk/" class="btn-website">view website <img
+                                    <h3>Wholesaler Program</h3>
+                                    <a href="https://one-delivery.co.uk/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -102,8 +101,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.madeofsundays.com/" class="res"><img
                                             src="assets/images/worklogofive.svg" alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://www.madeofsundays.com/" class="btn-website">view website <img
+                                    <h3>White Label Branding Services</h3>
+                                    <a href="https://www.madeofsundays.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -120,8 +119,8 @@
                                 <div class="col-md-7">
                                     <a href="https://airbit.com/" class="res"><img
                                             src="assets/images/worklogosix1.png" alt="portoflio" class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://airbit.com/" class="btn-website">view website <img
+                                    <h3>Building Collaborative Ecosystems</h3>
+                                    <a href="https://airbit.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -139,8 +138,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.skullcandy.com/"><img src="assets/images/lg.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://www.skullcandy.com/" class="btn-website">view website <img
+                                    <h3>Innovation Through Shared Expertise</h3>
+                                    <a href="https://www.skullcandy.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -156,8 +155,8 @@
                                     <a href="https://simplychocolatecph.com/"><img
                                             src="assets/images/simplychocolate.png" alt="portoflio"
                                             class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://simplychocolatecph.com/" class="btn-website">view website <img
+                                    <h3>Expanded Networks</h3>
+                                    <a href="https://simplychocolatecph.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -174,8 +173,8 @@
                                 <div class="col-md-7">
                                     <a href="https://caliberstrong.com/"><img src="assets/images/jhgu.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://caliberstrong.com/" class="btn-website">view website <img
+                                    <h3>Cost Efficiency</h3>
+                                    <a href="https://caliberstrong.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -190,8 +189,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.onehourheatandair.com/"><img src="assets/images/sgfg.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://www.onehourheatandair.com/" class="btn-website">view website <img
+                                    <h3>Accelerated Growth</h3>
+                                    <a href="https://www.onehourheatandair.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -208,8 +207,8 @@
                                 <div class="col-md-7">
                                     <a href="https://caliberstrong.com/"><img src="assets/images/arch-logo.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://caliberstrong.com/" class="btn-website">view website <img
+                                    <h3>Competitive Advantage</h3>
+                                    <a href="https://caliberstrong.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -225,8 +224,8 @@
                                     <a href="https://www.onehourheatandair.com/"><img
                                             src="assets/images/Anderson-Rogers-Insurance-Logo-500.png" alt="portoflio"
                                             class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://www.onehourheatandair.com/" class="btn-website">view website <img
+                                    <h3>How we Work</h3>
+                                    <a href="https://www.onehourheatandair.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -243,8 +242,8 @@
                                 <div class="col-md-7">
                                     <a href="https://caliberstrong.com/"><img src="assets/images/Group-logo.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://caliberstrong.com/" class="btn-website">view website <img
+                                    <h3>Brand Visibility Enhancement</h3>
+                                    <a href="https://caliberstrong.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -260,8 +259,8 @@
                                     <a href="https://www.onehourheatandair.com/"><img
                                             src="assets/images/taylor-and-hart-logo.png" alt="portoflio"
                                             class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://www.onehourheatandair.com/" class="btn-website">view website <img
+                                    <h3>Customer Engagement Strategies</h3>
+                                    <a href="https://www.onehourheatandair.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -278,8 +277,8 @@
                                 <div class="col-md-7">
                                     <a href="https://caliberstrong.com/"><img src="assets/images/nastygal.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://caliberstrong.com/" class="btn-website">view website <img
+                                    <h3>Targeted Marketing Campaigns</h3>
+                                    <a href="https://caliberstrong.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -294,8 +293,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.onehourheatandair.com/"><img
                                             src="assets/images/finallogo-4.png" alt="portoflio" class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://www.onehourheatandair.com/" class="btn-website">view website <img
+                                    <h3>Data-Driven Marketing Insights</h3>
+                                    <a href="https://www.onehourheatandair.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -312,8 +311,8 @@
                                 <div class="col-md-7">
                                     <a href="https://caliberstrong.com/"><img src="assets/images/van heusen.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://caliberstrong.com/" class="btn-website">view website <img
+                                    <h3>Social Media Marketing</h3>
+                                    <a href="https://caliberstrong.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -328,8 +327,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.onehourheatandair.com/"><img src="assets/images/logo 4.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://www.onehourheatandair.com/" class="btn-website">view website <img
+                                    <h3>Content Marketing Strategies</h3>
+                                    <a href="https://www.onehourheatandair.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -346,8 +345,8 @@
                                 <div class="col-md-7">
                                     <a href="https://caliberstrong.com/"><img src="assets/images/logo3.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>DECORATE WITH PAPER WALL DECALS</h3>
-                                    <a href="https://caliberstrong.com/" class="btn-website">view website <img
+                                    <h3>SEO & SEM Services</h3>
+                                    <a href="https://caliberstrong.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">
@@ -362,8 +361,8 @@
                                 <div class="col-md-7">
                                     <a href="https://www.onehourheatandair.com/"><img src="assets/images/makania.png"
                                             alt="portoflio" class="lazy"></a>
-                                    <h3>Find the perfect beat for your project</h3>
-                                    <a href="https://www.onehourheatandair.com/" class="btn-website">view website <img
+                                    <h3>Email Marketing Campaigns</h3>
+                                    <a href="https://www.onehourheatandair.com/" class="btn-website">Learn More <img
                                             src="assets/images/whitearrow.svg" alt="portoflio" class="lazy"></a>
                                 </div>
                                 <div class="col-md-5">

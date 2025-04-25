@@ -13,13 +13,12 @@
                                                 class="lazy" alt="pouoiy"></a>
                                     </div>
                                     <ul class="technology-case">
-                                        <li>Partnership</li>
-                                        <li>Growth</li>
-                                        <li>Innovation</li>
+                                        <li>Strategic Alliances</li>
+                                        <li>Market Expansion</li>
+                                        <li>Shared Growth</li>
                                     </ul>
                                     <h3>Channel Partner Program</h3>
-                                    <p>Build strategic alliances and expand market reach through collaborative
-                                        partnerships.</p>
+                                    <p>Forge powerful alliances to access new markets and grow together through collaborative ventures.</p>
                                     <a href="javascript:;" class="btn-website">Learn More<img
                                             src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
                                             alt="qwqrfsf"></a>
@@ -37,17 +36,16 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="logo-case">
-                                        <a href="portfolio/"><img src="{{ asset('assets/images/viator1.svg') }}"
+                                        <a href="portfolio/"><img src="{{ asset('assets/images/viator1.png') }}"
                                                 class="lazy" alt="dhfkdsnf"></a>
                                     </div>
                                     <ul class="technology-case">
-                                        <li>Distribution</li>
-                                        <li>Logistics</li>
-                                        <li>Efficiency</li>
+                                        <li>Supply Chain</li>
+                                        <li>Collaboration</li>
+                                        <li>Optimization</li>
                                     </ul>
                                     <h3>Distribution Projects</h3>
-                                    <p>Streamline supply chains and optimize logistics through collaborative
-                                        networks.</p>
+                                    <p>Connect manufacturers with distributors to enhance efficiency and reduce costs across the supply chain.</p>
                                     <a href="https://www.viator.com/" class="btn-website">Learn More<img
                                             src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
                                             alt="qwqrfsf"></a>
@@ -70,13 +68,12 @@
                                                 class="lazy" alt="asasas"></a>
                                     </div>
                                     <ul class="technology-case">
-                                        <li>Branding</li>
-                                        <li>Solutions</li>
-                                        <li>Growth</li>
+                                        <li>Customization</li>
+                                        <li>Brand Identity</li>
+                                        <li>Customer Loyalty</li>
                                     </ul>
                                     <h3>White Label Solutions</h3>
-                                    <p>Custom digital solutions under your brand identity, driving growth and
-                                        recognition.</p>
+                                    <p>Offer customized digital services under your brand and boost recognition without development overhead.</p>
                                     <a href="https://www.skullcandy.com/" class="btn-website">Learn More
                                         <img src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
                                             alt="qwqrfsf"></a>

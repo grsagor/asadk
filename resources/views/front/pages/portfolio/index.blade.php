@@ -5,9 +5,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <h1>Portfolio</h1>
-                    <p>We Believe In Creativity And Effectiveness, And For That Reason, Our Team Of Developers, Designers,
-                        And Strategists At The Creative Digital Agency Have Worked Tirelessly To Provide Our Clients With
-                        Designs That You Can Ponder Upon.</p>
+                    <p>At FIVEPCMIRACLE LIMITED, we believe in blending creativity with purpose. Our dedicated team of developers, designers, and strategists collaborates closely to craft impactful digital solutions that not only inspire but also drive real business outcomes. Every design we create is a reflection of thoughtful innovation and shared vision.</p>
                 </div>
             </div>
         </div>
@@ -16,7 +14,7 @@
         <div class="hero-main-rp container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2><img src="{{asset('assets/images/Group-198.png')}}" class="lazy"><br>Case Studies</h2>
+                    <h2><img src="{{asset('assets/images/Group-198.png')}}" class="lazy"><br>Partnership Showcases</h2>
                 </div>
             </div>
         </div>
