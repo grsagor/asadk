@@ -20,7 +20,7 @@
         </nav>
     </div>
 </header>
-<section class="main-menu-nav" style=" background: #130047">
+<section class="main-menu-nav" style=" background: #1a1a1a">
     <div class="hero-main-rp container">
         <div class="cancel-btn">
             <a href="javascript:void(0)">Menu<img src="{{ asset('assets/images/cancel.svg') }}" alt="cancel button"
