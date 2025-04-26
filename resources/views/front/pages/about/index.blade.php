@@ -4,24 +4,24 @@
     <div class="hero-main-rp container">
         <div class="row">
             <div class="col-md-10">
-                <h1>About Design Layer Agency</h1>
-                <p>Being the best US Digital Agency, Design Layer Agency thrive to provide you with a complete package where all your problems can be solved, and you don't have to go to another digital agency. Our web design company offer you Conversion Rate Optimization, Designing landing pages, UX audits, Page Speed Optimization, Website Support, Monthly Reporting, A/B Testing, Multi Variant Testing and Split Testing.</p>
+                <h1>About FIVEPCMIRACLE LIMITED</h1>
+                <p>At FIVEPCMIRACLE LIMITED, we believe that "Collaboration is the Key" to driving innovation, growth, and profitability. We specialize in connecting businesses and customers, fostering partnerships, and integrating operations to unlock new opportunities. By providing comprehensive digital services and tailored programs, we empower organizations to work closely and achieve shared success.</p>
             </div>
         </div>
     </div>
 </section>
 <section class="about-section-one">
     <div class="hero-main-rp container">
-        <h2><img src="assets/images/Group 198.png" alt="digital agency" class="lazy"><br>A passionate &amp; dedicated team, rooted in the digital world.</h2>
-        <p>We are an expert group of diverse minds who bring together technology, strategy, and creative passion to design the best experience brand for your business.</p>
+        <h2><img src="assets/images/Group 198.png" alt="digital agency" class="lazy"><br>Building Collaborative Ecosystems</h2>
+        <p>FIVEPCMIRACLE LIMITED is dedicated to creating a business ecosystem where collaboration thrives. Whether it's connecting businesses with customers or enabling partnerships between enterprises, we focus on fostering relationships that drive mutual growth.</p>
         <div class="row">
             <div class="col-md-7">
                 <img src="assets/images/abt-img1.png" alt="advertising agency" class="lazy">
             </div>
             <div class="col-md-5">
                 <div class="card-abt">
-                    <h3>about us</h3>
-                    <p>The way digital agencies have traditionally created user experiences is broad and generalized. Design Layer Agency is fixing that with personalization to the core of what we do. We pride ourselves on pushing the boundaries of digital design. We combine relevant trends and best practices to build platforms with longevity.</p>
+                    <h3>Our Mission</h3>
+                    <p>Our approach revolves around integrating resources, expertise, and strategies to deliver impactful results. We believe in the power of collaboration to transform challenges into opportunities and drive sustainable growth for all our partners.</p>
                 </div>
             </div>
         </div>
@@ -100,22 +100,22 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="box-right">
-                        <h3>3.2k</h3>
-                        <p>Successful Projects</p>
+                        <h3>500+</h3>
+                        <p>Collaborative Partnerships</p>
                     </div>
                     <div class="box-right">
-                        <h3>22+</h3>
-                        <p>industries served</p>
+                        <h3>25+</h3>
+                        <p>Industries Connected</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="box-left">
-                        <h3>2000+</h3>
-                        <p>Happy Clients</p>
+                        <h3>1500+</h3>
+                        <p>Successful Projects</p>
                     </div>
                     <div class="box-left">
-                        <h3>07+</h3>
-                        <p>Years of Experience</p>
+                        <h3>10+</h3>
+                        <p>Years of Collaboration</p>
                     </div>
                 </div>
             </div>
@@ -126,11 +126,11 @@
     <div class="hero-main-rp container">
         <div class="row">
             <div class="col-md-6">
-                <h2><img src="assets/images/Group 198.png" alt="commitment to diversity"><br>Commitment to Diversity</h2>
-                <p>Design Layer Agency has an unwavering commitment to diversity. Unlike other agencies, our commitment is not rhetoric, but rather a central component that makes up the essence of our company. Working with a diverse team, as it relates to age, gender, and ethnicity, has played a key role in our firm's success.
+                <h2><img src="assets/images/Group 198.png" alt="commitment to diversity"><br>The Power of Collaboration</h2>
+                <p>Collaboration is at the heart of everything we do. By pooling resources and exchanging ideas, businesses can develop creative solutions that drive industry advancements. Collaborative efforts open doors to new markets, customer segments, and professional relationships that fuel growth.
                     <br>
                     <br>
-                    As a creative agency, we strongly believe in diversity as it relates to race, but diversity in thought. This is why we prioritize hiring talent from various backgrounds, ages, and genders, as it fosters different viewpoints and cultivates creative synergy.
+                    Sharing infrastructure, marketing budgets, and operational resources reduces costs while increasing scalability. Partnerships enable faster product development, streamlined workflows, and quicker time-to-market for new offerings. Working together allows businesses to stay ahead of market trends by combining strengths and leveraging collective capabilities.
                 </p>
             </div>
         </div>
@@ -138,30 +138,30 @@
 </section>
 <section class="about-section-six">
     <div class="hero-main-rp container">
-        <h2><img src="assets/images/Group 198.png" alt="digital agency" class="lazy"><br>How we think</h2>
+        <h2><img src="assets/images/Group 198.png" alt="digital agency" class="lazy"><br>What We Offer</h2>
         <div class="row">
             <div class="col-md-3">
                 <div class="box box-one">
                     <h3>1</h3>
-                    <p>Clients are friends. Each of their problems are ours.</p>
+                    <p>Build strategic alliances to expand market reach.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="box box-two">
                     <h3>2</h3>
-                    <p>We don’t assume. We arrive at solutions through careful inferences.</p>
+                    <p>Streamline supply chains for enhanced efficiency.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="box box-three">
                     <h3>3</h3>
-                    <p>Ownership and accountability are our everyday practice.</p>
+                    <p>Empower businesses to resell our digital services.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="box box-four">
                     <h3>4</h3>
-                    <p>100+ digital talents care about your project.</p>
+                    <p>Facilitate bulk purchasing and distribution.</p>
                 </div>
             </div>
         </div>
@@ -169,25 +169,25 @@
             <div class="col-md-3">
                 <div class="box box-five">
                     <h3>5</h3>
-                    <p>Expect design thinking, creativity and problem solving.</p>
+                    <p>Offer customized solutions under your brand.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="box box-six">
                     <h3>6</h3>
-                    <p>We know how to play digital for brand value.</p>
+                    <p>Enhance brand visibility and engagement.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="box box-seven">
                     <h3>7</h3>
-                    <p>We're a consumer engagement one-stop shop.</p>
+                    <p>Ensure measurable business results.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="box box-eight">
                     <h3>8</h3>
-                    <p>We've got an eye for functional design and impactful content.</p>
+                    <p>Seamlessly connect technologies and expertise.</p>
                 </div>
             </div>
         </div>
@@ -197,11 +197,11 @@
     <div class="hero-main-rp container">
         <div class="row">
             <div class="col-md-12">
-                <h2><img src="assets/images/Group 198.png" alt="careers" class="lazy"><br>Careers</h2>
-                <p>We are always seeking talented people with passion, experience and the ability to drive value for our clients.
+                <h2><img src="assets/images/Group 198.png" alt="careers" class="lazy"><br>Join Our Collaborative Network</h2>
+                <p>FIVEPCMIRACLE LIMITED invites you to be part of a collaborative journey that transforms challenges into opportunities. Whether you're looking to expand your market reach, enhance your brand value, or streamline operations, we have the expertise and network to make it happen.
                     <br>
                     <br>
-                    If you’re interested in joining the design layer agency team,<br> send your resume and cover letter to <a href="mailto:jobs@designlayeragency.com">jobs@designlayeragency.com</a>
+                    Let's work together—because at FIVEPCMIRACLE LIMITED, collaboration isn't just a strategy; it's the foundation of success. Contact us at <a href="mailto:partnerships@fivepcmiracle.com">partnerships@fivepcmiracle.com</a>
                 </p>
                 <img src="assets/images/career.png" alt="join our team" class="carer-img lazy">
             </div>

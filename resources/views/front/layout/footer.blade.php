@@ -27,15 +27,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <a href="/"><img src="{{ asset('assets/images/logo.svg') }}"
-                            alt="Digital Templates 24" class="lazy"></a>
+                    <a href="/"><img src="{{ asset('assets/images/logo.png') }}"
+                            alt="Digital Templates 24" class="lazy" width="300"></a>
                     <ul class="social-footer">
                         <li><a target="_blank" href="https://www.facebook.com/designlayeragency.dla"><img
                                     src="{{ asset('assets/images/facebook.svg') }}" alt="facebook"
                                     class="lazy"></a></li>
                         <li><a target="_blank"
                                 href="https://www.linkedin.com/company/design-layer-agency-dla/"><img
-                                    src="{{ asset('assets/images/linkdin.svg') }}" alt="linkedin"
+                                    src="{{ asset('assets/images/linkedin.svg') }}" alt="linkedin"
                                     class="lazy"></a></li>
                         <li><a target="_blank" href="#"><img
                                     src="{{ asset('assets/images/instagram.svg') }}" alt="instagram"
