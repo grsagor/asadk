@@ -1,4 +1,6 @@
 @extends('front.layout.app')
+@section('title', 'Portfolio')
+
 @section('content')
     <section class="inner-banner work-banner">
         <div class="hero-main-rp container">

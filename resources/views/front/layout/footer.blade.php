@@ -64,11 +64,11 @@
                 <div class="col-lg-3">
                     <h3>quick links</h3>
                     <ul class="footer-links">
-                        <li><a href="/">home </a></li>
-                        <li><a href="portfolio/">Portfolio</a></li>
-                        <li><a href="services/">Services</a></li>
-                        <li><a href="about/">About</a></li>
-                        <li><a href="contact/">Contact</a></li>
+                        <li><a href="{{ route('front.index') }}">home </a></li>
+                        <li><a href="{{ route('front.portfolio') }}">Portfolio</a></li>
+                        <li><a href="{{ route('front.services') }}">Services</a></li>
+                        <li><a href="{{ route('front.about') }}">About</a></li>
+                        <li><a href="{{ route('front.contact') }}">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">

@@ -7,7 +7,7 @@
             </div>
             <div class="main-nav">
                 <ul class="nav navbar-nav">
-                    <li class="btn-container btn-blue"><a href="contact/">get in touch <img
+                    <li class="btn-container btn-blue"><a href="{{ route('front.contact') }}">get in touch <img
                                 src="{{ asset('assets/images/arrow.png') }}" alt="get in touch" class="lazy"></a>
                     </li>
                 </ul>
@@ -34,12 +34,12 @@
                 </div>
                 <div class="menu-nav">
                     <ul class="fancy-menu ">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/portfolio/">portfolio</a></li>
-                        <li><a href="/services/">services</a></li>
-                        <li><a href="/about/">about</a></li>
+                        <li><a href="{{ route('front.index') }}">Home</a></li>
+                        <li><a href="{{ route('front.portfolio') }}">portfolio</a></li>
+                        <li><a href="{{ route('front.services') }}">services</a></li>
+                        <li><a href="{{ route('front.about') }}">about</a></li>
                         <!-- <li><a href="/blogs/">digital trends</a></li> -->
-                        <li><a href="contact/">contact</a></li>
+                        <li><a href="{{ route('front.contact') }}">contact</a></li>
                     </ul>
                 </div>
                 <div class="social-icons-head">
@@ -48,8 +48,8 @@
                                     src="{{ asset('assets/images/facebook-head.svg') }}" alt="facebook"
                                     class="lazy"></a></li>
                         <li><a target="_blank" href="https://www.linkedin.com/company/83519829/"><img
-                                    src="{{ asset('assets/images/linkedin.svg') }}" alt="linkedin"
-                                    class="lazy"></a></li>
+                                    src="{{ asset('assets/images/linkedin.svg') }}" alt="linkedin" class="lazy"></a>
+                        </li>
                         <li><a target="_blank" href="https://www.instagram.com/designlayeragency/"><img
                                     src="{{ asset('assets/images/instagram.svg') }}" alt="instagram"
                                     class="lazy"></a></li>

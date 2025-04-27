@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="download_date" content="2025-04-15T19:08:04.561Z" />
-    <title>Digital Templates 24 | Web Design &amp; Digital Marketing Agency</title>
+    <title>@yield('title') | 5XPCMIRACLE</title>
     <meta name="description"
         content="Digital Templates 24 is been in the industry for an extended period of time, achieving the trust of different brands and the undisputed title of the best digital &amp; designing agency.">
 
