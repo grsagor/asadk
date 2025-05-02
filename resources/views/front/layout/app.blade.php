@@ -39,13 +39,15 @@
     </style>
     <base href="/">
     <link rel="canonical" href="https://www.designlayeragency.com/">
-    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="icon" href="{{ asset('assets/images/logo.png') }}">
     <!-- <link href="../assets/css/fontawesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ asset('front/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/stylesheet.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/custom.css') }}">
 
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TYD85VSV1M"></script>
@@ -77,6 +79,7 @@
     </div>
     
     @include('front.layout.header')
+    @include('front.layout.menu')
     @yield('content')
     @include('front.layout.footer')
 

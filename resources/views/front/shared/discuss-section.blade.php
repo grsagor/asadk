@@ -5,14 +5,13 @@
             <div class="col-lg-10 col-md-12">
                 <h2 class="animate-in-future">
                     <span style="color: #2bc4f7; font-size: 23px; display: block; margin-bottom: 10px;">
-                        Ready to
-                        Unlock Your Business Potential?</span>
-                    Join FIVEPCMIRACLE LIMITED for Collaborative Success
+                        Join Us in Building the Future</span>
+                    FIVEPCMIRACLE invites you to be part of a collaborative journey that transforms challenges into opportunities. Whether you’re looking to expand your market reach, enhance your brand value, or streamline operations, we have the expertise and network to make it happen.
                 </h2>
             </div>
             <div class="col-lg-2 col-md-12">
                 <div class="btn-container btn-pirple chat">
-                    <a href="javascript:void(Tawk_API.toggle())">Collaborate Now<img
+                    <a href="javascript:void(Tawk_API.toggle())">Let’s work together—because at FIVEPCMIRACLE, collaboration isn’t just a strategy; it’s the foundation of success.<img
                             src="{{ asset('assets/images/arrow2.svg') }}" class="lazy" alt="start partnership"></a>
                 </div>
             </div>

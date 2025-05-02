@@ -1,0 +1,23 @@
+.h-100 {
+    height: 100% !important;
+}
+.d-flex {
+    display: flex!important;
+}
+.flex-column {
+    flex-direction: column!important;
+}
+.flex-grow-1 {
+    flex-grow: 1!important;
+}
+.overflow-y-auto {
+    overflow-y: auto!important;
+}
+
+.submenu {
+    list-style: none;
+}
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse!important;
+}

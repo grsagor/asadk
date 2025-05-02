@@ -1,6 +1,6 @@
 
 <footer class="main-footer">
-    <div class="footer-row1">
+    {{-- <div class="footer-row1">
         <div class="container">
             <h2>Industry Recognition & Certifications</h2>
             <div class="row">
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="footer-row2">
         <div class="container">
             <div class="row">

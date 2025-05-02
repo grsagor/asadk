@@ -18,7 +18,8 @@
                                         <li>Shared Growth</li>
                                     </ul>
                                     <h3>Channel Partner Program</h3>
-                                    <p>Forge powerful alliances to access new markets and grow together through collaborative ventures.</p>
+                                    <p>Purpose: Build strategic alliances with businesses to expand market reach.</p>
+                                    <p>Benefits: Partners gain access to our resources, expertise, and networks while sharing in the profits of joint ventures.</p>
                                     <a href="javascript:;" class="btn-website">Learn More<img
                                             src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
                                             alt="qwqrfsf"></a>
@@ -45,7 +46,8 @@
                                         <li>Optimization</li>
                                     </ul>
                                     <h3>Distribution Projects</h3>
-                                    <p>Connect manufacturers with distributors to enhance efficiency and reduce costs across the supply chain.</p>
+                                    <p>Purpose: Streamline supply chains by connecting manufacturers with distributors.</p>
+                                    <p>Benefits: Enhanced efficiency and reduced costs through optimized logistics and shared infrastructure.</p>
                                     <a href="https://www.viator.com/" class="btn-website">Learn More<img
                                             src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
                                             alt="qwqrfsf"></a>
@@ -72,8 +74,9 @@
                                         <li>Brand Identity</li>
                                         <li>Customer Loyalty</li>
                                     </ul>
-                                    <h3>White Label Solutions</h3>
-                                    <p>Offer customized digital services under your brand and boost recognition without development overhead.</p>
+                                    <h3>White Label Branding Services</h3>
+                                    <p>Purpose: Enable businesses to offer customized digital solutions under their own brand identity.</p>
+                                    <p>Benefits: Increased brand recognition and customer loyalty without the overhead of product development.</p>
                                     <a href="https://www.skullcandy.com/" class="btn-website">Learn More
                                         <img src="{{ asset('assets/images/whitearrow.svg') }}" class="lazy"
                                             alt="qwqrfsf"></a>
@@ -86,6 +89,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Additional slides can be added here following the same structure -->
             </div>
         </div>
         <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
