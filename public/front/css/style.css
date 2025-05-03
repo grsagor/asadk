@@ -28,7 +28,7 @@
 }
 
 body {
-    background-image: url("../../assets/images/body.png");
+    /* background-image: url("../../assets/images/body.png"); */
     background-color: var(--main-bg) !important;
     background-size: 100% 100%;
     background-repeat: repeat;

@@ -27,29 +27,29 @@
                             <a href="#" class="menu-toggle">Programs <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu"
                                 style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                <li><a href="#">Raise funds for your startup</a></li>
-                                <li><a href="#">Quest for Tech CoFounder</a></li>
-                                <li><a href="#">Business Franchise</a></li>
-                                <li><a href="#">Start and Launch your business worldwide</a></li>
-                                <li><a href="#">Grow your Startup</a></li>
-                                <li><a href="#">All-encompassing technical development for startups</a></li>
-                                <li><a href="#">Identify New Markets</a></li>
-                                <li><a href="#">Scheme for outcome</a></li>
-                                <li><a href="#">Growth Program multi-level</a></li>
-                                <li><a href="#">Start-up launchers</a></li>
-                                <li><a href="#">Do not let your idea die</a></li>
-                                <li><a href="#">Build a Virtual company</a></li>
-                                <li><a href="#">Swap work load</a></li>
-                                <li><a href="#">Borderless collaboration</a></li>
-                                <li><a href="#">Fully Collaborated Network</a></li>
-                                <li><a href="#">Mutually Beneficial Relationship</a></li>
-                                <li><a href="#">Resource sharing</a></li>
-                                <li><a href="#">General Facilities</a></li>
-                                <li><a href="#">Community based facilities</a></li>
-                                <li><a href="#">Joint Ownership</a></li>
-                                <li><a href="#">Learning Management Solution</a></li>
-                                <li><a href="#">Free Education Program</a></li>
-                                <li><a href="#">Build your own Umbrella</a></li>
+                                <li><a href="/programs/raise-fund">Raise funds for your startup</a></li>
+                                <li><a href="/programs/tech-cofounder">Quest for Tech CoFounder</a></li>
+                                <li><a href="/programs/franchise">Business Franchise</a></li>
+                                <li><a href="/programs/launch-business">Start and Launch your business worldwide</a></li>
+                                <li><a href="/programs/grow-startup">Grow your Startup</a></li>
+                                <li><a href="/programs/technical-development">All-encompassing technical development for startups</a></li>
+                                <li><a href="/programs/new-markets">Identify New Markets</a></li>
+                                <li><a href="/programs/scheme-outcome">Scheme for outcome</a></li>
+                                <li><a href="/programs/growth-program">Growth Program multi-level</a></li>
+                                <li><a href="/programs/startup-launchers">Start-up launchers</a></li>
+                                <li><a href="/programs/idea-survival">Do not let your idea die</a></li>
+                                <li><a href="/programs/virtual-company">Build a Virtual company</a></li>
+                                <li><a href="/programs/workload-swap">Swap work load</a></li>
+                                <li><a href="/programs/collaboration">Borderless collaboration</a></li>
+                                <li><a href="/programs/network">Fully Collaborated Network</a></li>
+                                <li><a href="/programs/mutual-relationship">Mutually Beneficial Relationship</a></li>
+                                <li><a href="/programs/resource-sharing">Resource sharing</a></li>
+                                <li><a href="/programs/general-facilities">General Facilities</a></li>
+                                <li><a href="/programs/community-facilities">Community based facilities</a></li>
+                                <li><a href="/programs/joint-ownership">Joint Ownership</a></li>
+                                <li><a href="/programs/lms">Learning Management Solution</a></li>
+                                <li><a href="/programs/free-education">Free Education Program</a></li>
+                                <li><a href="/programs/umbrella">Build your own Umbrella</a></li>
                             </ul>
                         </li>
 
@@ -59,40 +59,40 @@
                             <a href="#" class="menu-toggle">Services <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu"
                                 style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                <li><a href="#">Talk to SME - Consultation</a></li>
-                                <li><a href="#">Business Plans for everyone</a></li>
-                                <li><a href="#">Design and Development Management</a></li>
+                                <li><a href="/services/talk-to-sme">Talk to SME - Consultation</a></li>
+                                <li><a href="/services/business-plans">Business Plans for everyone</a></li>
+                                <li><a href="/services/design-development">Design and Development Management</a></li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Managed Services <i
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Collaboration as a service</a></li>
-                                        <li><a href="#">Marketing as a Service</a></li>
-                                        <li><a href="#">Technology as a Service</a></li>
-                                        <li><a href="#">Sales as a Service</a></li>
-                                        <li><a href="#">Maintenance as a Service</a></li>
-                                        <li><a href="#">Software as a Service</a></li>
-                                        <li><a href="#">Workforce as a Service</a></li>
-                                        <li><a href="#">Work Swap as a Service</a></li>
-                                        <li><a href="#">Outsourcing as a Service</a></li>
-                                        <li><a href="#">Technopreneur as a service</a></li>
-                                        <li><a href="#">CTO as a Service</a></li>
-                                        <li><a href="#">Teams as a Service</a></li>
+                                        <li><a href="/services/managed-services/collaboration">Collaboration as a service</a></li>
+                                        <li><a href="/services/managed-services/marketing">Marketing as a Service</a></li>
+                                        <li><a href="/services/managed-services/technology">Technology as a Service</a></li>
+                                        <li><a href="/services/managed-services/sales">Sales as a Service</a></li>
+                                        <li><a href="/services/managed-services/maintenance">Maintenance as a Service</a></li>
+                                        <li><a href="/services/managed-services/software">Software as a Service</a></li>
+                                        <li><a href="/services/managed-services/workforce">Workforce as a Service</a></li>
+                                        <li><a href="/services/managed-services/workswap">Work Swap as a Service</a></li>
+                                        <li><a href="/services/managed-services/outsourcing">Outsourcing as a Service</a></li>
+                                        <li><a href="/services/managed-services/technopreneur">Technopreneur as a service</a></li>
+                                        <li><a href="/services/managed-services/cto">CTO as a Service</a></li>
+                                        <li><a href="/services/managed-services/teams">Teams as a Service</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Fully Managed Services</a></li>
-                                <li><a href="#">Business Health Checkup</a></li>
-                                <li><a href="#">Supervision and Reporting Services</a></li>
+                                <li><a href="/services/fully-managed">Fully Managed Services</a></li>
+                                <li><a href="/services/business-health-checkup">Business Health Checkup</a></li>
+                                <li><a href="/services/supervision-reporting">Supervision and Reporting Services</a></li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Funding Sources <i
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Venture Capital Funding</a></li>
-                                        <li><a href="#">Startup Business Loans</a></li>
-                                        <li><a href="#">Startup Grants</a></li>
-                                        <li><a href="#">Crowdfunding Platforms</a></li>
+                                        <li><a href="/services/funding-sources/venture-capital">Venture Capital Funding</a></li>
+                                        <li><a href="/services/funding-sources/business-loans">Startup Business Loans</a></li>
+                                        <li><a href="/services/funding-sources/grants">Startup Grants</a></li>
+                                        <li><a href="/services/funding-sources/crowdfunding">Crowdfunding Platforms</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -100,12 +100,12 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Advertisement Projects</a></li>
-                                        <li><a href="#">Contact Center Projects</a></li>
-                                        <li><a href="#">SMB Startups</a></li>
-                                        <li><a href="#">Education empowerment</a></li>
-                                        <li><a href="#">Digital Space projects</a></li>
-                                        <li><a href="#">E-commerce at its best</a></li>
+                                        <li><a href="/services/funding-for/advertisement">Advertisement Projects</a></li>
+                                        <li><a href="/services/funding-for/contact-center">Contact Center Projects</a></li>
+                                        <li><a href="/services/funding-for/smb-startups">SMB Startups</a></li>
+                                        <li><a href="/services/funding-for/education">Education empowerment</a></li>
+                                        <li><a href="/services/funding-for/digital-space">Digital Space projects</a></li>
+                                        <li><a href="/services/funding-for/ecommerce">E-commerce at its best</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -113,10 +113,10 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Startup Valuation</a></li>
-                                        <li><a href="#">Planning for Raising Capital</a></li>
-                                        <li><a href="#">Negotiations with VCs</a></li>
-                                        <li><a href="#">Pitch your Startup</a></li>
+                                        <li><a href="/services/funding-steps/valuation">Startup Valuation</a></li>
+                                        <li><a href="/services/funding-steps/planning">Planning for Raising Capital</a></li>
+                                        <li><a href="/services/funding-steps/negotiations">Negotiations with VCs</a></li>
+                                        <li><a href="/services/funding-steps/pitch">Pitch your Startup</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -124,8 +124,8 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Funding Tech Startups</a></li>
-                                        <li><a href="#">Business Growth Capital</a></li>
+                                        <li><a href="/services/fund-your-startup/tech-startups">Funding Tech Startups</a></li>
+                                        <li><a href="/services/fund-your-startup/business-growth">Business Growth Capital</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -133,9 +133,9 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Write your Business Plan</a></li>
-                                        <li><a href="#">Startup Pitch Deck</a></li>
-                                        <li><a href="#">Financial Speculation</a></li>
+                                        <li><a href="/services/review-materials/business-plan">Write your Business Plan</a></li>
+                                        <li><a href="/services/review-materials/pitch-deck">Startup Pitch Deck</a></li>
+                                        <li><a href="/services/review-materials/financial">Financial Speculation</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -143,12 +143,12 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Early Funding</a></li>
-                                        <li><a href="#">Series A, B and C Funding</a></li>
+                                        <li><a href="/services/funding-stages/early">Early Funding</a></li>
+                                        <li><a href="/services/funding-stages/series">Series A, B and C Funding</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Real Estate Funding</a></li>
-                                <li><a href="#">Real Estate Projects Funding</a></li>
+                                <li><a href="{{route('front.services.real-estate')}}">Real Estate Funding</a></li>
+                                <li><a href="{{route('front.services.real-estate-projects')}}">Real Estate Projects Funding</a></li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Business Empowerment <i
                                             class="fas fa-chevron-down"></i></a>

@@ -18,7 +18,83 @@ Route::controller(FrontendController::class)->group(function() {
     Route::get('/', 'index')->name('front.index');
     Route::get('/portfolio', 'portfolio')->name('front.portfolio');
     Route::get('/about', 'about')->name('front.about');
+    Route::get('/programs/raise-fund', 'programsRaiseFund')->name('front.programs.raise-fund');
+    Route::get('/programs/tech-cofounder', 'programstechCofounder')->name('front.programs.tech-cofounder');
+    Route::get('/programs/franchise', 'programsFranchise')->name('front.programs.franchise');
+    Route::get('/programs/launch-business', 'programsLaunchBusiness')->name('front.programs.launch-business');
+    Route::get('/programs/grow-startup', 'programsGrowStartup')->name('front.programs.grow-startup');
+    Route::get('/programs/technical-development', 'programsTechnicalDevelopment')->name('front.programs.technical-development');
+    Route::get('/programs/new-markets', 'programsNewMarkets')->name('front.programs.new-markets');
+    Route::get('/programs/scheme-outcome', 'programsSchemeOutcome')->name('front.programs.scheme-outcome');
+    Route::get('/programs/growth-program', 'programsGrowthProgram')->name('front.programs.growth-program');
+    Route::get('/programs/startup-launchers', 'programsStartupLaunchers')->name('front.programs.startup-launchers');
+    Route::get('/programs/idea-survival', 'programsIdeaSurvival')->name('front.programs.idea-survival');
+    Route::get('/programs/virtual-company', 'programsVirtualCompany')->name('front.programs.virtual-company');
+    Route::get('/programs/workload-swap', 'programsWorkloadSwap')->name('front.programs.workload-swap');
+    Route::get('/programs/collaboration', 'programsCollaboration')->name('front.programs.collaboration');
+    Route::get('/programs/network', 'programsNetwork')->name('front.programs.network');
+    Route::get('/programs/mutual-relationship', 'programsMutualRelationship')->name('front.programs.mutual-relationship');
+    Route::get('/programs/resource-sharing', 'programsResourceSharing')->name('front.programs.resource-sharing');
+    Route::get('/programs/general-facilities', 'programsGeneralFacilities')->name('front.programs.general-facilities');
+    Route::get('/programs/community-facilities', 'programsCommunityFacilities')->name('front.programs.community-facilities');
+    Route::get('/programs/joint-ownership', 'programsJointOwnership')->name('front.programs.joint-ownership');
+    Route::get('/programs/lms', 'programsLMS')->name('front.programs.lms');
+    Route::get('/programs/free-education', 'programsFreeEducation')->name('front.programs.free-education');
+    Route::get('/programs/umbrella', 'programsUmbrella')->name('front.programs.umbrella');
+
     Route::get('/services', 'services')->name('front.services');
+
+    Route::get('/services/talk-to-sme', 'servicesTalkToSme')->name('front.services.talk-to-sme');
+    Route::get('/services/business-plans', 'servicesBusinessPlans')->name('front.services.business-plans');
+    Route::get('/services/design-development', 'servicesDesignDevelopment')->name('front.services.design-development');
+    Route::get('/services/managed-services/collaboration', 'servicesCollaborationService')->name('front.services.managed-services.collaboration');
+    Route::get('/services/managed-services/marketing', 'servicesMarketingService')->name('front.services.managed-services.marketing');
+    Route::get('/services/managed-services/technology', 'servicesTechnologyService')->name('front.services.managed-services.technology');
+    Route::get('/services/managed-services/sales', 'servicesSalesService')->name('front.services.managed-services.sales');
+    Route::get('/services/managed-services/maintenance', 'servicesMaintenanceService')->name('front.services.managed-services.maintenance');
+    Route::get('/services/managed-services/software', 'servicesSoftwareService')->name('front.services.managed-services.software');
+    Route::get('/services/managed-services/workforce', 'servicesWorkforceService')->name('front.services.managed-services.workforce');
+    Route::get('/services/managed-services/workswap', 'servicesWorkSwapService')->name('front.services.managed-services.workswap');
+    Route::get('/services/managed-services/outsourcing', 'servicesOutsourcingService')->name('front.services.managed-services.outsourcing');
+    Route::get('/services/managed-services/technopreneur', 'servicesTechnopreneurService')->name('front.services.managed-services.technopreneur');
+    Route::get('/services/managed-services/cto', 'servicesCTOService')->name('front.services.managed-services.cto');
+    Route::get('/services/managed-services/teams', 'servicesTeamsService')->name('front.services.managed-services.teams');
+    Route::get('/services/funding-sources/venture-capital', 'servicesVentureCapital')->name('front.services.funding-sources.venture-capital');
+    Route::get('/services/funding-sources/business-loans', 'servicesBusinessLoans')->name('front.services.funding-sources.business-loans');
+    Route::get('/services/funding-sources/grants', 'servicesGrants')->name('front.services.funding-sources.grants');
+    Route::get('/services/funding-sources/crowdfunding', 'servicesCrowdfunding')->name('front.services.funding-sources.crowdfunding');
+    Route::get('/services/funding-for/advertisement', 'servicesFundingAdvertisement')->name('front.services.funding-for.advertisement');
+    Route::get('/services/funding-for/contact-center', 'servicesFundingContactCenter')->name('front.services.funding-for.contact-center');
+    Route::get('/services/funding-for/smb-startups', 'servicesFundingSmb')->name('front.services.funding-for.smb-startups');
+    Route::get('/services/funding-for/education', 'servicesFundingEducation')->name('front.services.funding-for.education');
+    Route::get('/services/funding-for/digital-space', 'servicesFundingDigital')->name('front.services.funding-for.digital-space');
+    Route::get('/services/funding-for/ecommerce', 'servicesFundingEcommerce')->name('front.services.funding-for.ecommerce');
+
+
+    Route::get('/services/funding-steps/valuation', 'servicesStartupValuation')->name('front.services.funding-steps.valuation');
+    Route::get('/services/funding-steps/planning', 'servicesPlanningCapital')->name('front.services.funding-steps.planning');
+    Route::get('/services/funding-steps/negotiations', 'servicesNegotiations')->name('front.services.funding-steps.negotiations');
+    Route::get('/services/funding-steps/pitch', 'servicesPitchStartup')->name('front.services.funding-steps.pitch');
+
+    Route::get('/services/fund-your-startup/tech-startups', 'servicesFundingTech')->name('front.services.fund-your-startup.tech-startups');
+    Route::get('/services/fund-your-startup/business-growth', 'servicesFundingGrowth')->name('front.services.fund-your-startup.business-growth');
+
+    Route::get('/services/review-materials/business-plan', 'servicesBusinessPlan')->name('front.services.review-materials.business-plan');
+    Route::get('/services/review-materials/pitch-deck', 'servicesPitchDeck')->name('front.services.review-materials.pitch-deck');
+    Route::get('/services/review-materials/financial', 'servicesFinancialSpeculation')->name('front.services.review-materials.financial');
+
+
+    Route::get('/services/funding-stages/early', 'servicesEarlyFunding')->name('front.services.funding-stages.early');
+    Route::get('/services/funding-stages/series', 'servicesSeriesFunding')->name('front.services.funding-stages.series');
+
+    Route::get('/services/real-estate', 'servicesrealEstate')->name('front.services.real-estate');
+    Route::get('/services/real-estate-projects', 'servicesrealEstateProjects')->name('front.services.real-estate-projects');
+
+
+    Route::get('/services/fully-managed', 'servicesFullyManaged')->name('front.services.fully-managed');
+    Route::get('/services/business-health-checkup', 'servicesBusinessHealthCheckup')->name('front.services.business-health-checkup');
+    Route::get('/services/supervision-reporting', 'servicesSupervisionReporting')->name('front.services.supervision-reporting');
+
     Route::get('/contact', 'contact')->name('front.contact');
     Route::post('/contact/submit', 'submitContact')->name('contact.submit');
     Route::get('/templates', 'templates')->name('front.templates');

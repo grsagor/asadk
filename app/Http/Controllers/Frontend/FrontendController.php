@@ -137,8 +137,211 @@ class FrontendController extends Controller
     public function about() {
         return view('front.pages.about.index');
     }
+    public function programsRaiseFund() {
+        return view('front.pages.programs.raise-fund');
+    }
+    public function programstechCofounder() {
+        return view('front.pages.programs.tech-cofounder');
+    }
+    public function programsFranchise() {
+        return view('front.pages.programs.franchise');
+    }
+    public function programsLaunchBusiness() {
+        return view('front.pages.programs.launch-business');
+    }
+    public function programsGrowStartup() {
+        return view('front.pages.programs.grow-startup');
+    }
+    public function programsTechnicalDevelopment() {
+        return view('front.pages.programs.technical-development');
+    }
+    public function programsNewMarkets() {
+        return view('front.pages.programs.new-markets');
+    }
+    public function programsSchemeOutcome() {
+        return view('front.pages.programs.scheme-outcome');
+    }
+    public function programsGrowthProgram() {
+        return view('front.pages.programs.growth-program');
+    }
+    public function programsStartupLaunchers() {
+        return view('front.pages.programs.startup-launchers');
+    }
+    public function programsIdeaSurvival() {
+        return view('front.pages.programs.idea-survival');
+    }
+    public function programsVirtualCompany() {
+        return view('front.pages.programs.virtual-company');
+    }
+    public function programsWorkloadSwap() {
+        return view('front.pages.programs.workload-swap');
+    }
+    public function programsCollaboration() {
+        return view('front.pages.programs.collaboration');
+    }
+    public function programsNetwork() {
+        return view('front.pages.programs.network');
+    }
+    public function programsMutualRelationship() {
+        return view('front.pages.programs.mutual-relationship');
+    }
+    public function programsResourceSharing() {
+        return view('front.pages.programs.resource-sharing');
+    }
+    public function programsGeneralFacilities() {
+        return view('front.pages.programs.general-facilities');
+    }
+    public function programsCommunityFacilities() {
+        return view('front.pages.programs.community-facilities');
+    }
+    public function programsJointOwnership() {
+        return view('front.pages.programs.joint-ownership');
+    }
+    public function programsLMS() {
+        return view('front.pages.programs.lms');
+    }
+    public function programsFreeEducation() {
+        return view('front.pages.programs.free-education');
+    }
+    public function programsUmbrella() {
+        return view('front.pages.programs.umbrella');
+    }
+
+
+
     public function services() {
         return view('front.pages.services.index');
+    }
+
+    public function servicesTalkToSme() {
+        return view('front.pages.services.talk-to-sme');
+    }
+    public function servicesBusinessPlans() {
+        return view('front.pages.services.business-plans');
+    }
+    public function servicesDesignDevelopment() {
+        return view('front.pages.services.design-development');
+    }
+    public function servicesCollaborationService() {
+        return view('front.pages.services.managed-services.collaboration');
+    }
+    public function servicesMarketingService() {
+        return view('front.pages.services.managed-services.marketing');
+    }
+    public function servicesTechnologyService() {
+        return view('front.pages.services.managed-services.technology');
+    }
+    public function servicesSalesService() {
+        return view('front.pages.services.managed-services.sales');
+    }
+    public function servicesMaintenanceService() {
+        return view('front.pages.services.managed-services.maintenance');
+    }
+    public function servicesSoftwareService() {
+        return view('front.pages.services.managed-services.software');
+    }
+    public function servicesWorkforceService() {
+        return view('front.pages.services.managed-services.workforce');
+    }
+    public function servicesWorkSwapService() {
+        return view('front.pages.services.managed-services.workswap');
+    }
+    public function servicesOutsourcingService() {
+        return view('front.pages.services.managed-services.outsourcing');
+    }
+    public function servicesTechnopreneurService() {
+        return view('front.pages.services.managed-services.technopreneur');
+    }
+    public function servicesCTOService() {
+        return view('front.pages.services.managed-services.cto');
+    }
+    public function servicesTeamsService() {
+        return view('front.pages.services.managed-services.teams');
+    }
+    public function servicesVentureCapital() {
+        return view('front.pages.services.funding-sources.venture-capital');
+    }
+    public function servicesBusinessLoans() {
+        return view('front.pages.services.funding-sources.business-loans');
+    }
+    public function servicesGrants() {
+        return view('front.pages.services.funding-sources.grants');
+    }
+    public function servicesCrowdfunding() {
+        return view('front.pages.services.funding-sources.crowdfunding');
+    }
+    public function servicesFundingAdvertisement() {
+        return view('front.pages.services.funding-for.advertisement');
+    }
+    public function servicesFundingContactCenter() {
+        return view('front.pages.services.funding-for.contact-center');
+    }
+    public function servicesFundingSmb() {
+        return view('front.pages.services.funding-for.smb-startups');
+    }
+    public function servicesFundingEducation() {
+        return view('front.pages.services.funding-for.education');
+    }
+    public function servicesFundingDigital() {
+        return view('front.pages.services.funding-for.digital-space');
+    }
+    public function servicesFundingEcommerce() {
+        return view('front.pages.services.funding-for.ecommerce');
+    }
+
+    public function servicesStartupValuation() {
+        return view('front.pages.services.funding-steps.valuation');
+    }
+    public function servicesPlanningCapital() {
+        return view('front.pages.services.funding-steps.planning');
+    }
+    public function servicesNegotiations() {
+        return view('front.pages.services.funding-steps.negotiations');
+    }
+    public function servicesPitchStartup() {
+        return view('front.pages.services.funding-steps.pitch');
+    }
+
+    public function servicesFundingTech() {
+        return view('front.pages.services.fund-your-startup.tech-startups');
+    }
+    public function servicesFundingGrowth() {
+        return view('front.pages.services.fund-your-startup.business-growth');
+    }
+
+    public function servicesBusinessPlan() {
+        return view('front.pages.services.review-materials.business-plan');
+    }
+    public function servicesPitchDeck() {
+        return view('front.pages.services.review-materials.pitch-deck');
+    }
+    public function servicesFinancialSpeculation() {
+        return view('front.pages.services.review-materials.financial');
+    }
+
+    public function servicesEarlyFunding() {
+        return view('front.pages.services.funding-stages.early');
+    }
+    public function servicesSeriesFunding() {
+        return view('front.pages.services.funding-stages.series');
+    }
+
+    public function servicesrealEstate() {
+        return view('front.pages.services.real-estate');
+    }
+    public function servicesrealEstateProjects() {
+        return view('front.pages.services.real-estate-projects');
+    }
+
+
+    public function servicesFullyManaged() {
+        return view('front.pages.services.fully-managed');
+    }
+    public function servicesBusinessHealthCheckup() {
+        return view('front.pages.services.business-health-checkup');
+    }
+    public function servicesSupervisionReporting() {
+        return view('front.pages.services.supervision-reporting');
     }
 
     public function contact() {

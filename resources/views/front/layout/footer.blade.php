@@ -72,17 +72,20 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h3><img src="{{ asset('assets/images/usa-flag.png') }}" alt="usa branch"
-                            class="lazy">USA Branch</h3>
-                    <p>Registered Office 450 South Orange Avenue, 7th Floor, Orlando, FL 32807</p>
+                    <h3>
+                        {{-- <img src="{{ asset('assets/images/usa-flag.png') }}" alt="usa branch"
+                            class="lazy"> --}}
+                            India Branch</h3>
+                    <p>16-10-190/1, Old Malakpet, Near Yashoda Hospital
+                        Hyderabad - 500036</p>
                     <a href="tel:+17327026913" class="cntct-footer">+1 (732) 702-6913</a>
                     <br>
-                    <h3><img src="{{ asset('assets/images/uk-flag.png') }}" alt="uk branch"
+                    {{-- <h3><img src="{{ asset('assets/images/uk-flag.png') }}" alt="uk branch"
                             class="lazy">UK Branch</h3>
                     <p>4 Mann Island, Liverpool L3 1BP, UK</p>
                     <a href="tel:+447835249706" class="cntct-footer">+44 7835-249706</a>
                     <a href="mailto:info@designlayeragency.com"
-                        class="cntct-footer">info@designlayeragency.com</a>
+                        class="cntct-footer">info@designlayeragency.com</a> --}}
                 </div>
             </div>
         </div>
