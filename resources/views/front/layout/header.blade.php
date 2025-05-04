@@ -3,7 +3,7 @@
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.png') }}"
-                        alt="dDigital Templates 24" class="lazy" width="300"></a>
+                        alt="dDigital Templates 24" class="lazy" width="100" height="80"></a>
             </div>
             <div class="main-nav">
                 <ul class="nav navbar-nav">

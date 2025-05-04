@@ -16,7 +16,7 @@
             <div class="col-md-12 h-100 d-flex flex-column">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.png') }}"
-                            alt="navigation" class="lazy" width="300"></a>
+                            alt="navigation" class="lazy" width="100" height="80"></a>
                 </div>
                 <div class="menu-nav flex-grow-1 overflow-y-auto">
                     <ul class="fancy-menu ">
