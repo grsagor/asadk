@@ -90,6 +90,60 @@ Route::controller(FrontendController::class)->group(function() {
     Route::get('/services/real-estate', 'servicesrealEstate')->name('front.services.real-estate');
     Route::get('/services/real-estate-projects', 'servicesrealEstateProjects')->name('front.services.real-estate-projects');
 
+    Route::get('/services/business-empowerment/business-hacks', 'servicesBusinessHacks')->name('front.services.business-empowerment.business-hacks');
+    Route::get('/services/business-empowerment/hotel-development', 'servicesHotelDevelopment')->name('front.services.business-empowerment.hotel-development');
+    Route::get('/services/business-empowerment/schools-development', 'servicesSchoolsDevelopment')->name('front.services.business-empowerment.schools-development');
+    Route::get('/services/business-empowerment/healthcare-development', 'servicesHealthcareDevelopment')->name('front.services.business-empowerment.healthcare-development');
+
+    Route::get('/services/franchise-services/franchise-opportunities', 'servicesFranchiseOpportunities')->name('front.services.franchise-services.franchise-opportunities');
+    Route::get('/services/franchise-services/franchise-development', 'servicesFranchiseDevelopment')->name('front.services.franchise-services.franchise-development');
+    Route::get('/services/franchise-services/franchise-guidance', 'servicesFranchiseGuidance')->name('front.services.franchise-services.franchise-guidance');
+    Route::get('/services/franchise-services/franchise-trends', 'servicesFranchiseTrends')->name('front.services.franchise-services.franchise-trends');
+    Route::get('/services/franchise-services/franchise-models', 'servicesFranchiseModels')->name('front.services.franchise-services.franchise-models');
+    Route::get('/services/franchise-services/franchise-revenue', 'servicesFranchiseRevenue')->name('front.services.franchise-services.franchise-revenue');
+    Route::get('/services/franchise-services/franchise-expansion', 'servicesFranchiseExpansion')->name('front.services.franchise-services.franchise-expansion');
+    Route::get('/services/franchise-services/franchise-plan', 'servicesFranchisePlan')->name('front.services.franchise-services.franchise-plan');
+
+    Route::get('/services/idea-validation/proof-of-concept', 'servicesProofOfConcept')->name('front.services.idea-validation.proof-of-concept');
+    Route::get('/services/idea-validation/software-prototype', 'servicesSoftwarePrototype')->name('front.services.idea-validation.software-prototype');
+    Route::get('/services/idea-validation/mvp-development', 'servicesMVPDevelopment')->name('front.services.idea-validation.mvp-development');
+    Route::get('/services/idea-validation/product-costing', 'servicesProductCosting')->name('front.services.idea-validation.product-costing');
+
+    Route::get('/services/tech-services/software-design', 'servicesSoftwareDesign')->name('front.services.tech-services.software-design');
+    Route::get('/services/tech-services/web-applications', 'servicesWebApplications')->name('front.services.tech-services.web-applications');
+    Route::get('/services/tech-services/mobile-design', 'servicesMobileDesign')->name('front.services.tech-services.mobile-design');
+
+    Route::get('/services/sales-services/sales-service', 'servicesSalesAsService')->name('front.services.sales-services.sales-service');
+    Route::get('/services/sales-services/sales-consulting', 'servicesSalesConsulting')->name('front.services.sales-services.sales-consulting');
+
+    Route::get('/services/step-up-services/business-development-services', 'servicesBusinessDevelopmentServices')->name('front.services.step-up-services.business-development-services');
+    Route::get('/services/step-up-services/business-growth', 'servicesBusinessGrowth')->name('front.services.step-up-services.business-growth');
+    Route::get('/services/step-up-services/business-development', 'servicesBusinessDevelopment')->name('front.services.step-up-services.business-development');
+    Route::get('/services/step-up-services/market-research', 'servicesMarketResearch')->name('front.services.step-up-services.market-research');
+    
+    Route::get('/community/our-team/get-to-know', 'communityGetToKnow')->name('front.community.our-team.get-to-know');
+
+    Route::get('/community/Entrepreneur/worked-with', 'communityEntrepreneurWorkedWith')->name('front.community.Entrepreneur.worked-with');
+    Route::get('/community/Entrepreneur/network', 'communityEntrepreneurNetwork')->name('front.community.Entrepreneur.network');
+    Route::get('/community/Entrepreneur/join', 'communityJoinEntrepreneur')->name('front.community.Entrepreneur.join');
+    Route::get('/community/Entrepreneur/women-support', 'communitySupportWomenEntrepreneurs')->name('front.community.Entrepreneur.women-support');
+    Route::get('/community/Entrepreneur/female-founder', 'communityFemaleFounder')->name('front.community.Entrepreneur.female-founder');
+
+    Route::get('/community/Partner/partnerships-more', 'communityPartnershipsMore')->name('front.community.Partner.partnerships-more');
+    Route::get('/community/Partner/partners-network', 'communityPartnersNetwork')->name('front.community.Partner.partners-network');
+    Route::get('/community/Partner/join-as-partner', 'communityJoinAsPartner')->name('front.community.Partner.join-as-partner');
+    Route::get('/community/Partner/global-network', 'communityGlobalNetwork')->name('front.community.Partner.global-network');
+    Route::get('/community/Partner/representatives-network', 'communityRepresentativesNetwork')->name('front.community.Partner.representatives-network');
+    Route::get('/community/Partner/join-as-representative', 'communityJoinAsRepresentative')->name('front.community.Partner.join-as-representative');
+
+    Route::get('/community/investor/our-investors-network', 'communityOurInvestorsNetwork')->name('front.community.investor.our-investors-network');
+    Route::get('/community/investor/investors-network', 'communityInvestorsNetwork')->name('front.community.investor.investors-network');
+    Route::get('/community/investor/join-as-investor', 'communityJoinAsInvestor')->name('front.community.investor.join-as-investor');
+
+    Route::get('/community/mentor/our-mentors', 'communityOurMentors')->name('front.community.mentor.our-mentors');
+    Route::get('/community/mentor/join-as-mentor', 'communityJoinAsMentor')->name('front.community.mentor.join-as-mentor');
+    Route::get('/community/mentor/find-mentor', 'communityFindMentor')->name('front.community.mentor.find-mentor');
+
 
     Route::get('/services/fully-managed', 'servicesFullyManaged')->name('front.services.fully-managed');
     Route::get('/services/business-health-checkup', 'servicesBusinessHealthCheckup')->name('front.services.business-health-checkup');

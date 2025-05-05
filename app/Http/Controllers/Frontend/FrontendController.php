@@ -333,6 +333,146 @@ class FrontendController extends Controller
         return view('front.pages.services.real-estate-projects');
     }
 
+    public function servicesBusinessHacks() {
+        return view('front.pages.services.business-empowerment.business-hacks');
+    }
+    public function servicesHotelDevelopment() {
+        return view('front.pages.services.business-empowerment.hotel-development');
+    }
+    public function servicesSchoolsDevelopment() {
+        return view('front.pages.services.business-empowerment.schools-development');
+    }
+    public function servicesHealthcareDevelopment() {
+        return view('front.pages.services.business-empowerment.healthcare-development');
+    }
+
+    public function servicesFranchiseOpportunities() {
+        return view('front.pages.services.franchise-services.franchise-opportunities');
+    }
+    public function servicesFranchiseDevelopment() {
+        return view('front.pages.services.franchise-services.franchise-development');
+    }
+    public function servicesFranchiseGuidance() {
+        return view('front.pages.services.franchise-services.franchise-guidance');
+    }
+    public function servicesFranchiseTrends() {
+        return view('front.pages.services.franchise-services.franchise-trends');
+    }
+    public function servicesFranchiseModels() {
+        return view('front.pages.services.franchise-services.franchise-models');
+    }
+    public function servicesFranchiseRevenue() {
+        return view('front.pages.services.franchise-services.franchise-revenue');
+    }
+    public function servicesFranchiseExpansion() {
+        return view('front.pages.services.franchise-services.franchise-expansion');
+    }
+    public function servicesFranchisePlan() {
+        return view('front.pages.services.franchise-services.franchise-plan');
+    }
+
+    public function servicesProofOfConcept() {
+        return view('front.pages.services.idea-validation.proof-of-concept');
+    }
+    public function servicesSoftwarePrototype() {
+        return view('front.pages.services.idea-validation.software-prototype');
+    }
+    public function servicesMVPDevelopment() {
+        return view('front.pages.services.idea-validation.mvp-development');
+    }
+    public function servicesProductCosting() {
+        return view('front.pages.services.idea-validation.product-costing');
+    }
+
+    public function servicesSoftwareDesign() {
+        return view('front.pages.services.tech-services.software-design');
+    }
+    public function servicesWebApplications() {
+        return view('front.pages.services.tech-services.web-applications');
+    }
+    public function servicesMobileDesign() {
+        return view('front.pages.services.tech-services.mobile-design');
+    }
+
+    public function servicesSalesAsService() {
+        return view('front.pages.services.sales-services.sales-service');
+    }
+    public function servicesSalesConsulting() {
+        return view('front.pages.services.sales-services.sales-consulting');
+    }
+
+    public function servicesBusinessDevelopmentServices() {
+        return view('front.pages.services.step-up-services.business-development-services');
+    }
+    public function servicesBusinessGrowth() {
+        return view('front.pages.services.step-up-services.business-growth');
+    }
+    public function servicesBusinessDevelopment() {
+        return view('front.pages.services.step-up-services.business-development');
+    }
+    public function servicesMarketResearch() {
+        return view('front.pages.services.step-up-services.market-research');
+    }
+
+    public function communityGetToKnow() {
+        return view('front.pages.community.our-team.get-to-know');
+    }
+
+    public function communityEntrepreneurWorkedWith() {
+        return view('front.pages.community.Entrepreneur.worked-with');
+    }
+    public function communityEntrepreneurNetwork() {
+        return view('front.pages.community.Entrepreneur.network');
+    }
+    public function communityJoinEntrepreneur() {
+        return view('front.pages.community.Entrepreneur.join');
+    }
+    public function communitySupportWomenEntrepreneurs() {
+        return view('front.pages.community.Entrepreneur.women-support');
+    }
+    public function communityFemaleFounder() {
+        return view('front.pages.community.Entrepreneur.female-founder');
+    }
+
+    public function communityPartnershipsMore() {
+        return view('front.pages.community.Partner.partnerships-more');
+    }
+    public function communityPartnersNetwork() {
+        return view('front.pages.community.Partner.partners-network');
+    }
+    public function communityJoinAsPartner() {
+        return view('front.pages.community.Partner.join-as-partner');
+    }
+    public function communityGlobalNetwork() {
+        return view('front.pages.community.Partner.global-network');
+    }
+    public function communityRepresentativesNetwork() {
+        return view('front.pages.community.Partner.representatives-network');
+    }
+    public function communityJoinAsRepresentative() {
+        return view('front.pages.community.Partner.join-as-representative');
+    }
+
+    public function communityOurInvestorsNetwork() {
+        return view('front.pages.community.investor.our-investors-network');
+    }
+    public function communityInvestorsNetwork() {
+        return view('front.pages.community.investor.investors-network');
+    }
+    public function communityJoinAsInvestor() {
+        return view('front.pages.community.investor.join-as-investor');
+    }
+
+    public function communityOurMentors() {
+        return view('front.pages.community.mentor.our-mentors');
+    }
+    public function communityJoinAsMentor() {
+        return view('front.pages.community.mentor.join-as-mentor');
+    }
+    public function communityFindMentor() {
+        return view('front.pages.community.mentor.find-mentor');
+    }
+
 
     public function servicesFullyManaged() {
         return view('front.pages.services.fully-managed');
