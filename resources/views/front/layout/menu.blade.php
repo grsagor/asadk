@@ -16,7 +16,7 @@
             <div class="col-md-12 h-100 d-flex flex-column">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.png') }}"
-                            alt="navigation" class="lazy" width="300"></a>
+                            alt="navigation" class="lazy" width="100" height="80"></a>
                 </div>
                 <div class="menu-nav flex-grow-1 overflow-y-auto">
                     <ul class="fancy-menu ">
@@ -154,10 +154,10 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Business Hacks</a></li>
-                                        <li><a href="#">Hotel and Restaurant business development</a></li>
-                                        <li><a href="#">Schools business development</a></li>
-                                        <li><a href="#">Healthcare Facility development</a></li>
+                                        <li><a href="{{route('front.services.business-empowerment.business-hacks')}}">Business Hacks</a></li>
+                                        <li><a href="{{route('front.services.business-empowerment.hotel-development')}}">Hotel and Restaurant business development</a></li>
+                                        <li><a href="{{route('front.services.business-empowerment.schools-development')}}">Schools business development</a></li>
+                                        <li><a href="{{route('front.services.business-empowerment.healthcare-development')}}">Healthcare Facility development</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -165,14 +165,14 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Franchise Business Opportunities</a></li>
-                                        <li><a href="#">Franchise Business Development</a></li>
-                                        <li><a href="#">Franchise Establishment Guidance</a></li>
-                                        <li><a href="#">Franchise Market Trends</a></li>
-                                        <li><a href="#">Franchise Business Models</a></li>
-                                        <li><a href="#">Franchise Revenue Generation</a></li>
-                                        <li><a href="#">Franchise Expansion Strategies</a></li>
-                                        <li><a href="#">Franchise Business Plan Development</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-opportunities')}}">Franchise Business Opportunities</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-development')}}">Franchise Business Development</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-guidance')}}">Franchise Establishment Guidance</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-trends')}}">Franchise Market Trends</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-models')}}">Franchise Business Models</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-revenue')}}">Franchise Revenue Generation</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-expansion')}}">Franchise Expansion Strategies</a></li>
+                                        <li><a href="{{route('front.services.franchise-services.franchise-plan')}}">Franchise Business Plan Development</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -180,10 +180,10 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Proof of Concept</a></li>
-                                        <li><a href="#">Software Prototype</a></li>
-                                        <li><a href="#">MVP Development</a></li>
-                                        <li><a href="#">Product Costing</a></li>
+                                        <li><a href="{{route('front.services.idea-validation.proof-of-concept')}}">Proof of Concept</a></li>
+                                        <li><a href="{{route('front.services.idea-validation.software-prototype')}}">Software Prototype</a></li>
+                                        <li><a href="{{route('front.services.idea-validation.mvp-development')}}">MVP Development</a></li>
+                                        <li><a href="{{route('front.services.idea-validation.product-costing')}}">Product Costing</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -191,9 +191,9 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Software Design and Development</a></li>
-                                        <li><a href="#">Web Site and Applications</a></li>
-                                        <li><a href="#">Mobile Application Design</a></li>
+                                        <li><a href="{{route('front.services.tech-services.software-design')}}">Software Design and Development</a></li>
+                                        <li><a href="{{route('front.services.tech-services.web-applications')}}">Web Site and Applications</a></li>
+                                        <li><a href="{{route('front.services.tech-services.mobile-design')}}">Mobile Application Design</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -201,8 +201,8 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Sales as a Service</a></li>
-                                        <li><a href="#">Sales Consulting</a></li>
+                                        <li><a href="{{route('front.services.sales-services.sales-service')}}">Sales as a Service</a></li>
+                                        <li><a href="{{route('front.services.sales-services.sales-consulting')}}">Sales Consulting</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -210,10 +210,10 @@
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Business Development Services</a></li>
-                                        <li><a href="#">Business Growth Services</a></li>
-                                        <li><a href="#">Business Development</a></li>
-                                        <li><a href="#">Market Research Services</a></li>
+                                        <li><a href="{{route('front.services.step-up-services.business-development-services')}}">Business Development Services</a></li>
+                                        <li><a href="{{route('front.services.step-up-services.business-growth')}}">Business Growth Services</a></li>
+                                        <li><a href="{{route('front.services.step-up-services.business-development')}}">Business Development</a></li>
+                                        <li><a href="{{route('front.services.step-up-services.market-research')}}">Market Research Services</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -228,48 +228,48 @@
                                     <a href="#" class="menu-toggle">Our Team <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Get to know our team!</a></li>
+                                        <li><a href="{{route('front.community.our-team.get-to-know')}}">Get to know our team!</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Entrepreneur <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Entrepreneurs we have worked with</a></li>
-                                        <li><a href="#">Our Entrepreneurs Network</a></li>
-                                        <li><a href="#">Join us as an Entrepreneur</a></li>
-                                        <li><a href="#">Supporting Women Entrepreneurs</a></li>
-                                        <li><a href="#">Join Us as a Female Founder</a></li>
+                                        <li><a href="{{route('front.community.Entrepreneur.worked-with')}}">Entrepreneurs we have worked with</a></li>
+                                        <li><a href="{{route('front.community.Entrepreneur.network')}}">Our Entrepreneurs Network</a></li>
+                                        <li><a href="{{route('front.community.Entrepreneur.join')}}">Join us as an Entrepreneur</a></li>
+                                        <li><a href="{{route('front.community.Entrepreneur.women-support')}}">Supporting Women Entrepreneurs</a></li>
+                                        <li><a href="{{route('front.community.Entrepreneur.female-founder')}}">Join Us as a Female Founder</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Partner <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Partnerships, co-investments, and more</a></li>
-                                        <li><a href="#">Our Partners Network</a></li>
-                                        <li><a href="#">Join us as a Partner</a></li>
-                                        <li><a href="#">Our global representatives network</a></li>
-                                        <li><a href="#">Representatives Network</a></li>
-                                        <li><a href="#">Join us as a Representative</a></li>
+                                        <li><a href="{{route('front.community.Partner.partnerships-more')}}">Partnerships, co-investments, and more</a></li>
+                                        <li><a href="{{route('front.community.Partner.partners-network')}}">Our Partners Network</a></li>
+                                        <li><a href="{{route('front.community.Partner.join-as-partner')}}">Join us as a Partner</a></li>
+                                        <li><a href="{{route('front.community.Partner.global-network')}}">Our global representatives network</a></li>
+                                        <li><a href="{{route('front.community.Partner.representatives-network')}}">Representatives Network</a></li>
+                                        <li><a href="{{route('front.community.Partner.join-as-representative')}}">Join us as a Representative</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Investor <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Our Investors network</a></li>
-                                        <li><a href="#">Investors Network</a></li>
-                                        <li><a href="#">Join us as an Investor</a></li>
+                                        <li><a href="{{route('front.community.investor.our-investors-network')}}">Our Investors network</a></li>
+                                        <li><a href="{{route('front.community.investor.investors-network')}}">Investors Network</a></li>
+                                        <li><a href="{{route('front.community.investor.join-as-investor')}}">Join us as an Investor</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Mentor <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Our Mentors Network</a></li>
-                                        <li><a href="#">Join us as a Mentor</a></li>
-                                        <li><a href="#">Find a mentor</a></li>
+                                        <li><a href="{{route('front.community.mentor.our-mentors')}}">Our Mentors Network</a></li>
+                                        <li><a href="{{route('front.community.mentor.join-as-mentor')}}">Join us as a Mentor</a></li>
+                                        <li><a href="{{route('front.community.mentor.find-mentor')}}">Find a mentor</a></li>
                                     </ul>
                                 </li>
                             </ul>

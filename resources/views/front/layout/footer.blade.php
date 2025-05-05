@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <a href="/"><img src="{{ asset('assets/images/logo.png') }}"
-                            alt="Digital Templates 24" class="lazy" width="300"></a>
+                            alt="Digital Templates 24" class="lazy" width="100" height="80"></a>
                     <ul class="social-footer">
                         <li><a target="_blank" href="https://www.facebook.com/designlayeragency.dla"><img
                                     src="{{ asset('assets/images/facebook.svg') }}" alt="facebook"
