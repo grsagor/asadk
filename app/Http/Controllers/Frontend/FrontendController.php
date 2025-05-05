@@ -59,7 +59,7 @@ class FrontendController extends Controller
             'technologies' => $technologies,
             'services' => $services,
         ];
-        return view('front.pages.home.index', $data);
+        return view('front.pages.home', $data);
     }
     public function registration() {
         App::setLocale(Session::get('language'));
@@ -345,7 +345,7 @@ class FrontendController extends Controller
     }
 
     public function contact() {
-        return view('front.pages.contact.index');
+        return view('front.pages.contact');
     }
 
     public function submitContact(Request $request) {
