@@ -283,16 +283,16 @@
                                     <a href="#" class="menu-toggle">About Learning Centre <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="#">Content region</a></li>
-                                        <li><a href="#">Design and Develop</a></li>
-                                        <li><a href="#">Best Keywords to lookout for</a></li>
-                                        <li><a href="#">Entrepreneurs blog</a></li>
-                                        <li><a href="#">Subject Matter Experts</a></li>
-                                        <li><a href="#">Catchwords</a></li>
-                                        <li><a href="#">Discussions</a></li>
-                                        <li><a href="#">Q&A</a></li>
-                                        <li><a href="#">Data Visualization</a></li>
-                                        <li><a href="#">Blogs</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.content-region')}}">Content region</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.design-develop')}}">Design and Develop</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.best-keywords')}}">Best Keywords to lookout for</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.entrepreneurs-blog')}}">Entrepreneurs blog</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.subject-matter-experts')}}">Subject Matter Experts</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.catchwords')}}">Catchwords</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.discussions')}}">Discussions</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.q&a')}}">Q&A</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.data-visualization')}}">Data Visualization</a></li>
+                                        <li><a href="{{route('front.centralized-learning-program.learning-center.blogs')}}">Blogs</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -301,33 +301,33 @@
                             <a href="#" class="menu-toggle">Media <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu"
                                 style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Observants Declaration about us</a></li>
-                                <li><a href="#">Success Stories</a></li>
-                                <li><a href="#">Companies collaborated to our learning portal</a></li>
-                                <li><a href="#">How we calculate and offer help</a></li>
-                                <li><a href="#">Read about our activities</a></li>
-                                <li><a href="#">Investments</a></li>
-                                <li><a href="#">Videos - Press and BizNews</a></li>
-                                <li><a href="#">References</a></li>
-                                <li><a href="#">Accomplishments</a></li>
-                                <li><a href="#">Tech meeting program</a></li>
-                                <li><a href="#">Pitch your idea</a></li>
+                                <li><a href="{{route('front.media.testimonials')}}">Testimonials</a></li>
+                                <li><a href="{{route('front.media.observants-declaration')}}">Observants Declaration about us</a></li>
+                                <li><a href="{{route('front.media.success-stories')}}">Success Stories</a></li>
+                                <li><a href="{{route('front.media.companies-collaborated')}}">Companies collaborated to our learning portal</a></li>
+                                <li><a href="{{route('front.media.offer-help')}}">How we calculate and offer help</a></li>
+                                <li><a href="{{route('front.media.our-activities')}}">Read about our activities</a></li>
+                                <li><a href="{{route('front.media.investments')}}">Investments</a></li>
+                                <li><a href="{{route('front.media.videos-press')}}">Videos - Press and BizNews</a></li>
+                                <li><a href="{{route('front.media.references')}}">References</a></li>
+                                <li><a href="{{route('front.media.accomplishments')}}">Accomplishments</a></li>
+                                <li><a href="{{route('front.media.tech-program')}}">Tech meeting program</a></li>
+                                <li><a href="{{route('front.media.pitch-your-idea')}}">Pitch your idea</a></li>
                             </ul>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-toggle">Join us <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu"
                                 style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                <li><a href="#">Get Funded</a></li>
-                                <li><a href="#">Build MMP</a></li>
-                                <li><a href="#">Our SLC Model</a></li>
-                                <li><a href="#">Grow Sales</a></li>
+                                <li><a href="{{route('front.join-us.get-funded')}}">Get Funded</a></li>
+                                <li><a href="{{route('front.join-us.build-mmp')}}">Build MMP</a></li>
+                                <li><a href="{{route('front.join-us.slc-model')}}">Our SLC Model</a></li>
+                                <li><a href="{{route('front.join-us.grow-sales')}}">Grow Sales</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Partner Now</a></li>
-                        <li><a href="#">AI for All</a></li>
-                        <li><a href="#">Get All Access Pass</a></li>
+                        <li><a href="{{route('front.partner-now')}}">Partner Now</a></li>
+                        <li><a href="{{route('front.ai-for-all')}}">AI for All</a></li>
+                        <li><a href="{{route('front.get-access')}}">Get All Access Pass</a></li>
                         <!-- <li><a href="/blogs/">digital trends</a></li> -->
                         <li><a href="{{ route('front.contact') }}">Contact</a></li>
                     </ul>

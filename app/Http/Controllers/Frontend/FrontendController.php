@@ -473,6 +473,97 @@ class FrontendController extends Controller
         return view('front.pages.community.mentor.find-mentor');
     }
 
+    public function centralizedProgramContentRegion() {
+        return view('front.pages.centralized-learning-program.learning-center.content-region');
+    }
+    public function centralizedProgramDesignDevelop() {
+        return view('front.pages.centralized-learning-program.learning-center.design-develop');
+    }
+    public function centralizedProgramBestKeywords() {
+        return view('front.pages.centralized-learning-program.learning-center.best-keywords');
+    }
+    public function centralizedProgramEntrepreneursBlog() {
+        return view('front.pages.centralized-learning-program.learning-center.entrepreneurs-blog');
+    }
+    public function centralizedProgramSubjectMatterExperts() {
+        return view('front.pages.centralized-learning-program.learning-center.subject-matter-experts');
+    }
+    public function centralizedProgramCatchwords() {
+        return view('front.pages.centralized-learning-program.learning-center.catchwords');
+    }
+    public function centralizedProgramDiscussions() {
+        return view('front.pages.centralized-learning-program.learning-center.discussions');
+    }
+    public function centralizedProgramQA() {
+        return view('front.pages.centralized-learning-program.learning-center.q&a');
+    }
+    public function centralizedProgramDataVisualization() {
+        return view('front.pages.centralized-learning-program.learning-center.data-visualization');
+    }
+    public function centralizedProgramBlogs() {
+        return view('front.pages.centralized-learning-program.learning-center.blogs');
+    }
+
+    public function mediaTestimonials() {
+        return view('front.pages.media.testimonials');
+    }
+    public function mediaObservantsDeclaration() {
+        return view('front.pages.media.observants-declaration');
+    }
+    public function mediaSuccessStories() {
+        return view('front.pages.media.success-stories');
+    }
+    public function mediaCompaniesCollaborated() {
+        return view('front.pages.media.companies-collaborated');
+    }
+    public function mediaOfferHelp() {
+        return view('front.pages.media.offer-help');
+    }
+    public function mediaOurActivities() {
+        return view('front.pages.media.our-activities');
+    }
+    public function mediaInvestments() {
+        return view('front.pages.media.investments');
+    }
+    public function mediaVideos() {
+        return view('front.pages.media.videos-press');
+    }
+    public function mediaReferences() {
+        return view('front.pages.media.references');
+    }
+    public function mediaAccomplishments() {
+        return view('front.pages.media.accomplishments');
+    }
+    public function mediaTechProgram() {
+        return view('front.pages.media.tech-program');
+    }
+    public function mediaPitchYourIdea() {
+        return view('front.pages.media.pitch-your-idea');
+    }
+
+    public function joinUsGetFunded() {
+        return view('front.pages.join-us.get-funded');
+    }
+    public function joinUsBuildMMP() {
+        return view('front.pages.join-us.build-mmp');
+    }
+    public function joinUsOurSLCModel() {
+        return view('front.pages.join-us.slc-model');
+    }
+    public function joinUsGrowSales() {
+        return view('front.pages.join-us.grow-sales');
+    }
+
+    public function partnerNow() {
+        return view('front.pages.partner-now');
+    }
+    public function aiForAll() {
+        return view('front.pages.ai-for-all');
+    }
+    public function GetAccess() {
+        return view('front.pages.get-access');
+    }
+
 
     public function servicesFullyManaged() {
         return view('front.pages.services.fully-managed');

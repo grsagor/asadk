@@ -144,6 +144,39 @@ Route::controller(FrontendController::class)->group(function() {
     Route::get('/community/mentor/join-as-mentor', 'communityJoinAsMentor')->name('front.community.mentor.join-as-mentor');
     Route::get('/community/mentor/find-mentor', 'communityFindMentor')->name('front.community.mentor.find-mentor');
 
+    Route::get('/centralized-learning-program/learning-center/content-region', 'centralizedProgramContentRegion')->name('front.centralized-learning-program.learning-center.content-region');
+    Route::get('/centralized-learning-program/learning-center/design-develop', 'centralizedProgramDesignDevelop')->name('front.centralized-learning-program.learning-center.design-develop');
+    Route::get('/centralized-learning-program/learning-center/best-keywords', 'centralizedProgramBestKeywords')->name('front.centralized-learning-program.learning-center.best-keywords');
+    Route::get('/centralized-learning-program/learning-center/entrepreneurs-blog', 'centralizedProgramEntrepreneursBlog')->name('front.centralized-learning-program.learning-center.entrepreneurs-blog');
+    Route::get('/centralized-learning-program/learning-center/subject-matter-experts', 'centralizedProgramSubjectMatterExperts')->name('front.centralized-learning-program.learning-center.subject-matter-experts');
+    Route::get('/centralized-learning-program/learning-center/catchwords', 'centralizedProgramCatchwords')->name('front.centralized-learning-program.learning-center.catchwords');
+    Route::get('/centralized-learning-program/learning-center/discussions', 'centralizedProgramDiscussions')->name('front.centralized-learning-program.learning-center.discussions');
+    Route::get('/centralized-learning-program/learning-center/q&a', 'centralizedProgramQA')->name('front.centralized-learning-program.learning-center.q&a');
+    Route::get('/centralized-learning-program/learning-center/data-visualization', 'centralizedProgramDataVisualization')->name('front.centralized-learning-program.learning-center.data-visualization');
+    Route::get('/centralized-learning-program/learning-center/blogs', 'centralizedProgramBlogs')->name('front.centralized-learning-program.learning-center.blogs');
+
+    Route::get('/media/testimonials', 'mediaTestimonials')->name('front.media.testimonials');
+    Route::get('/media/observants-declaration', 'mediaObservantsDeclaration')->name('front.media.observants-declaration');
+    Route::get('/media/success-stories', 'mediaSuccessStories')->name('front.media.success-stories');
+    Route::get('/media/companies-collaborated', 'mediaCompaniesCollaborated')->name('front.media.companies-collaborated');
+    Route::get('/media/offer-help', 'mediaOfferHelp')->name('front.media.offer-help');
+    Route::get('/media/our-activities', 'mediaOurActivities')->name('front.media.our-activities');
+    Route::get('/media/investments', 'mediaInvestments')->name('front.media.investments');
+    Route::get('/media/videos-press', 'mediaVideos')->name('front.media.videos-press');
+    Route::get('/media/references', 'mediaReferences')->name('front.media.references');
+    Route::get('/media/accomplishments', 'mediaAccomplishments')->name('front.media.accomplishments');
+    Route::get('/media/tech-program', 'mediaTechProgram')->name('front.media.tech-program');
+    Route::get('/media/pitch-your-idea', 'mediaPitchYourIdea')->name('front.media.pitch-your-idea');
+
+    Route::get('/join-us/get-funded', 'joinUsGetFunded')->name('front.join-us.get-funded');
+    Route::get('/join-us/build-mmp', 'joinUsBuildMMP')->name('front.join-us.build-mmp');
+    Route::get('/join-us/slc-model', 'joinUsOurSLCModel')->name('front.join-us.slc-model');
+    Route::get('/join-us/grow-sales', 'joinUsGrowSales')->name('front.join-us.grow-sales');
+
+    Route::get('/partner-now', 'partnerNow')->name('front.partner-now');
+    Route::get('/ai-for-all', 'aiForAll')->name('front.ai-for-all');
+    Route::get('/get-access', 'GetAccess')->name('front.get-access');
+
 
     Route::get('/services/fully-managed', 'servicesFullyManaged')->name('front.services.fully-managed');
     Route::get('/services/business-health-checkup', 'servicesBusinessHealthCheckup')->name('front.services.business-health-checkup');
