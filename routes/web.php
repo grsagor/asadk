@@ -87,8 +87,7 @@ Route::controller(FrontendController::class)->group(function() {
     Route::get('/services/funding-stages/early', 'servicesEarlyFunding')->name('front.services.funding-stages.early');
     Route::get('/services/funding-stages/series', 'servicesSeriesFunding')->name('front.services.funding-stages.series');
 
-    Route::get('/services/real-estate', 'servicesrealEstate')->name('front.services.real-estate');
-    Route::get('/services/real-estate-projects', 'servicesrealEstateProjects')->name('front.services.real-estate-projects');
+    Route::get('/services/real-estate-funding/real-estate-projects', 'servicesrealEstateProjects')->name('front.pages.services.real-estate-funding.real-estate-projects');
 
     Route::get('/services/business-empowerment/business-hacks', 'servicesBusinessHacks')->name('front.services.business-empowerment.business-hacks');
     Route::get('/services/business-empowerment/hotel-development', 'servicesHotelDevelopment')->name('front.services.business-empowerment.hotel-development');
@@ -123,18 +122,18 @@ Route::controller(FrontendController::class)->group(function() {
     
     Route::get('/community/our-team/get-to-know', 'communityGetToKnow')->name('front.community.our-team.get-to-know');
 
-    Route::get('/community/Entrepreneur/worked-with', 'communityEntrepreneurWorkedWith')->name('front.community.Entrepreneur.worked-with');
-    Route::get('/community/Entrepreneur/network', 'communityEntrepreneurNetwork')->name('front.community.Entrepreneur.network');
-    Route::get('/community/Entrepreneur/join', 'communityJoinEntrepreneur')->name('front.community.Entrepreneur.join');
-    Route::get('/community/Entrepreneur/women-support', 'communitySupportWomenEntrepreneurs')->name('front.community.Entrepreneur.women-support');
-    Route::get('/community/Entrepreneur/female-founder', 'communityFemaleFounder')->name('front.community.Entrepreneur.female-founder');
+    Route::get('/community/entrepreneur/worked-with', 'communityEntrepreneurWorkedWith')->name('front.community.entrepreneur.worked-with');
+    Route::get('/community/entrepreneur/network', 'communityEntrepreneurNetwork')->name('front.community.entrepreneur.network');
+    Route::get('/community/entrepreneur/join', 'communityJoinEntrepreneur')->name('front.community.entrepreneur.join');
+    Route::get('/community/entrepreneur/women-support', 'communitySupportWomenEntrepreneurs')->name('front.community.entrepreneur.women-support');
+    Route::get('/community/entrepreneur/female-founder', 'communityFemaleFounder')->name('front.community.entrepreneur.female-founder');
 
-    Route::get('/community/Partner/partnerships-more', 'communityPartnershipsMore')->name('front.community.Partner.partnerships-more');
-    Route::get('/community/Partner/partners-network', 'communityPartnersNetwork')->name('front.community.Partner.partners-network');
-    Route::get('/community/Partner/join-as-partner', 'communityJoinAsPartner')->name('front.community.Partner.join-as-partner');
-    Route::get('/community/Partner/global-network', 'communityGlobalNetwork')->name('front.community.Partner.global-network');
-    Route::get('/community/Partner/representatives-network', 'communityRepresentativesNetwork')->name('front.community.Partner.representatives-network');
-    Route::get('/community/Partner/join-as-representative', 'communityJoinAsRepresentative')->name('front.community.Partner.join-as-representative');
+    Route::get('/community/partner/partnerships-more', 'communityPartnershipsMore')->name('front.community.partner.partnerships-more');
+    Route::get('/community/partner/partners-network', 'communityPartnersNetwork')->name('front.community.partner.partners-network');
+    Route::get('/community/partner/join-as-partner', 'communityJoinAsPartner')->name('front.community.partner.join-as-partner');
+    Route::get('/community/partner/global-network', 'communityGlobalNetwork')->name('front.community.partner.global-network');
+    Route::get('/community/partner/representatives-network', 'communityRepresentativesNetwork')->name('front.community.partner.representatives-network');
+    Route::get('/community/partner/join-as-representative', 'communityJoinAsRepresentative')->name('front.community.partner.join-as-representative');
 
     Route::get('/community/investor/our-investors-network', 'communityOurInvestorsNetwork')->name('front.community.investor.our-investors-network');
     Route::get('/community/investor/investors-network', 'communityInvestorsNetwork')->name('front.community.investor.investors-network');

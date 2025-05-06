@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="navbar navbar-default">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.png') }}"
+                <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/black_bg_logo.jpeg') }}"
                         alt="dDigital Templates 24" class="lazy" width="100" height="80"></a>
             </div>
             <div class="main-nav">

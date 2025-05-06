@@ -147,8 +147,14 @@
                                         <li><a href="/services/funding-stages/series">Series A, B and C Funding</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{route('front.services.real-estate')}}">Real Estate Funding</a></li>
-                                <li><a href="{{route('front.services.real-estate-projects')}}">Real Estate Projects Funding</a></li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-toggle">Real Estate Funding<i
+                                            class="fas fa-chevron-down"></i></a>
+                                    <ul class="submenu"
+                                        style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
+                                        <li><a href="{{route('front.pages.services.real-estate-funding.real-estate-projects')}}">Real Estate Projects Funding</a></li>
+                                    </ul>
+                                </li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Business Empowerment <i
                                             class="fas fa-chevron-down"></i></a>
@@ -235,23 +241,23 @@
                                     <a href="#" class="menu-toggle">Entrepreneur <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="{{route('front.community.Entrepreneur.worked-with')}}">Entrepreneurs we have worked with</a></li>
-                                        <li><a href="{{route('front.community.Entrepreneur.network')}}">Our Entrepreneurs Network</a></li>
-                                        <li><a href="{{route('front.community.Entrepreneur.join')}}">Join us as an Entrepreneur</a></li>
-                                        <li><a href="{{route('front.community.Entrepreneur.women-support')}}">Supporting Women Entrepreneurs</a></li>
-                                        <li><a href="{{route('front.community.Entrepreneur.female-founder')}}">Join Us as a Female Founder</a></li>
+                                        <li><a href="{{route('front.community.entrepreneur.worked-with')}}">Entrepreneurs we have worked with</a></li>
+                                        <li><a href="{{route('front.community.entrepreneur.network')}}">Our Entrepreneurs Network</a></li>
+                                        <li><a href="{{route('front.community.entrepreneur.join')}}">Join us as an Entrepreneur</a></li>
+                                        <li><a href="{{route('front.community.entrepreneur.women-support')}}">Supporting Women Entrepreneurs</a></li>
+                                        <li><a href="{{route('front.community.entrepreneur.female-founder')}}">Join Us as a Female Founder</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#" class="menu-toggle">Partner <i class="fas fa-chevron-down"></i></a>
                                     <ul class="submenu"
                                         style="height: 0; overflow: hidden; transition: height 0.5s ease; position: relative;">
-                                        <li><a href="{{route('front.community.Partner.partnerships-more')}}">Partnerships, co-investments, and more</a></li>
-                                        <li><a href="{{route('front.community.Partner.partners-network')}}">Our Partners Network</a></li>
-                                        <li><a href="{{route('front.community.Partner.join-as-partner')}}">Join us as a Partner</a></li>
-                                        <li><a href="{{route('front.community.Partner.global-network')}}">Our global representatives network</a></li>
-                                        <li><a href="{{route('front.community.Partner.representatives-network')}}">Representatives Network</a></li>
-                                        <li><a href="{{route('front.community.Partner.join-as-representative')}}">Join us as a Representative</a></li>
+                                        <li><a href="{{route('front.community.partner.partnerships-more')}}">Partnerships, co-investments, and more</a></li>
+                                        <li><a href="{{route('front.community.partner.partners-network')}}">Our Partners Network</a></li>
+                                        <li><a href="{{route('front.community.partner.join-as-partner')}}">Join us as a Partner</a></li>
+                                        <li><a href="{{route('front.community.partner.global-network')}}">Our global representatives network</a></li>
+                                        <li><a href="{{route('front.community.partner.representatives-network')}}">Representatives Network</a></li>
+                                        <li><a href="{{route('front.community.partner.join-as-representative')}}">Join us as a Representative</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">

@@ -326,11 +326,8 @@ class FrontendController extends Controller
         return view('front.pages.services.funding-stages.series');
     }
 
-    public function servicesrealEstate() {
-        return view('front.pages.services.real-estate');
-    }
     public function servicesrealEstateProjects() {
-        return view('front.pages.services.real-estate-projects');
+        return view('front.pages.services.real-estate-funding.real-estate-projects');
     }
 
     public function servicesBusinessHacks() {
@@ -419,38 +416,38 @@ class FrontendController extends Controller
     }
 
     public function communityEntrepreneurWorkedWith() {
-        return view('front.pages.community.Entrepreneur.worked-with');
+        return view('front.pages.community.entrepreneur.worked-with');
     }
     public function communityEntrepreneurNetwork() {
-        return view('front.pages.community.Entrepreneur.network');
+        return view('front.pages.community.entrepreneur.network');
     }
     public function communityJoinEntrepreneur() {
-        return view('front.pages.community.Entrepreneur.join');
+        return view('front.pages.community.entrepreneur.join');
     }
     public function communitySupportWomenEntrepreneurs() {
-        return view('front.pages.community.Entrepreneur.women-support');
+        return view('front.pages.community.entrepreneur.women-support');
     }
     public function communityFemaleFounder() {
-        return view('front.pages.community.Entrepreneur.female-founder');
+        return view('front.pages.community.entrepreneur.female-founder');
     }
 
     public function communityPartnershipsMore() {
-        return view('front.pages.community.Partner.partnerships-more');
+        return view('front.pages.community.partner.partnerships-more');
     }
     public function communityPartnersNetwork() {
-        return view('front.pages.community.Partner.partners-network');
+        return view('front.pages.community.partner.partners-network');
     }
     public function communityJoinAsPartner() {
-        return view('front.pages.community.Partner.join-as-partner');
+        return view('front.pages.community.partner.join-as-partner');
     }
     public function communityGlobalNetwork() {
-        return view('front.pages.community.Partner.global-network');
+        return view('front.pages.community.partner.global-network');
     }
     public function communityRepresentativesNetwork() {
-        return view('front.pages.community.Partner.representatives-network');
+        return view('front.pages.community.partner.representatives-network');
     }
     public function communityJoinAsRepresentative() {
-        return view('front.pages.community.Partner.join-as-representative');
+        return view('front.pages.community.partner.join-as-representative');
     }
 
     public function communityOurInvestorsNetwork() {

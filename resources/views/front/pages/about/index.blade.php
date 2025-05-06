@@ -203,7 +203,7 @@
                 <p>FIVEPCMIRACLE LIMITED invites you to be part of a collaborative journey that transforms challenges into opportunities. Whether you're looking to expand your market reach, enhance your brand value, or streamline operations, we have the expertise and network to make it happen.
                     <br>
                     <br>
-                    Let's work together—because at FIVEPCMIRACLE LIMITED, collaboration isn't just a strategy; it's the foundation of success. Contact us at <a href="mailto:partnerships@fivepcmiracle.com">partnerships@fivepcmiracle.com</a>
+                    Let's work together—because at FIVEPCMIRACLE LIMITED, collaboration isn't just a strategy; it's the foundation of success. Contact us at <a href="mailto:partnerships@5xpcmiracle.com">partnerships@5xpcmiracle.com</a>
                 </p>
                 <img src="assets/images/career.png" alt="join our team" class="carer-img lazy">
             </div>

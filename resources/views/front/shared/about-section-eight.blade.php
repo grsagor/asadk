@@ -18,7 +18,7 @@
             <div class="col-md-4">
                 <div class="cntct-box">
                     <p>Looking to explore partnership opportunities? Let's connect!</p>
-                    <h3><a href="mailto:partnerships@fivepcmiracle.com" class="numbr">partnerships@fivepcmiracle.com</a></h3>
+                    <h3><a href="mailto:partnerships@5xpcmiracle.com" class="numbr">partnerships@5xpcmiracle.com</a></h3>
                 </div>
             </div>
         </div>
