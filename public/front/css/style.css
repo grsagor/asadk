@@ -4785,9 +4785,16 @@ section.main-menu-nav .social-icons-head ul li {
     transition: 0.4s;
 }
 
-section.main-menu-nav .social-icons-head ul li img {
+section.main-menu-nav .social-icons-head ul li i {
     height: 45px;
     width: 45px;
+    font-size: 25px;
+    background-color: #494848;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.main-menu-nav .social-icons-head ul li:hover {
@@ -5116,6 +5123,17 @@ footer.main-footer .footer-row1 .row {
 .footer-row2 .social-footer li {
     padding-right: 12px;
     transition: 0.4s;
+}
+.footer-row2 .social-footer li i{
+    height: 45px;
+    width: 45px;
+    font-size: 25px;
+    background-color: #FFFFFF1A;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-row2 .social-footer li:hover {

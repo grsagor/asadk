@@ -90,3 +90,9 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.social-icon{
+   height: 20px;
+   width: 20px;
+   color: azure;
+}

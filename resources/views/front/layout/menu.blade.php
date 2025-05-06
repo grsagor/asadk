@@ -334,16 +334,24 @@
                 </div>
                 <div class="social-icons-head">
                     <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/designlayeragencyllc"><img
+                        <li><a target="_blank" href="https://www.facebook.com/designlayeragencyllc">
+                            {{-- <img
                                     src="{{ asset('assets/images/facebook-head.svg') }}" alt="facebook"
-                                    class="lazy"></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/company/83519829/"><img
-                                    src="{{ asset('assets/images/linkedin.svg') }}" alt="linkedin"
-                                    class="lazy"></a>
+                                    class="lazy"> --}}
+                                    <i class="fa-brands fa-facebook-f "></i>
+                                </a></li>
+                        <li>
+                            <a target="_blank" href="https://www.whatsapp.com">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                      </li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/83519829/">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
                         </li>
-                        <li><a target="_blank" href="https://www.instagram.com/designlayeragency/"><img
-                                    src="{{ asset('assets/images/instagram.svg') }}" alt="instagram"
-                                    class="lazy"></a>
+                        <li><a target="_blank" href="https://www.instagram.com/designlayeragency/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                         </li>
                     </ul>
                 </div>

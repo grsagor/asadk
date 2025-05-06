@@ -30,16 +30,19 @@
                     <a href="/"><img src="{{ asset('assets/images/logo.png') }}"
                             alt="Digital Templates 24" class="lazy" width="100" height="80"></a>
                     <ul class="social-footer">
-                        <li><a target="_blank" href="https://www.facebook.com/designlayeragency.dla"><img
-                                    src="{{ asset('assets/images/facebook.svg') }}" alt="facebook"
-                                    class="lazy"></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/designlayeragency.dla">
+                            <i class="fa-brands fa-facebook-f "></i>
+                        </a></li>
+                        <li><a target="_blank" href="https://www.whatsapp.com">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a></li>
                         <li><a target="_blank"
-                                href="https://www.linkedin.com/company/design-layer-agency-dla/"><img
-                                    src="{{ asset('assets/images/linkedin.svg') }}" alt="linkedin"
-                                    class="lazy"></a></li>
-                        <li><a target="_blank" href="#"><img
-                                    src="{{ asset('assets/images/instagram.svg') }}" alt="instagram"
-                                    class="lazy"></a></li>
+                                href="https://www.linkedin.com/company/design-layer-agency-dla/">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a></li>
+                        <li><a target="_blank" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a></li>
                     </ul>
                     <div class="reviews-footer">
                         <div class="row">
@@ -54,11 +57,10 @@
                 <div class="col-lg-3">
                     <h3>services</h3>
                     <ul class="footer-links">
-                        <li><a href="branding-designing/">Branding &amp; Designing</a></li>
-                        <li><a href="digital-marketing-optimization/">Digital Marketing &amp; Sales
-                                Optimization</a>
+                        <li><a href="/services/design-development">Design & Development Management</a></li>
+                        <li><a href="/services/business-health-checkup">Business Health Checkup</a>
                         </li>
-                        <li><a href="web-mobile-app-development/">Web &amp; Mobile App Development</a></li>
+                        <li><a href="/services/supervision-reporting">Supervision and Reporting Services</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
