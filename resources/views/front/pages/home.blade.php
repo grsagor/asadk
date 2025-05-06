@@ -136,7 +136,7 @@
     <section class="homepage-sectionfour">
         <div class="hero-main-rp container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 upper-spacing">
+                <div class="col-12 col-lg-6 col-md-6 upper-spacing">
                     <h2 class="animate-in-future">The Power of<br> Collaboration</h2>
                     <p class="animate-in-future">
                         <strong>1. Innovation Through Shared Expertise</strong><br>
@@ -164,7 +164,7 @@
                                 src="{{ asset('assets/images/arrow2.svg') }}" alt="lets chat" class="lazy"></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-12 col-lg-6 col-md-6">
                     <img src="{{ asset('assets/images/team.png') }}" alt="team"
                         class="tem-img lazy animate-in-future" loading="lazy">
                 </div>
@@ -175,7 +175,7 @@
     <section class="homepage-sectionfour copy">
         <div class="hero-main-rp container">
             <div class="row flex-row-reverse">
-                <div class="col-lg-6 col-md-6 upper-spacing">
+                <div class="col-12 col-lg-6 col-md-6 upper-spacing">
                     <h2 class="animate-in-future">How We Work</h2>
                     <p class="animate-in-future">
                         At SKY7P7, we grow alongside our connected networks. Our approach is simple yet impactful:
@@ -193,7 +193,7 @@
                                 src="{{ asset('assets/images/arrow2.svg') }}" alt="lets chat" class="lazy"></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-12 col-lg-6 col-md-6">
                     <img src="{{ asset('assets/images/team.png') }}" alt="team"
                         class="tem-img lazy animate-in-future" loading="lazy">
                 </div>
@@ -204,7 +204,7 @@
     <section class="homepage-sectionfour copy2">
         <div class="hero-main-rp container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 upper-spacing">
+                <div class="col-12 col-lg-6 col-md-6 upper-spacing">
                     <h2 class="animate-in-future">Why Choose Sky7P7?</h2>
                     <p class="animate-in-future">
                         Businesses choose us because:
@@ -225,7 +225,7 @@
                                 src="{{ asset('assets/images/arrow2.svg') }}" alt="lets chat" class="lazy"></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-12 col-lg-6 col-md-6">
                     <img src="{{ asset('assets/images/team.png') }}" alt="team"
                         class="tem-img lazy animate-in-future" loading="lazy">
                 </div>

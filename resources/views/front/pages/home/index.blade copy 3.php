@@ -696,7 +696,7 @@
     <section class="homepage-sectionfour">
         <div class="hero-main-rp container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 upper-spacing">
+                <div class="col-12 col-lg-6 col-md-6 upper-spacing">
                 <h2 class="animate-in-future">Comprehensive Business<br>Integration Solutions</h2>
                 <p class="animate-in-future">At FIVEPCMIRACLE LIMITED, we provide end-to-end business integration solutions that drive growth and efficiency. Our services include Channel Partner Programs, Distribution Projects, Reseller Programs, Wholesaler Programs, and White Label Branding Services. We focus on creating seamless collaborations that enhance operational efficiency, reduce costs, and accelerate market expansion. Our dedicated team ensures that every partnership delivers measurable results and sustainable growth.</p>
                     <div class="btn-container btn-pirple">

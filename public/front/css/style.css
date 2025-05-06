@@ -95,6 +95,7 @@ a.readmore {
     position: relative;
     padding: 0 !important;
     width: max-content;
+    max-width: 100%;
 }
 
 .btn-container button,
@@ -4850,7 +4851,7 @@ section.main-menu-nav.show {
 
 section.main-menu-nav.show .fancy-menu li a {
     animation-delay: .8s;
-    animation: text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    /* animation: text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both; */
 }
 
 section.main-menu-nav .hero-main-rp.container {
@@ -4932,7 +4933,7 @@ section.main-menu-nav .menu-nav {
 section.main-menu-nav .menu-nav .fancy-menu li {
     width: 100%;
     flex: 0 0 100%;
-    text-align: center;
+    text-align: left;
     padding-top: 0px;
     padding-bottom: 0px;
 }
