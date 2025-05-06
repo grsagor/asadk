@@ -29,3 +29,9 @@
 .row {
     flex-wrap: wrap;
 }
+section.main-menu-nav .cancel-btn {
+    z-index: 9999;
+}
+section.main-menu-nav .row {
+    max-width: 100%;
+  }
